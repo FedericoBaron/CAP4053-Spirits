@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public Vector2 speed = new Vector2(30, 20);
+    public Vector2 speed = new Vector2(12, 8);
 
     // Update is called once per frame
     void Update()
