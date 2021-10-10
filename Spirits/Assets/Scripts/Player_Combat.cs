@@ -14,22 +14,28 @@ public class Player_Combat : MonoBehaviour
 	public float attackRate = 2f;
 	float nextAttackTime = 0f;
 
-
+	public GameObject bottle;
 
     // Update is called once per frame
     void Update()
     {
 		if(Time.time >= nextAttackTime){
 			if(Input.GetKeyDown(KeyCode.Space)){
-        		Attack();
+        		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
         	}
+			if(Input.GetKeyDown(KeyCode.B))
+			{
+				Attack_Long();
+				nextAttackTime = Time.time + 1f / attackRate;
+			}
 		}
 
         
     }
 
-    void Attack(){
+    void Attack_Short()
+	{
 		// add animation 
 		// animator.SetTrigger("Attack");
 
@@ -46,7 +52,13 @@ public class Player_Combat : MonoBehaviour
 
     }
 
-    void OnDrawGizmosSelected(){
+	void Attack_Long()
+	{
+		Instantiate(bottle, attackPoint.transform);
+	}
+
+    void OnDrawGizmosSelected()
+	{
     	// if(attackPoint == null){
     	// 	Debug.Log("we here");
     	// 	return;
