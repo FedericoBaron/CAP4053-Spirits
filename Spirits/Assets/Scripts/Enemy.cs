@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour
             timeRemaining--;
         }
         isFainted = false;
+        Destroy(gameObject);
         Debug.Log("unfaint");
     }
 
