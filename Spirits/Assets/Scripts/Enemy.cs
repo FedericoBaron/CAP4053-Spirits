@@ -28,6 +28,10 @@ public class Enemy : MonoBehaviour
     	}
     }
 
+    public void isFainted(){
+        
+    }
+
     void Die()
     {
     	Debug.Log("Enemy Died");
@@ -35,7 +39,7 @@ public class Enemy : MonoBehaviour
         // animator.SetBool("IsDead", true);
 
     	// Disable enemy
-        Destroy(gameObject);
+        // Destroy(gameObject);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         

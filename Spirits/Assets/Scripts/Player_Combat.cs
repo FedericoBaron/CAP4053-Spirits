@@ -57,6 +57,10 @@ public class Player_Combat : MonoBehaviour
 		Instantiate(bottle, attackPoint.transform);
 	}
 
+	void Capture_Ghost(){
+		
+	}
+
     void OnDrawGizmosSelected()
 	{
     	// if(attackPoint == null){
