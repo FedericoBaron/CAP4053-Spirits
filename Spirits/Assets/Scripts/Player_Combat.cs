@@ -13,6 +13,7 @@ public class Player_Combat : MonoBehaviour
 	public int attackDamage = 40;
 	public float attackRate = 2f;
 	float nextAttackTime = 0f;
+	List<int> capturedGhosts = new List<int>();
 
 	public GameObject bottle;
 
@@ -20,14 +21,21 @@ public class Player_Combat : MonoBehaviour
     void Update()
     {
 		if(Time.time >= nextAttackTime){
+			// Short range attack
 			if(Input.GetKeyDown(KeyCode.Space)){
         		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
         	}
+			// Throw bottle
 			if(Input.GetKeyDown(KeyCode.B))
 			{
 				Attack_Long();
 				nextAttackTime = Time.time + 1f / attackRate;
+			}
+			// Capture ghost
+			if(Input.GetKeyDown(KeyCode.N))
+			{
+				Capture_Ghost();
 			}
 		}
 
@@ -55,6 +63,18 @@ public class Player_Combat : MonoBehaviour
 	void Attack_Long()
 	{
 		Instantiate(bottle, attackPoint.transform);
+	}
+
+	void Capture_Ghost(){
+		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+		foreach(Collider2D enemy in hitEnemies){
+			if(enemy.GetComponent<Enemy>().IsFainted()){
+				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
+				enemy.GetComponent<Enemy>().Captured();
+			}
+		}
+		Debug.Log("here are the captured ghosts: " + capturedGhosts);
 	}
 
     void OnDrawGizmosSelected()
