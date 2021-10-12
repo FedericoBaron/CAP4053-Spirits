@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Player_Combat : MonoBehaviour
 {
-
+	public Rigidbody2D playerBody;
 	public Animator animator;
 
 	public Transform attackPoint;
 	public float attackRange = 10f;
 	public LayerMask enemyLayers;
-	public int attackDamage = 40;
+	public int attackDamageShort = 40;
+	public int attackDamageLong = 100;
 	public float attackRate = 2f;
 	float nextAttackTime = 0f;
 	List<int> capturedGhosts = new List<int>();
 
 	public GameObject bottle;
+
+	void Start()
+	{
+		playerBody = GetComponent<Rigidbody2D>();
+	}
 
     // Update is called once per frame
     void Update()
@@ -29,7 +35,7 @@ public class Player_Combat : MonoBehaviour
 			// Throw bottle
 			if(Input.GetKeyDown(KeyCode.B))
 			{
-				Attack_Long();
+				StartCoroutine(Attack_Long());
 				nextAttackTime = Time.time + 1f / attackRate;
 			}
 			// Capture ghost
@@ -55,14 +61,28 @@ public class Player_Combat : MonoBehaviour
 		// Debug.Log(hitEnemies[0].name);
 		foreach(Collider2D enemy in hitEnemies){
 			Debug.Log("We hit " + enemy.name);
-			enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+			enemy.GetComponent<Enemy>().TakeDamage(attackDamageShort);
 		}
 
     }
 
-	void Attack_Long()
+	IEnumerator Attack_Long()
 	{
-		Instantiate(bottle, gameObject.transform);
+		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+
+
+
+		Instantiate(bottle, gameObject.transform.position + new Vector3(1f, 1.5f, 0), Quaternion.identity);
+
+		yield return new WaitForSeconds(1.5f);
+		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(mousePos, attackRange, enemyLayers);
+
+		foreach(Collider2D enemy in hitEnemies)
+		{
+			Debug.Log("We hit " + enemy.name);
+			enemy.GetComponent<Enemy>().TakeDamage(attackDamageLong);
+		}
 	}
 
 	void Capture_Ghost(){
