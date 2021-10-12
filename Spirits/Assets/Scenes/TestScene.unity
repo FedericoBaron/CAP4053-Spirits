@@ -852,7 +852,8 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 40
+  attackDamageShort: 40
+  attackDamageLong: 100
   attackRate: 2
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
 --- !u!114 &1614703011
@@ -1029,7 +1030,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.246335
+  orthographic size: 7.8569937
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
