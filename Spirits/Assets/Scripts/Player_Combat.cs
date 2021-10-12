@@ -62,7 +62,7 @@ public class Player_Combat : MonoBehaviour
 
 	void Attack_Long()
 	{
-		Instantiate(bottle, attackPoint.transform);
+		Instantiate(bottle, gameObject.transform);
 	}
 
 	void Capture_Ghost(){
