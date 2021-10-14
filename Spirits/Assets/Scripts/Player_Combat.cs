@@ -71,8 +71,6 @@ public class Player_Combat : MonoBehaviour
 		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
 
-
-
 		Instantiate(bottle, gameObject.transform.position + new Vector3(1f, 1.5f, 0), Quaternion.identity);
 
 		yield return new WaitForSeconds(1.5f);

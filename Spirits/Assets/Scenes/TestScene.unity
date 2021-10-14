@@ -264,8 +264,8 @@ GameObject:
   - component: {fileID: 241610749}
   - component: {fileID: 241610748}
   - component: {fileID: 241610747}
-  - component: {fileID: 241610746}
   - component: {fileID: 241610745}
+  - component: {fileID: 241610746}
   m_Layer: 6
   m_Name: Enemy2
   m_TagString: Untagged
@@ -471,8 +471,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4075845070354443697, guid: fd16017197acb374aa3937e3263c3828, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7625654534511120912, guid: cab25c344ee47c248a3ff1c26626cb40, type: 3}
+  m_Color: {r: 0.2352941, g: 1, b: 0.8369344, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -620,8 +620,8 @@ GameObject:
   - component: {fileID: 534673917}
   - component: {fileID: 534673915}
   - component: {fileID: 534673923}
-  - component: {fileID: 534673922}
   - component: {fileID: 534673916}
+  - component: {fileID: 534673922}
   m_Layer: 6
   m_Name: Enemy1
   m_TagString: Untagged
@@ -785,8 +785,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4075845070354443697, guid: fd16017197acb374aa3937e3263c3828, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7625654534511120912, guid: cab25c344ee47c248a3ff1c26626cb40, type: 3}
+  m_Color: {r: 0.23529412, g: 1, b: 0.8392157, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -804,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534673914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.27, y: 0.25, z: -4.2932878}
+  m_LocalPosition: {x: -10.48, y: -1.74, z: -4.2932878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1546085049}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Cellar Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1124,7 +1124,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4075845070354443697, guid: fd16017197acb374aa3937e3263c3828, type: 3}
+  m_Sprite: {fileID: -7625654534511120912, guid: cab25c344ee47c248a3ff1c26626cb40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1336,6 +1336,7 @@ GameObject:
   - component: {fileID: 1950893962}
   - component: {fileID: 1950893961}
   - component: {fileID: 1950893960}
+  - component: {fileID: 1950893963}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1378,7 +1379,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.726212
+  orthographic size: 7.82371
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1408,6 +1409,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950893963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950893959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1373482d41823644b76760b4112fd8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1993492757
 GameObject:
   m_ObjectHideFlags: 0
