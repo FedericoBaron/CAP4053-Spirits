@@ -15,12 +15,14 @@ public class Player_Combat : MonoBehaviour
 	public float attackRate = 2f;
 	float nextAttackTime = 0f;
 	List<int> capturedGhosts = new List<int>();
+	public Money money;
 
 	public GameObject bottle;
 
 	void Start()
 	{
 		playerBody = GetComponent<Rigidbody2D>();
+		money = new Money();
 	}
 
     // Update is called once per frame
@@ -90,6 +92,8 @@ public class Player_Combat : MonoBehaviour
 			if(enemy.GetComponent<Enemy>().IsFainted()){
 				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
 				enemy.GetComponent<Enemy>().Captured();
+				money.addMoney(30);
+				Debug.Log("money is: " + money.getMoney());
 			}
 		}
 		Debug.Log("here are the captured ghosts: " + capturedGhosts);
