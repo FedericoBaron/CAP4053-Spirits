@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 37711130}
+  money: 0
 --- !u!1 &114448518
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +458,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  player: {fileID: 1614703008}
+  setter: {fileID: 241610747}
+  avoid: []
+  moveRunAway: {fileID: 0}
+  run: 0
   maxHealth: 100
+  currentHealth: 0
+  RunAwaySpeed: 4
+  RunAwayDistance: 5
+  attackDist: 3
+  attackDamageShort: 5
 --- !u!61 &241610749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -735,7 +746,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  player: {fileID: 1614703008}
+  setter: {fileID: 534673923}
+  avoid: []
+  moveRunAway: {fileID: 0}
+  run: 0
   maxHealth: 100
+  currentHealth: 0
+  RunAwaySpeed: 4
+  RunAwayDistance: 5
+  attackDist: 3
+  attackDamageShort: 5
 --- !u!114 &534673916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 37711130}
+  money: 0
 --- !u!114 &1316530934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,6 +1480,8 @@ MonoBehaviour:
   attackDamageShort: 40
   attackDamageLong: 100
   attackRate: 2
+  health: 0
+  maxHealth: 100
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
 --- !u!114 &1614703011
 MonoBehaviour:

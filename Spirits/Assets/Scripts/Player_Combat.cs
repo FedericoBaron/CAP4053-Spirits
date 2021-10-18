@@ -13,16 +13,17 @@ public class Player_Combat : MonoBehaviour
 	public int attackDamageShort = 40;
 	public int attackDamageLong = 100;
 	public float attackRate = 2f;
+	public int health;
+	public int maxHealth = 100;
 	float nextAttackTime = 0f;
 	List<int> capturedGhosts = new List<int>();
-	// public Money money;
 
 	public GameObject bottle;
 
 	void Start()
 	{
+		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
-		// money = new Money();
 	}
 
     // Update is called once per frame
@@ -68,6 +69,14 @@ public class Player_Combat : MonoBehaviour
 
     }
 
+	public void TakeDamage(int amt){
+		health = 0 > (health - amt) ? 0 : (health - amt);
+		if (health == 0){
+			// Destroy(gameObject);
+			Debug.Log("Player Lost");
+		}
+	}
+
 	IEnumerator Attack_Long()
 	{
 		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -92,9 +101,6 @@ public class Player_Combat : MonoBehaviour
 			if(enemy.GetComponent<Enemy>().IsFainted()){
 				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
 				enemy.GetComponent<Enemy>().Captured();
-				// Money.addCurrMoney(30);
-				MoneyTextManager.instance.setText(30);
-				// Debug.Log("money is: " + money.getCurrMoney());
 			}
 		}
 		Debug.Log("here are the captured ghosts: " + capturedGhosts);
