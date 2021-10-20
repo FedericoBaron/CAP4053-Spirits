@@ -23,6 +23,9 @@ public class Enemy : MonoBehaviour
     bool isFainted = false;
     int ghostType = 0;
 
+    public float cooldown = 1f; //seconds
+    private float lastAttackedAt = -9999f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,7 +72,11 @@ public class Enemy : MonoBehaviour
 
     void attackPlayer(){
         if (Vector2.Distance(transform.position, player.position) > attackDist) return;
-        player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+        if (Time.time > lastAttackedAt + cooldown) {
+           //do the attack
+            player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+            lastAttackedAt = Time.time;
+        }
     }
 
 
