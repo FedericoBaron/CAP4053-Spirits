@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Image healthBarImage;
-    public Player player;
+    public Transform player;
 
     public void UpdateHealthBar() 
     {
-        healthBarImage.fillAmount = Mathf.Clamp(player.health / player.maxHealth, 0, 1f);
+        healthBarImage.fillAmount = Mathf.Clamp(player.GetComponent<Player_Combat>().health / player.GetComponent<Player_Combat>().maxHealth, 0, 1f);
     }
 }

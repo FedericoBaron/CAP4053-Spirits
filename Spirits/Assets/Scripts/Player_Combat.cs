@@ -13,12 +13,14 @@ public class Player_Combat : MonoBehaviour
 	public int attackDamageShort = 40;
 	public int attackDamageLong = 100;
 	public float attackRate = 2f;
-	public int health;
-	public int maxHealth = 100;
+	public float health;
+	public float maxHealth = 100;
 	float nextAttackTime = 0f;
 	List<int> capturedGhosts = new List<int>();
 
 	public GameObject bottle;
+
+	public HealthBar healthBar;
 
 	void Start()
 	{
@@ -71,6 +73,7 @@ public class Player_Combat : MonoBehaviour
 
 	public void TakeDamage(int amt){
 		health = 0 > (health - amt) ? 0 : (health - amt);
+		healthBar.UpdateHealthBar();
 		if (health == 0){
 			// Destroy(gameObject);
 			Debug.Log("Player Lost");

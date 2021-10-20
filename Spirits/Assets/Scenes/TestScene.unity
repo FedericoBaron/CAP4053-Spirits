@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarImage: {fileID: 130725412}
-  player: {fileID: 1614703013}
+  player: {fileID: 1614703008}
 --- !u!1 &37711128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1473,6 @@ GameObject:
   - component: {fileID: 1614703011}
   - component: {fileID: 1614703010}
   - component: {fileID: 1614703012}
-  - component: {fileID: 1614703013}
   m_Layer: 3
   m_Name: Bartender
   m_TagString: Untagged
@@ -1651,6 +1650,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
+  healthBar: {fileID: 14057129}
 --- !u!114 &1614703011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1681,21 +1681,6 @@ FrictionJoint2D:
   m_ConnectedAnchor: {x: -2.29, y: 0.13}
   m_MaxForce: 1
   m_MaxTorque: 1
---- !u!114 &1614703013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614703003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abc37cd3d11d34f2baa785368237fef2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
-  healthBar: {fileID: 14057129}
 --- !u!1 &1752110623
 GameObject:
   m_ObjectHideFlags: 0
