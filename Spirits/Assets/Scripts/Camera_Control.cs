@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Camera_Control : MonoBehaviour
 {
-    float mapBoundX = 5.75f;
+    float mapBoundX = 5.40f;
     float mapBoundMaxY = -1f;
-    float mapBoundMinY = -4f;
+    float mapBoundMinY = -5.25f;
 
     // Update is called once per frame
     void Update()
