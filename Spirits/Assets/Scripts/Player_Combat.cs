@@ -104,6 +104,7 @@ public class Player_Combat : MonoBehaviour
 			if(enemy.GetComponent<Enemy>().IsFainted()){
 				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
 				enemy.GetComponent<Enemy>().Captured();
+				MoneyTextManager.instance.setText(30);
 			}
 		}
 		Debug.Log("here are the captured ghosts: " + capturedGhosts);
