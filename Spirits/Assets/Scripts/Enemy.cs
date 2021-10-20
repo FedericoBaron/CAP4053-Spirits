@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
 
+    public EnemyHealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
     	currentHealth -= damage;
+        healthBar.UpdateHealthBar();
         // animator.setTrigger("Hurt");
     	// play hurt animation
 
