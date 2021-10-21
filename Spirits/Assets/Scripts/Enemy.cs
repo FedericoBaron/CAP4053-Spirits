@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Bartender").transform;
         currentHealth = maxHealth;
         if (avoid == null)
             avoid = GameObject.FindGameObjectsWithTag("ObjectInWorld");
