@@ -38,9 +38,13 @@ public class Enemy : MonoBehaviour
     }
 
     void Update(){
-        attackPlayer();
-        if (currentHealth < 30) run = true;
-        moveAway();
+        if(!isFainted){
+            attackPlayer();
+        
+            if (currentHealth < 30) run = true;
+            moveAway();
+        }
+        
     }
 
     // Update is called once per frame
@@ -86,6 +90,10 @@ public class Enemy : MonoBehaviour
 
     void Faint(){
         isFainted = true;
+        setter.target = transform;
+        foreach(var c in gameObject.GetComponentsInChildren<Collider2D>()){
+            c.isTrigger = true;
+        }
         Debug.Log("we faint");
         StartCoroutine(StartFaintTimer());
     }
