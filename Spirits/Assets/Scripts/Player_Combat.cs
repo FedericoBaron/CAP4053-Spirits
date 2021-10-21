@@ -33,18 +33,18 @@ public class Player_Combat : MonoBehaviour
     {
 		if(Time.time >= nextAttackTime){
 			// Short range attack
-			if(Input.GetKeyDown(KeyCode.Space)){
+			if(Input.GetMouseButtonDown(0)){
         		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
         	}
 			// Throw bottle
-			if(Input.GetKeyDown(KeyCode.B))
+			if(Input.GetMouseButtonDown(1))
 			{
 				StartCoroutine(Attack_Long());
 				nextAttackTime = Time.time + 1f / attackRate;
 			}
 			// Capture ghost
-			if(Input.GetKeyDown(KeyCode.N))
+			if(Input.GetKeyDown(KeyCode.Space))
 			{
 				Capture_Ghost();
 			}
