@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Player_Combat : MonoBehaviour
 {
 	public Rigidbody2D playerBody;
@@ -12,10 +13,13 @@ public class Player_Combat : MonoBehaviour
 	public LayerMask enemyLayers;
 	public int attackDamageShort = 40;
 	public int attackDamageLong = 100;
+	public int added = 30;
+	public int money = 0;
 	public float attackRate = 2f;
 	public float health;
 	public float maxHealth = 100;
 	float nextAttackTime = 0f;
+	//public PlayerLost GameOverScreen = null;
 	List<int> capturedGhosts = new List<int>();
 
 	public GameObject bottle;
@@ -53,6 +57,10 @@ public class Player_Combat : MonoBehaviour
         
     }
 
+	public void GameOver(){
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
     void Attack_Short()
 	{
 		// add animation 
@@ -71,11 +79,18 @@ public class Player_Combat : MonoBehaviour
 
     }
 
+	void Awake() 
+	{
+		DontDestroyOnLoad(transform.gameObject);
+	}
+
+
 	public void TakeDamage(int amt){
 		health = 0 > (health - amt) ? 0 : (health - amt);
 		healthBar.UpdateHealthBar();
 		if (health == 0){
 			// Destroy(gameObject);
+			GameOver();
 			Debug.Log("Player Lost");
 		}
 	}
@@ -104,7 +119,8 @@ public class Player_Combat : MonoBehaviour
 			if(enemy.GetComponent<Enemy>().IsFainted()){
 				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
 				enemy.GetComponent<Enemy>().Captured();
-				MoneyTextManager.instance.setText(30);
+				money += added;
+				MoneyTextManager.instance.setText(added);
 			}
 		}
 		Debug.Log("here are the captured ghosts: " + capturedGhosts);
