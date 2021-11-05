@@ -20,4 +20,8 @@ public class PlayerLost : MonoBehaviour
     public void RestartButton(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+
+    public void NextButton(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
