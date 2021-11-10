@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player_Combat : MonoBehaviour
 {
 	public Rigidbody2D playerBody;
-	public Animator animator;
+	public Animator playerAnim;
 
 	public Transform attackPoint;
 	public float attackRange = 10f;
@@ -30,6 +30,7 @@ public class Player_Combat : MonoBehaviour
 	{
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
+		playerAnim = GetComponent<Animator>();
 	}
 
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class Player_Combat : MonoBehaviour
 		if(Time.time >= nextAttackTime){
 			// Short range attack
 			if(Input.GetMouseButtonDown(0)){
+				playerAnim.SetTrigger("Attacking");
         		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
         	}
@@ -53,8 +55,6 @@ public class Player_Combat : MonoBehaviour
 				Capture_Ghost();
 			}
 		}
-
-        
     }
 
 	public void GameOver(){
@@ -64,7 +64,6 @@ public class Player_Combat : MonoBehaviour
     void Attack_Short()
 	{
 		// add animation 
-		// animator.SetTrigger("Attack");
 
 		// Detect enemies in range of attack
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -87,7 +86,7 @@ public class Player_Combat : MonoBehaviour
 
 	public void TakeDamage(int amt){
 		health = 0 > (health - amt) ? 0 : (health - amt);
-		healthBar.UpdateHealthBar();
+		healthBar.UpdateHealthBar(amt);
 		if (health == 0){
 			// Destroy(gameObject);
 			GameOver();

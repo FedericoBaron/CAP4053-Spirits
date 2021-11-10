@@ -281,10 +281,10 @@ GameObject:
   - component: {fileID: 7750438573472608910}
   - component: {fileID: 3106077083638254487}
   - component: {fileID: 871445701835663793}
+  - component: {fileID: 3869822476129221879}
   - component: {fileID: 6420323792921103166}
   - component: {fileID: 2292586777613335789}
   - component: {fileID: 394538593863405992}
-  - component: {fileID: 6421353366621758471}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -476,6 +476,20 @@ MonoBehaviour:
   attackDamageShort: 5
   attackRate: 2
   healthBar: {fileID: 2300082816336345282}
+--- !u!114 &3869822476129221879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050580592337532343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b7cf5f3294e440e91515b8f5169052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarImage: {fileID: 2198954533262495145}
+  enemy: {fileID: 3420576862140990869}
 --- !u!114 &6420323792921103166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,17 +568,3 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &6421353366621758471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6050580592337532343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb4ef336e763e406ca9f42feee47909a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBarImage: {fileID: 2198954533262495145}
-  player: {fileID: 3420576862140990869}

@@ -4,26 +4,35 @@ using DG.Tweening;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image healthBarImage;
+    public RawImage healthBarImage;
+    public Rect uvRect;
+
+    public RectTransform healthEdge;
+
+    public RectTransform healthBarMask;
+    private Vector2 maskDelta;
+    private float maskWidth = 240f;
+
     public Transform player;
+    private float playerMaxHealth;
 
-    public void UpdateHealthBar() 
+    void Start()
     {
-        float playerHealth = player.GetComponent<Player_Combat>().health;
-        float playerMaxHealth = player.GetComponent<Player_Combat>().maxHealth;
+        playerMaxHealth = player.GetComponent<Player_Combat>().maxHealth;
+    }
 
-        float duration = 0.75f * (playerHealth / playerMaxHealth);
-        healthBarImage.fillAmount = Mathf.Clamp(playerHealth / playerMaxHealth, 0, 1f);
+    void Update()
+    {
+        uvRect = healthBarImage.uvRect;
+        uvRect.x -= 0.33f * Time.deltaTime / (player.GetComponent<Player_Combat>().health / playerMaxHealth);
+        healthBarImage.uvRect = uvRect;
+    }
 
-        Color newColor = Color.green;
-        if (playerHealth < playerMaxHealth * 0.25f) 
-        {
-            newColor = Color.red;
-        } 
-        else if (playerHealth < playerMaxHealth * 0.66f) 
-        {
-            newColor = new Color(1f, .64f, 0f, 1f);
-        }
-        healthBarImage.DOColor(newColor, duration);
+    public void UpdateHealthBar(int dmg) 
+    {
+        maskDelta = new Vector2(dmg / playerMaxHealth, 0) * maskWidth;
+        healthBarMask.offsetMax -= maskDelta;
+
+        healthEdge.anchoredPosition -= maskDelta;
     }
 }
