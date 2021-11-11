@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 
     float currentTime;
     bool timerActive = true;
-    public int startMinutes;
+    public int startMinutes = 5;
     public Text currentTimeText;
 
     // Start is called before the first frame update

@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     public int attackDamageShort = 5;
     
     bool isFainted = false;
-    int ghostType = 0;
+    public int ghostType = 0;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;

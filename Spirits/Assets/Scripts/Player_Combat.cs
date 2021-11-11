@@ -26,8 +26,11 @@ public class Player_Combat : MonoBehaviour
 
 	public HealthBar healthBar;
 
+	public Control_List ControlList;
+
 	void Start()
 	{
+		ControlList = GetComponent<Control_List>();
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
 	}
@@ -119,6 +122,8 @@ public class Player_Combat : MonoBehaviour
 			if(enemy.GetComponent<Enemy>().IsFainted()){
 				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
 				enemy.GetComponent<Enemy>().Captured();
+				int type = enemy.GetComponent<Enemy>().ghostType;
+				ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
 				money += added;
 				MoneyTextManager.instance.setText(added);
 			}
