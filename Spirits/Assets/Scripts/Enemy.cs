@@ -5,8 +5,7 @@ using Pathfinding;
 
 public class Enemy : MonoBehaviour
 {
-    public Animator enemyAnim;
-    public Rigidbody2D enemyBody;
+    public Animator animator;
     public Transform player;
     public AIDestinationSetter setter;
     
@@ -22,7 +21,7 @@ public class Enemy : MonoBehaviour
     public int attackDamageShort = 5;
     
     bool isFainted = false;
-    int ghostType = 0;
+    public int ghostType = 0;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -32,8 +31,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyBody = GetComponent<Rigidbody2D>();
-
         player = GameObject.Find("Bartender").transform;
         currentHealth = maxHealth;
         if (avoid == null)
@@ -48,33 +45,6 @@ public class Enemy : MonoBehaviour
             moveAway();
         }
         
-        // Do stuff to calculate a vector between the player; angle causes direction change
-        Vector2 enemyPos = new Vector2(enemyBody.position.x, enemyBody.position.y);
-        Vector2 playerPos = new Vector2(player.position.x, player.position.y);
-
-        Vector2 distance = new Vector2(playerPos.x - enemyPos.x, playerPos.y - enemyPos.y);
-        float angle = (Mathf.Atan(distance.y / distance.x) * Mathf.Rad2Deg);
-        if(playerPos.x < enemyPos.x)
-            angle += 90;
-        else
-            angle -= 90;
-
-        float absAngle = Mathf.Abs(angle);
-        float absDistance = Mathf.Abs(distance.x);
-
-        int placeHolder = -1;
-        if(absAngle <= 45)
-            // General Direction is UP
-            placeHolder = 0;
-        else if(absAngle > 45 && absAngle <= 135)
-        {
-            // General Direction is LEFT or RIGHT
-            transform.localScale = new Vector2(distance.x / absDistance, 1);
-            placeHolder = 1;
-        }
-        else
-            // General Direction is DOWN
-            placeHolder = 2;
     }
 
     // Update is called once per frame
