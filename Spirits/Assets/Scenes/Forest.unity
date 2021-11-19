@@ -678,7 +678,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.598972
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -834,7 +834,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4ef336e763e406ca9f42feee47909a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBarImage: {fileID: 1647621156}
+  healthBarImage: {fileID: 0}
+  uvRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  healthEdge: {fileID: 0}
+  healthBarMask: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1557854550
 MonoBehaviour:
@@ -1325,7 +1333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070874769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1369,7 +1377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 0}
-  animator: {fileID: 0}
+  playerAnim: {fileID: 0}
   attackPoint: {fileID: 1575613340}
   attackRange: 1.75
   enemyLayers:
@@ -1384,6 +1392,7 @@ MonoBehaviour:
   maxHealth: 100
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
   healthBar: {fileID: 0}
+  ControlList: {fileID: 0}
 --- !u!114 &2087735156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,6 +1417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d97b6d8a1807f294e852cf0b8e9a008b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnim: {fileID: 0}
   speed: {x: 8, y: 6}
 --- !u!256 &2087735158
 FrictionJoint2D:
