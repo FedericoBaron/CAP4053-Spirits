@@ -19,6 +19,7 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         playerMaxHealth = player.GetComponent<Player_Combat>().maxHealth;
+        maskWidth = healthBarMask.rect.width;
     }
 
     void Update()

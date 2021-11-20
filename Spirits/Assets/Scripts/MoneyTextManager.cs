@@ -7,7 +7,7 @@ public class MoneyTextManager : MonoBehaviour
 {
     public static MoneyTextManager instance;
 
-    public Text moneyText;
+    //public Text moneyText;
     public int money;
 
     private void Awake(){
@@ -17,13 +17,13 @@ public class MoneyTextManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moneyText.text = "Money: 0";
+        // moneyText.text = "Money: 0";
         money = 0;
     }
 
     public void setText(int amount){
-        Debug.Log("SET TEXT");
+        //Debug.Log("SET TEXT");
         money += amount;
-        moneyText.text = "Money: " + money;
+       // moneyText.text = "Money: " + money;
     }
 }
