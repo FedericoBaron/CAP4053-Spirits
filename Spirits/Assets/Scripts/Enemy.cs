@@ -8,10 +8,11 @@ public class Enemy : MonoBehaviour
     public Animator animator;
     public Transform player;
     public AIDestinationSetter setter;
-    
+    public AIPath path;
+    public BoxCollider2D hitbox;
     public GameObject[] avoid;
     public GameObject moveRunAway;
-    
+    public Rigidbody2D rb;
     public bool run = false;
 	public int maxHealth = 100;
     public int currentHealth;
@@ -19,28 +20,76 @@ public class Enemy : MonoBehaviour
     public int RunAwayDistance = 5;
 	public int attackDist = 3;
     public int attackDamageShort = 5;
-    
-    bool isFainted = false;
+    public EnemyHealthBar healthBar;
     public int ghostType = 0;
-
     public float attackRate = 2f;
+
+    bool isFainted = false;
     float nextAttackTime = 0f;
 
-    public EnemyHealthBar healthBar;
+     public void HitBoxOn(){
+        Collider2D curr = hitbox;
+        curr.enabled = true;
+    }
+
+    public void HitBoxOff(){
+        Collider2D curr = hitbox;
+        curr.enabled = false;
+    }
 
     // Start is called before the first frame update
+    public void animateHealth(){
+        animator.SetInteger("Health", currentHealth);
+    }
+
+    public void animateDamage(){
+        animator.ResetTrigger("Damage");
+        animator.SetTrigger("Damage");        
+    }
+
+    public void animateDeath(){
+        animator.ResetTrigger("Death");
+        animator.SetTrigger("Death");        
+    }
+
+    public void animateAttack(){
+        animator.ResetTrigger("Attack");
+        animator.SetTrigger("Attack");
+    }
+
+    public void animateSpeed(){
+        //float speed = GetComponent<Rigidbody2D>().velocity.magnitude; 
+        // Debug.Log(speed);
+        if (!path.reachedEndOfPath)
+            animator.SetFloat("Speed", 10);
+        else
+            animator.SetFloat("Speed", 0);
+    }
+
     void Start()
     {
         player = GameObject.Find("Bartender").transform;
+        path = GetComponent<AIPath>();
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
+        animateHealth();
+        rb = GetComponent<Rigidbody2D>();
         if (avoid == null)
             avoid = GameObject.FindGameObjectsWithTag("ObjectInWorld");
     }
 
     void Update(){
         if(!isFainted){
+            Vector3 vel = Vector3.Normalize(path.velocity);
+            if (vel != Vector3.zero){
+                //Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, vel);
+                if (vel.x > 0)
+                    transform.rotation = new Quaternion(0, 0, 0, 0);//Quaternion.RotateTowards(transform.rotation, toRotation, 1 * Time.deltaTime);
+                else
+                    transform.rotation = new Quaternion(0, 180, 0, 0);
+            }
+            animateSpeed();
             attackPlayer();
-        
             if (currentHealth < 30) run = true;
             moveAway();
         }
@@ -52,13 +101,14 @@ public class Enemy : MonoBehaviour
     {
     	currentHealth -= damage;
         healthBar.UpdateHealthBar();
-        // animator.setTrigger("Hurt");
     	// play hurt animation
-
     	if(currentHealth <= 0)
         {
     		Die();
     	}
+        else{
+            animateDamage();
+        }
     }
 
     public bool IsFainted(){
@@ -80,12 +130,18 @@ public class Enemy : MonoBehaviour
 
     void attackPlayer()
     {
-        if (Time.time >= nextAttackTime)
+        //Debug.Log(Vector3.Dot(transform.right, transform.position - player.position));
+        if (-1 * Vector3.Dot(transform.right, transform.position - player.position) > (0.1f)) //transform.right is the direction it's looking, if dot product is > 0 the player is in front of the enemy
         {
-            if (Vector2.Distance(transform.position, player.position) > attackDist) return;
-            player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
-            nextAttackTime = Time.time + 1f / attackRate;
-        }
+        //do whatever
+            if (Time.time >= nextAttackTime)
+            {
+                if (Vector2.Distance(transform.position, player.position) > attackDist) return;
+                animateAttack();
+                // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
+        } 
     }
 
     void Faint(){
@@ -94,7 +150,6 @@ public class Enemy : MonoBehaviour
         foreach(var c in gameObject.GetComponentsInChildren<Collider2D>()){
             c.isTrigger = true;
         }
-        Debug.Log("we faint");
         StartCoroutine(StartFaintTimer());
     }
 
@@ -110,8 +165,8 @@ public class Enemy : MonoBehaviour
             timeRemaining--;
         }
         isFainted = false;
+        animateDeath();
         Destroy(gameObject);
-        Debug.Log("unfaint");
     }
 
     public void Captured(){
@@ -124,118 +179,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-    	Debug.Log("Enemy Died");
-
         Faint();
-    	// Die animation
-        // animator.SetBool("IsDead", true);
-
-    	// Disable enemy
-        // Destroy(gameObject);
-        // GetComponent<Collider2D>().enabled = false;
-        // this.enabled = false;
     }
 }
 
-    // void runAway(){
-    //     if (!run){
-    //         Transform person = player;
-    //         setter.target = person;    
-    //         return;   
-    //     }
-    //     if (Vector2.Distance(transform.position, player.position) > dist) return;
-    //     if (moveRunAway == null){
-    //         randomSpot();
-    //     } 
-    //     else{
-    //         Destroy(moveRunAway);
-    //         moveRunAway = null;
-    //         randomSpot();
-    //     }
-    //     setter.target = moveRunAway.transform;
-    // }
-
-    // void OnTriggerEnter2D(Collider2D col){
-    //     Debug.Log("Collide");
-    //     if (col.name == "Bartender") {
-    //         GameObject playObj = col.transform.gameObject;
-    //         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-    //         attack(col);
-    //         Debug.Log("Collide");
-    //     }
-    // }
-
-    // void OnTriggerStay2D(Collider2D col){
-    //     Debug.Log("Collide");
-    //     if (col.name == "Bartender") {
-    //         GameObject playObj = col.transform.gameObject;
-    //         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-    //         attack(col);
-    //         Debug.Log("Collide1");
-    //     }
-    // }
-
-    // void attack(Collider2D col){
-    //     col.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
-    // }
-
-    // int add(int axis, int dir){
-    //     if (axis == 0){
-    //         if (dir == 0) return 1;
-    //         if (dir == 2) return -1;
-    //         return 0;
-    //     }
-    //     if (dir == 3) return 1;
-    //     if (dir == 1) return -1;
-    //     return 0;
-    // }
-
-    // bool canMove(Vector2 curr){
-    //     foreach (GameObject val in avoid){
-    //         if (Vector2Int.FloorToInt(curr) == 
-    //             Vector2Int.FloorToInt(
-    //                 new Vector2(val.transform.position.x, val.transform.position.y)))
-    //             return false;
-    //     }
-    //     return true;
-    // }
-
-    // double abs(float number)
-    // {
-    //     double num = number;           
-    //     if(number<0)
-    //         num = -1*number;        
-    //     return num;
-    // }
-
-    // void randomSpot(){
-    //     int rep = 100;
-    //     bool flag = true;
-    //     int dir = 0;
-    //     Vector2 next;
-    //     do {
-    //         Vector2 start = new Vector2(transform.position.x - dist, transform.position.y + dist);
-    //         next = start + Vector2.left;
-    //         while (next != start){
-    //             if (canMove(next)){
-    //                 flag = false;
-    //                 break;
-    //             } 
-    //             float dx = next.x;
-    //             float dy = next.y;
-    //             if ((abs(dx + add(0, dir) - transform.position.x) > dist) || (abs(dy + add(1, dir) - transform.position.y) > dist)){
-    //                 dir++;
-    //             }
-    //             if (dir == 0) dx++;
-    //             if (dir == 1) dy--;
-    //             if (dir == 2) dx--;
-    //             if (dir == 3) dy--; 
-    //             next = new Vector2(dx, dy);
-    //         }
-    //     } while (flag && rep-- > 0);
-        
-    //     moveRunAway = new GameObject();
-    //     moveRunAway.transform.position = new Vector3(next.x, next.y, 0);
-    // }
+    
 
 
