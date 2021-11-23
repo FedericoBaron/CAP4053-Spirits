@@ -1107,10 +1107,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2384511071198428723, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370420277285298, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370420277285298, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370420277285298, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370420277285298, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4374370420277285299, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1614703008}
+    - target: {fileID: 4374370421046481502, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370421046481502, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370421046481502, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374370421046481502, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4374370422201305408, guid: 49fa2f536acc15c4facec4b75067fc7e, type: 3}
       propertyPath: m_Camera
       value: 
