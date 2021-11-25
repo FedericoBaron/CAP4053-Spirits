@@ -70,6 +70,8 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.Find("Bartender").transform;
         path = GetComponent<AIPath>();
+        setter = GetComponent<AIDestinationSetter>();
+        setter.target = player;
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         animateHealth();

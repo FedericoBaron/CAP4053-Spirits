@@ -7,21 +7,25 @@ public class Map : MonoBehaviour
 {
     public void OpenMainMenu()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
     }
 
     public void OpenForest()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(3);
     }
 
     public void OpenApartment()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(4);
     }
 
     public void OpenMansion()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(5);
     }
 }
