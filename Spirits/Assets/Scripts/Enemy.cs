@@ -23,13 +23,26 @@ public class Enemy : MonoBehaviour
     public EnemyHealthBar healthBar;
     public int ghostType = 0;
     public float attackRate = 2f;
-
+    bool isMoving = false;
     bool isFainted = false;
+    public bool animationCurrPlaying = false;
     float nextAttackTime = 0f;
 
-     public void HitBoxOn(){
+    public void HitBoxOn(){
         Collider2D curr = hitbox;
         curr.enabled = true;
+    }
+    
+    public void AnimationOn(){
+        Debug.Log("entered1");
+       animationCurrPlaying = true;
+       Debug.Log(animationCurrPlaying);
+    }
+
+    public void AnimationOff(){
+        Debug.Log("entered");
+       animationCurrPlaying = false;
+       Debug.Log(animationCurrPlaying); 
     }
 
     public void HitBoxOff(){
@@ -60,8 +73,10 @@ public class Enemy : MonoBehaviour
     public void animateSpeed(){
         //float speed = GetComponent<Rigidbody2D>().velocity.magnitude; 
         // Debug.Log(speed);
-        if (!path.reachedEndOfPath)
-            animator.SetFloat("Speed", 10);
+        if (animationCurrPlaying) return;
+
+        if (!path.reachedEndOfPath || isMoving)
+            animator.SetFloat("Speed", 1);
         else
             animator.SetFloat("Speed", 0);
     }
@@ -78,21 +93,20 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if (avoid == null)
             avoid = GameObject.FindGameObjectsWithTag("ObjectInWorld");
+        //initialForward = transform.right; // change this if its obj looking wrong way
     }
+    
+    // Vector3 initialForward;
 
     void Update(){
         if(!isFainted){
-            Vector3 vel = Vector3.Normalize(path.velocity);
-            if (vel != Vector3.zero){
-                //Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, vel);
-                if (vel.x > 0)
-                    transform.rotation = new Quaternion(0, 0, 0, 0);//Quaternion.RotateTowards(transform.rotation, toRotation, 1 * Time.deltaTime);
-                else
-                    transform.rotation = new Quaternion(0, 180, 0, 0);
+            if (currentHealth <= 0){
+                animateDeath();
+                if (animationCurrPlaying) return;
+                Die();
             }
             animateSpeed();
             attackPlayer();
-            if (currentHealth < 30) run = true;
             moveAway();
         }
         
@@ -104,11 +118,7 @@ public class Enemy : MonoBehaviour
     	currentHealth -= damage;
         healthBar.UpdateHealthBar();
     	// play hurt animation
-    	if(currentHealth <= 0)
-        {
-    		Die();
-    	}
-        else{
+        if (currentHealth > 0){
             animateDamage();
         }
     }
@@ -118,22 +128,64 @@ public class Enemy : MonoBehaviour
     }
 
     void moveAway(){
+        if (animationCurrPlaying){
+            //setter.target = transform;
+            path.isAnimating = true;
+            isMoving = false;
+            return;    
+        }
+        path.isAnimating = false;
+        if (currentHealth < 30) run = true;
+        else run = false;
+
         if (!run){
-            setter.target = player;    
+            if (setter.target != player)
+                setter.target = player;
+            else{
+                Vector3 vel = Vector3.Normalize(path.velocity);
+                if (vel != Vector3.zero){
+                    // Flips scale when vel.x < 0
+                    Vector3 scale = transform.localScale;
+                    if (vel.x < 0) scale.x = -1;
+                    else scale.x = 1;
+                    transform.localScale = scale;
+                    // Rotates enemy around y axis 
+                    // Vector3 lookPos = vel; //target.position - transform.position;
+                    // Vector3 forward = (transform.position + initialForward) - transform.position;
+                    // transform.eulerAngles = new Vector3(0, Vector3.SignedAngle(lookPos, forward, Vector2.down));
+                }
+                isMoving = false;
+            } 
             return;   
         }
         else{
             if (Vector2.Distance(transform.position, player.position) < RunAwayDistance){
                 transform.position = Vector2.MoveTowards(transform.position, player.position, -1 * RunAwaySpeed * Time.deltaTime);
                 setter.target = transform;
+                isMoving = true;
+                Vector3 scale = transform.localScale;
+                Vector3 vel = (transform.position - player.position);
+                if (vel.x < 0) scale.x = -1;
+                else scale.x = 1;
+                transform.localScale = scale;
             }
+            else
+                isMoving = false;
+            return;
         }
+    }
+
+    bool canSeePlayer(){
+        // -1 * Vector3.Dot(transform.right, player.position - transform.position) >= (0f);
+        if ((player.position - transform.position).x > 0 && transform.localScale.x > 0) return true;
+        if ((player.position - transform.position).x < 0 && transform.localScale.x < 0) return true;
+        return false;
     }
 
     void attackPlayer()
     {
         //Debug.Log(Vector3.Dot(transform.right, transform.position - player.position));
-        if (-1 * Vector3.Dot(transform.right, transform.position - player.position) > (0.1f)) //transform.right is the direction it's looking, if dot product is > 0 the player is in front of the enemy
+        if (canSeePlayer()) //transform.right is the direction it's looking, if dot product is > 0 the player is in front of the enemy
         {
         //do whatever
             if (Time.time >= nextAttackTime)
@@ -149,6 +201,7 @@ public class Enemy : MonoBehaviour
     void Faint(){
         isFainted = true;
         setter.target = transform;
+        animateDeath();
         foreach(var c in gameObject.GetComponentsInChildren<Collider2D>()){
             c.isTrigger = true;
         }
@@ -161,13 +214,13 @@ public class Enemy : MonoBehaviour
 
         float timeRemaining = Random.Range(minimum, maximum);
         
+        //GetComponent<Animator>().enabled = false;
         while(timeRemaining > 0){
             Debug.Log("we at: " + timeRemaining);
             yield return new WaitForSeconds(1.0f);
             timeRemaining--;
         }
-        isFainted = false;
-        animateDeath();
+        isFainted = true;       
         Destroy(gameObject);
     }
 

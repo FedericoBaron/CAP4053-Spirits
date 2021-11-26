@@ -394,11 +394,12 @@ namespace Pathfinding {
 			if (!(rigid == null && rigid2D == null) && canMove) {
 				Vector3 nextPosition;
 				Quaternion nextRotation;
+				if (isAnimating) return;
 				MovementUpdate(Time.fixedDeltaTime, out nextPosition, out nextRotation);
 				FinalizeMovement(nextPosition, nextRotation);
 			}
 		}
-
+		public bool isAnimating = false;
 		/// <summary>\copydoc Pathfinding::IAstarAI::MovementUpdate</summary>
 		public void MovementUpdate (float deltaTime, out Vector3 nextPosition, out Quaternion nextRotation) {
 			lastDeltaTime = deltaTime;
