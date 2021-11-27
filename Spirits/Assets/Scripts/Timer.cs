@@ -7,7 +7,8 @@ using System;
 public class Timer : MonoBehaviour
 {
 
-    float currentTime;
+    public Control_List player;
+    //float currentTime;
     bool timerActive = true;
     public int startMinutes;
     public Text currentTimeText;
@@ -15,8 +16,11 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentTime = startMinutes * 60;
-
+        player = GameObject.Find("Bartender").GetComponent<Control_List>();
+        if (player.currentTime == 0){
+            player.currentTime = startMinutes * 60;
+        }
+        circleMeter.GetComponent<Image>().fillAmount = player.lastFillValue;
     }
 
     // Update is called once per frame
@@ -25,19 +29,21 @@ public class Timer : MonoBehaviour
         float elapsedTime = 0;
         
         if(timerActive){
-            currentTime = currentTime - Time.deltaTime;
+            player.currentTime = player.currentTime - Time.deltaTime;
             elapsedTime = Time.deltaTime / (60 * startMinutes);
-            if(currentTime <= 0){
+            if(player.currentTime <= 0){
                 timerActive = false;
                 Debug.Log("Timer finished");
-                currentTime = 0;
+                player.currentTime = 0;
                 elapsedTime = 0;
             }
+
+            circleMeter.GetComponent<Image>().fillAmount += elapsedTime;
+            player.lastFillValue = circleMeter.GetComponent<Image>().fillAmount;
+            TimeSpan time = TimeSpan.FromSeconds(player.currentTime);
+            currentTimeText.text = format(time);
         }
         
-        circleMeter.GetComponent<Image>().fillAmount += elapsedTime;
-        TimeSpan time = TimeSpan.FromSeconds(currentTime);
-        currentTimeText.text = format(time);
     }
 
     string format(TimeSpan time){

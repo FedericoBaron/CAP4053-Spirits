@@ -9,7 +9,7 @@ public class HitBoxEnemyAttack : MonoBehaviour
      private void OnTriggerEnter2D(Collider2D other)
     {
         if (this.gameObject.name == "hitbox" && other.gameObject.name == "Bartender"){
-            Debug.Log(other.gameObject.name + " " + this.gameObject.name);
+            // Debug.Log(other.gameObject.name + " " + this.gameObject.name);
             other.gameObject.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
         }
     }

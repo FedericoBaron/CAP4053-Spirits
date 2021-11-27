@@ -48,6 +48,9 @@ public class Player_Combat : MonoBehaviour
     {
 		if (!ControlList.currExist) return;
 
+		if (ControlList.currentTime <= 0){
+			GameOver();
+		}
 
 		if(Time.time >= nextAttackTime){
 			// Short range attack

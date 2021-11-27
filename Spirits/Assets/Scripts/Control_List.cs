@@ -16,6 +16,8 @@ public class Control_List : MonoBehaviour
     public List<Texture> images;
     public bool currExist = true;
     public string[] badScenes;
+    public float currentTime = 0;
+    public float lastFillValue = 0;
     
     private void Awake()
     {

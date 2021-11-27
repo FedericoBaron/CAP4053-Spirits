@@ -36,13 +36,13 @@ public class Enemy : MonoBehaviour
     public void AnimationOn(){
        // Debug.Log("entered1");
        animationCurrPlaying = true;
-       Debug.Log(animationCurrPlaying);
+       // Debug.Log(animationCurrPlaying);
     }
 
     public void AnimationOff(){
        // Debug.Log("entered");
        animationCurrPlaying = false;
-       Debug.Log(animationCurrPlaying); 
+       // Debug.Log(animationCurrPlaying); 
     }
 
     public void HitBoxOff(){
