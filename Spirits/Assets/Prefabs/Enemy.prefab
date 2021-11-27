@@ -276,6 +276,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6013308315671856804}
   - component: {fileID: 8941928094225223786}
+  - component: {fileID: 275518931788698121}
+  - component: {fileID: 7684063381329089804}
   m_Layer: 6
   m_Name: hitbox
   m_TagString: Untagged
@@ -307,7 +309,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -323,6 +325,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &275518931788698121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769623361290063027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be7e1bae2844284684033930d614882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamageShort: 5
+--- !u!50 &7684063381329089804
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4769623361290063027}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &6050580592337532343
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +443,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -7625654534511120912, guid: cab25c344ee47c248a3ff1c26626cb40, type: 3}
-  m_Color: {r: 0.23529412, g: 1, b: 0.8392157, a: 0.47058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -525,6 +561,7 @@ MonoBehaviour:
   player: {fileID: 0}
   setter: {fileID: 6420323792921103166}
   path: {fileID: 0}
+  hitbox: {fileID: 8941928094225223786}
   avoid: []
   moveRunAway: {fileID: 0}
   rb: {fileID: 0}
@@ -538,6 +575,7 @@ MonoBehaviour:
   healthBar: {fileID: 2300082816336345282}
   ghostType: 0
   attackRate: 2
+  animationCurrPlaying: 0
 --- !u!114 &3869822476129221879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,14 +631,15 @@ MonoBehaviour:
   orientation: 1
   enableRotation: 0
   targetCompatibility: {fileID: 0}
+  isAnimating: 0
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 5
   pickNextWaypointDist: 2
-  endReachedDistance: 2
+  endReachedDistance: 1
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
 --- !u!114 &394538593863405992
 MonoBehaviour:

@@ -34,13 +34,13 @@ public class Enemy : MonoBehaviour
     }
     
     public void AnimationOn(){
-        Debug.Log("entered1");
+       // Debug.Log("entered1");
        animationCurrPlaying = true;
        Debug.Log(animationCurrPlaying);
     }
 
     public void AnimationOff(){
-        Debug.Log("entered");
+       // Debug.Log("entered");
        animationCurrPlaying = false;
        Debug.Log(animationCurrPlaying); 
     }
@@ -51,9 +51,6 @@ public class Enemy : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void animateHealth(){
-        animator.SetInteger("Health", currentHealth);
-    }
 
     public void animateDamage(){
         animator.ResetTrigger("Damage");
@@ -89,7 +86,6 @@ public class Enemy : MonoBehaviour
         setter.target = player;
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
-        animateHealth();
         rb = GetComponent<Rigidbody2D>();
         if (avoid == null)
             avoid = GameObject.FindGameObjectsWithTag("ObjectInWorld");
@@ -216,7 +212,7 @@ public class Enemy : MonoBehaviour
         
         //GetComponent<Animator>().enabled = false;
         while(timeRemaining > 0){
-            Debug.Log("we at: " + timeRemaining);
+           // Debug.Log("we at: " + timeRemaining);
             yield return new WaitForSeconds(1.0f);
             timeRemaining--;
         }

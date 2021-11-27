@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9fc485b53b257e04fad02f7e3d029bb4, type: 2}
+    - target: {fileID: 644374480322735246, guid: dbdee6480c4c0a34892a61d962b04ff1, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 871445701835663793, guid: dbdee6480c4c0a34892a61d962b04ff1, type: 3}
       propertyPath: hitbox
       value: 
