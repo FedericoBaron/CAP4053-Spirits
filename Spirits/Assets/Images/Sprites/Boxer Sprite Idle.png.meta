@@ -1,34 +1,7 @@
 fileFormatVersion: 2
 guid: cab25c344ee47c248a3ff1c26626cb40
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7625654534511120912
-    second: Boxer Sprite Idle_0
-  - first:
-      213: -7174406098268340062
-    second: Boxer Sprite Idle_1
-  - first:
-      213: 5809790466717635999
-    second: Boxer Sprite Idle_2
-  - first:
-      213: -6973583683864070483
-    second: Boxer Sprite Idle_3
-  - first:
-      213: -541847069005298889
-    second: Boxer Sprite Idle_4
-  - first:
-      213: 2894512435940301398
-    second: Boxer Sprite Idle_5
-  - first:
-      213: 5186807999747318209
-    second: Boxer Sprite Idle_6
-  - first:
-      213: -4554148131910135320
-    second: Boxer Sprite Idle_7
-  - first:
-      213: -7240031414155354734
-    second: Boxer Sprite Idle_8
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:

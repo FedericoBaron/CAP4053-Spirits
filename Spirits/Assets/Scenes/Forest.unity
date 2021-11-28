@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f93633cf13750c4290ed95d21f7e633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6050580592337532343, guid: dbdee6480c4c0a34892a61d962b04ff1, type: 3}
+  enemy: {fileID: 4084219501998502467, guid: 02c537b1b0e34457b9ab9df71b4e20c9, type: 3}
   spawnRate: 5
 --- !u!4 &598147822
 Transform:
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarImage: {fileID: 1647621156}
-  player: {fileID: 0}
+  player: {fileID: 2087735164}
 --- !u!114 &1557854550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1557854549}
 --- !u!114 &2087735156
 MonoBehaviour:
   m_ObjectHideFlags: 0
