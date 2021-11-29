@@ -364,7 +364,7 @@ MonoBehaviour:
   currExist: 1
   badScenes:
   - Map
-  - Menu
+  - TitleScreen
   - GameOver
   currentTime: 0
   lastFillValue: 0
