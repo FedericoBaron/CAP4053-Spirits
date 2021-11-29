@@ -8,10 +8,17 @@ public class Player_Movement : MonoBehaviour
 
     // Base speed vector that we'll use to multiply by our movement booleans
     public Vector2 speed;
+    public bool isDashing;
+    float dashTime;
+    readonly int dashSpeed = 4;
+    readonly float dashLen = 0.2f;
+    float nextDashTime = 0f;
 
     void Start()
     {
         speed = new Vector2(8, 6);
+        isDashing = false;
+
         playerAnim = GetComponent<Animator>();
     }
 
@@ -26,6 +33,20 @@ public class Player_Movement : MonoBehaviour
             playerAnim.SetBool("Moving", true);
         else
             playerAnim.SetBool("Moving", false);
+
+        if(Input.GetKeyDown(KeyCode.X) && Time.time >= nextDashTime){
+			speed.x = speed.x * dashSpeed;
+            speed.y = speed.y * dashSpeed;
+            isDashing = true;
+            dashTime = Time.time + dashLen;
+            nextDashTime = Time.time + 1.5f;
+		}
+
+        if(isDashing && dashTime < Time.time){
+            speed.x = speed.x/dashSpeed;
+            speed.y = speed.y/dashSpeed;
+            isDashing = false;
+        }
 
         Vector2 movement = new Vector2(speed.x * InputX, speed.y * InputY);
         movement *= Time.deltaTime;
