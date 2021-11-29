@@ -18,6 +18,7 @@ public class Control_List : MonoBehaviour
     public string[] badScenes;
     public float currentTime = 0;
     public float lastFillValue = 0;
+    public float maskTotal;
     
     private void Awake()
     {
@@ -70,14 +71,15 @@ public class Control_List : MonoBehaviour
         scrollingList = List.GetComponent<CircularScrollingList>();
         bankList = List.GetComponent<IntListBank>();    
         bankList._listContents = _listContents;
-        Player_Combat player = GetComponent<Player_Combat>();
-        GameObject currHealthBar = GameObject.Find("HealthMask");
-		if (currHealthBar != null){
-			player.healthBar = currHealthBar.GetComponent<HealthBar>();
-            //player.healthBar.player = this.transform;
-            Debug.Log(player.damageTakenCurrently);
-            player.healthBar.UpdateHealthBar(player.damageTakenCurrently);
-        }
+        // Player_Combat player = GetComponent<Player_Combat>();
+        // GameObject currHealthBar = GameObject.Find("HealthMask");
+		// if (currHealthBar != null){
+		// 	player.healthBar = currHealthBar.GetComponent<HealthBar>();
+        //     player.healthBar.set();
+        //     //player.healthBar.player = this.transform;
+        //     // Debug.Log(player.damageTakenCurrently);
+        //     // player.healthBar.UpdateHealthBar(player.damageTakenCurrently);
+        // }
     }
 
     void populate(){

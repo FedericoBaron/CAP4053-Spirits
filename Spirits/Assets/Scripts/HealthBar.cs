@@ -14,28 +14,43 @@ public class HealthBar : MonoBehaviour
     private float maskWidth = 240f;
 
     public Transform player;
+    public Control_List ControlList;
     private float playerMaxHealth = 100;
 
     void Start()
-    {
+    {   
         player = GameObject.Find("Bartender").transform;
-        playerMaxHealth = player.GetComponent<Player_Combat>().maxHealth;
+        Player_Combat combat = player.GetComponent<Player_Combat>();
+        playerMaxHealth = combat.maxHealth;
+        combat.healthBar = this;
         maskWidth = healthBarMask.rect.width;
+        ControlList = player.GetComponent<Control_List>();
+        if (ControlList.maskTotal <= 0)
+            ControlList.maskTotal = 0;
+        //Debug.Log(maskDelta + " " + ControlList.maskTotal);
+        maskDelta = new Vector2(ControlList.maskTotal, 0);
+        healthBarMask.offsetMax -= maskDelta;
+        healthEdge.anchoredPosition -= maskDelta;
     }
 
     void Update()
     {
-        uvRect = healthBarImage.uvRect;
-        uvRect.x -= 0.33f * Time.deltaTime / (player.GetComponent<Player_Combat>().health / playerMaxHealth);
-        healthBarImage.uvRect = uvRect;
+        if (healthBarImage == null) return;
+        uvRect = (healthBarImage == null ? Rect.zero : healthBarImage.uvRect);
+        if (uvRect != null){
+            uvRect.x -= 0.33f * Time.deltaTime / (player.GetComponent<Player_Combat>().health / playerMaxHealth);
+            healthBarImage.uvRect = uvRect;
+        }
     }
 
     public void UpdateHealthBar(int dmg) 
     {
+        if (healthBarMask == null) return;
+        if (healthEdge == null) return;
         maskDelta = new Vector2(dmg / playerMaxHealth, 0) * maskWidth;
         Debug.Log(maskDelta);
         healthBarMask.offsetMax -= maskDelta;
-
+        ControlList.maskTotal += dmg / playerMaxHealth * maskWidth;
         healthEdge.anchoredPosition -= maskDelta;
     }
 }

@@ -101,6 +101,8 @@ public class Player_Combat : MonoBehaviour
 
 
 	public void TakeDamage(int amt){
+		if (healthBar == null)
+			return;
 		health = 0 > (health - amt) ? 0 : (health - amt);
 		damageTakenCurrently += amt;
 		healthBar.UpdateHealthBar(amt);
