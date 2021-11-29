@@ -10,4 +10,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
         Time.timeScale = 1f;
     }
+
+    public void ControlsScene()
+    {
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+    }
 }
