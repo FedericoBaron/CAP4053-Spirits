@@ -8,7 +8,7 @@ public class Map : MonoBehaviour
     public void OpenMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(7);
     }
 
     public void OpenForest()
