@@ -13,7 +13,6 @@ public class MainMenu : MonoBehaviour
 
     public void ControlsScene()
     {
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1f;
+        SceneManager.LoadScene("Controls");
     }
 }
