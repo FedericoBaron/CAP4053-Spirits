@@ -37,5 +37,14 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
+    public void LoadMenu(){
+        Debug.Log("Menu Loaded");
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Quit(){
+        Debug.Log("Quitting Game");
+        Application.Quit();
+    }
 
 }

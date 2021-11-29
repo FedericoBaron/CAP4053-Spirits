@@ -298,6 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 0}
   speed: {x: 8, y: 6}
+  isDashing: 0
 --- !u!114 &3663285223562782784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,5 +364,7 @@ MonoBehaviour:
   currExist: 1
   badScenes:
   - Map
+  - Menu
+  - GameOver
   currentTime: 0
   lastFillValue: 0
