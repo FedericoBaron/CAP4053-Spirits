@@ -7,11 +7,6 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void OpenMap()
-    {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(1);
     }
 }

@@ -3,9 +3,9 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/TestScene.unity
-  isLoaded: 1
-  isActive: 1
+- path: Assets/Scenes/Tutorial.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Forest.unity
   isLoaded: 0
@@ -18,4 +18,8 @@ sceneSetups:
 - path: Assets/Scenes/Apartment.unity
   isLoaded: 0
   isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/TitleScreen.unity
+  isLoaded: 1
+  isActive: 1
   isSubScene: 0
