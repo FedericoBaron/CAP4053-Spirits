@@ -21,12 +21,14 @@ public class Player_Combat : MonoBehaviour
 	public int damageTakenCurrently = 0;
 	float nextAttackTime = 0f;
 	//public PlayerLost GameOverScreen = null;
-	List<int> capturedGhosts = new List<int>();
+	int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 
 	public GameObject bottle;
 
 	public HealthBar healthBar;
 
+	private GameObject uiInventory;
+	private Text[] counts; 
 	public Control_List ControlList;
 
 	void Start()
@@ -35,6 +37,9 @@ public class Player_Combat : MonoBehaviour
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
+
+		uiInventory = GameObject.Find("GhostCount");
+		counts = uiInventory.GetComponentsInChildren<Text>();
 	}
 
 	void Reset(){
@@ -130,15 +135,23 @@ public class Player_Combat : MonoBehaviour
 
 		foreach(Collider2D enemy in hitEnemies){
 			if(enemy.GetComponent<Enemy>().IsFainted()){
-				capturedGhosts.Add(enemy.GetComponent<Enemy>().GetGhostType());
+				int type = enemy.GetComponent<Enemy>().GetGhostType();
+				capturedGhosts[type]++;
+				counts[type].text = capturedGhosts[type].ToString();
+
 				enemy.GetComponent<Enemy>().Captured();
-				int type = enemy.GetComponent<Enemy>().ghostType;
 				ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
 				money += added;
 				MoneyTextManager.instance.setText(added);
 			}
 		}
-		Debug.Log("here are the captured ghosts: " + capturedGhosts);
+
+		int index = 0;
+		foreach (int typing in capturedGhosts) 
+        {
+        	Debug.Log("ghosts of type " + index + ": " + capturedGhosts[index]);
+			index++;
+        }
 	}
 
     void OnDrawGizmosSelected()

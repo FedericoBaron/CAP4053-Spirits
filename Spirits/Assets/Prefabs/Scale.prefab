@@ -88,7 +88,7 @@ MonoBehaviour:
     _centerSelectedBox: 0
     _reverseOrder: 0
     _initializeOnStart: 1
-    _boxDensity: 1
+    _boxDensity: 0.8
     _boxPositionCurve:
       serializedVersion: 2
       m_Curve:
@@ -117,17 +117,17 @@ MonoBehaviour:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: -1
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: -0.99909014
+        value: 0.70105433
+        inSlope: -0.000008639784
+        outSlope: -0.000008639784
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
-        outWeight: 0
+        outWeight: 1
       - serializedVersion: 3
-        time: 0
-        value: 1.5
+        time: 0.004089698
+        value: 1.0011569
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -135,13 +135,13 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
+        time: 0.9924793
+        value: 0.7022445
+        inSlope: 0.00000942752
+        outSlope: 0.00000942752
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 1
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
