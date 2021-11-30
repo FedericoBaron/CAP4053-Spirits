@@ -216,8 +216,16 @@ public class Enemy : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             timeRemaining--;
         }
-        isFainted = true;       
-        Destroy(gameObject);
+        isFainted = false;
+
+        float reviveProbability = Random.Range(0.0f, 1.0f);
+        if(reviveProbability >= 0.05f)
+        {
+            currentHealth = (int)(reviveProbability * (float)maxHealth);
+            healthBar.UpdateHealthBar();
+        }
+        else
+            Destroy(gameObject);
     }
 
     public void Captured(){
