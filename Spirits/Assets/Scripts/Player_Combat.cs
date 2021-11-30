@@ -63,17 +63,20 @@ public class Player_Combat : MonoBehaviour
 				playerAnim.SetTrigger("Attacking");
         		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
+				GetComponents<AudioSource>()[0].Play();
         	}
 			// Throw bottle
 			if(Input.GetMouseButtonDown(1))
 			{
 				StartCoroutine(Attack_Long());
 				nextAttackTime = Time.time + 1f / attackRate;
+				GetComponents<AudioSource>()[0].Play();
 			}
 			// Capture ghost
 			if(Input.GetKeyDown(KeyCode.Space))
 			{
 				Capture_Ghost();
+				GetComponents<AudioSource>()[1].Play();
 			}
 		}
     }
