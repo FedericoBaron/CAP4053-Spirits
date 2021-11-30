@@ -11,6 +11,7 @@ public class HitBoxEnemyAttack : MonoBehaviour
         if (this.gameObject.name == "hitbox" && other.gameObject.name == "Bartender"){
             // Debug.Log(other.gameObject.name + " " + this.gameObject.name);
             other.gameObject.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+            GetComponents<AudioSource>()[0].Play();
         }
     }
 }
