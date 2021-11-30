@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     bool isFainted = false;
     public bool animationCurrPlaying = false;
     float nextAttackTime = 0f;
+    public GameObject projectile;
+    public Transform firePosition;
 
     public void HitBoxOn(){
         Collider2D curr = hitbox;
@@ -178,6 +180,9 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
+    void projectileAttack(){
+        Instantiate(projectile, firePosition.position, firePosition.rotation);
+    }
     void attackPlayer()
     {
         //Debug.Log(Vector3.Dot(transform.right, transform.position - player.position));
@@ -186,10 +191,16 @@ public class Enemy : MonoBehaviour
         //do whatever
             if (Time.time >= nextAttackTime)
             {
-                if (Vector2.Distance(transform.position, player.position) > attackDist) return;
-                animateAttack();
-                // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
-                nextAttackTime = Time.time + 1f / attackRate;
+                if (Vector2.Distance(transform.position, player.position) <= attackDist){ 
+                    animateAttack();
+                    // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
+                if (Vector2.Distance(transform.position, player.position) <= 3 * attackDist){ 
+                    projectileAttack();
+                    // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
             }
         } 
     }
