@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8524967680971739603}
   - component: {fileID: 6015674052257088565}
   - component: {fileID: 1817407697003294550}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: HealthBarInner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 271746061
   m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1606953403188705902
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 4534882364046163579}
   - component: {fileID: 2198954533262495145}
   - component: {fileID: 2300082816336345282}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

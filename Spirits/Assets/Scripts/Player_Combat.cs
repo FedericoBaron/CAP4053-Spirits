@@ -21,14 +21,17 @@ public class Player_Combat : MonoBehaviour
 	public int damageTakenCurrently = 0;
 	float nextAttackTime = 0f;
 	//public PlayerLost GameOverScreen = null;
+	int ghostSelect = 0;
 	int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 
 	public GameObject bottle;
 
 	public HealthBar healthBar;
 
+	private RectTransform selectIcon;
 	private GameObject uiInventory;
-	private Text[] counts; 
+	private Text[] counts;
+
 	public Control_List ControlList;
 
 	void Start()
@@ -38,6 +41,7 @@ public class Player_Combat : MonoBehaviour
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
 
+		selectIcon = GameObject.Find("Selector").GetComponent<RectTransform>();
 		uiInventory = GameObject.Find("GhostCount");
 		counts = uiInventory.GetComponentsInChildren<Text>();
 	}
@@ -56,6 +60,21 @@ public class Player_Combat : MonoBehaviour
 		if (ControlList.currentTime <= 0){
 			GameOver();
 		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha1))
+			ghostSelect = 0;
+		else if(Input.GetKeyDown(KeyCode.Alpha2))
+			ghostSelect = 1;
+		else if(Input.GetKeyDown(KeyCode.Alpha3))
+			ghostSelect = 2;
+		else if(Input.GetKeyDown(KeyCode.Alpha4))
+			ghostSelect = 3;
+		else if(Input.GetKeyDown(KeyCode.Alpha5))
+			ghostSelect = 4;
+		else if(Input.GetKeyDown(KeyCode.Alpha6))
+			ghostSelect = 5;
+
+		selectIcon.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
 
 		if(Time.time >= nextAttackTime){
 			// Short range attack
@@ -118,6 +137,10 @@ public class Player_Combat : MonoBehaviour
 
 	IEnumerator Attack_Long()
 	{
+		if(capturedGhosts[ghostSelect] > 0)
+			capturedGhosts[ghostSelect]--;
+		counts[ghostSelect].text = capturedGhosts[ghostSelect].ToString();
+
 		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
 
