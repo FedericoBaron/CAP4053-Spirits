@@ -18,10 +18,10 @@ public class PlayerLost : MonoBehaviour
     }
 
     public void RestartButton(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("Tutorial");
     }
 
-    public void NextButton(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    public void MainMenuButton(){
+        SceneManager.LoadScene("TitleScreen");
     }
 }
