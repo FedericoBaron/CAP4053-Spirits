@@ -7,15 +7,20 @@ using UnityEngine.SceneManagement;
 public class LevelSummary : MonoBehaviour
 {
     public Text Money;
+    public Text Spirits;
+    public Text Recipes;
+    public Text TotalMoney;
 
     public void Start(){
         GameObject player = GameObject.Find("Bartender");
-        int score = -1;
+        int ghostsCaptured = -1;
         if (player != null){
-            score = player.GetComponent<Player_Combat>().money;
+            ghostsCaptured = player.GetComponent<Player_Combat>().ghostsCaptured;
             Destroy(player);
         }
-        Money.text = "Money: " + score.ToString();
+        int moneyMade = ghostsCaptured * 30;
+        Money.text = "Money: " + moneyMade.ToString();
+        Spirits.text = "Spirits Captured: " + ghostsCaptured.ToString();
     }
 
     public void RestartButton(){

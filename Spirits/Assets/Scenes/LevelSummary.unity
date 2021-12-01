@@ -401,6 +401,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 1256587744}
+  Spirits: {fileID: 0}
+  Recipes: {fileID: 0}
+  TotalMoney: {fileID: 0}
 --- !u!1 &1155412795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 1256587744}
+  Spirits: {fileID: 1314650908}
+  Recipes: {fileID: 1831782450}
+  TotalMoney: {fileID: 1905844212}
 --- !u!114 &1619452644
 MonoBehaviour:
   m_ObjectHideFlags: 0

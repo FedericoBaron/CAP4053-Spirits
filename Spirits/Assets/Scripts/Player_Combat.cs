@@ -15,6 +15,8 @@ public class Player_Combat : MonoBehaviour
 	public int attackDamageLong = 100;
 	public int added = 30;
 	public int money = 0;
+	public int ghostsCaptured = 0;
+	public int recipesCompleted = 0;
 	public float attackRate = 2f;
 	public float health = 100;
 	public float maxHealth = 100;
@@ -58,7 +60,7 @@ public class Player_Combat : MonoBehaviour
 		if (!ControlList.currExist) return;
 
 		if (ControlList.currentTime <= 0){
-			GameOver();
+			LevelSummary();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha1))
@@ -101,7 +103,11 @@ public class Player_Combat : MonoBehaviour
     }
 
 	public void GameOver(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		SceneManager.LoadScene("GameOverScene");
+	}
+
+	public void LevelSummary(){
+		SceneManager.LoadScene("LevelSummary");
 	}
 
     void Attack_Short()
@@ -168,6 +174,7 @@ public class Player_Combat : MonoBehaviour
 				enemy.GetComponent<Enemy>().Captured();
 				ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
 				money += added;
+				ghostsCaptured += 1;
 				MoneyTextManager.instance.setText(added);
 			}
 		}
