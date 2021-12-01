@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Map : MonoBehaviour
 {
-    public void OpenMainMenu()
+    public void OpenTutorial()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("TitleScreen");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void OpenForest()

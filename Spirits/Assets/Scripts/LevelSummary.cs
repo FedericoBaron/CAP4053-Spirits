@@ -16,7 +16,7 @@ public class LevelSummary : MonoBehaviour
         int ghostsCaptured = -1;
         if (player != null){
             ghostsCaptured = player.GetComponent<Player_Combat>().ghostsCaptured;
-            Destroy(player);
+            // Destroy(player);
         }
         int moneyMade = ghostsCaptured * 30;
         Money.text = "Money: " + moneyMade.ToString();
@@ -28,6 +28,8 @@ public class LevelSummary : MonoBehaviour
     }
 
     public void NextButton(){
+        GameObject player = GameObject.Find("Bartender");
+        player.GetComponent<Player_Combat>().health = player.GetComponent<Player_Combat>().maxHealth;  
         SceneManager.LoadScene("Forest");
     }
 }

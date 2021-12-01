@@ -13,14 +13,17 @@ public class HealthBar : MonoBehaviour
     private Vector2 maskDelta;
     private float maskWidth = 240f;
 
-    public Transform player;
+    public GameObject player;
     private float playerMaxHealth = 100;
 
     void Start()
     {
-        player = GameObject.Find("Bartender").transform;
+        player = GameObject.Find("Bartender"); 
+        player.GetComponent<Player_Combat>().healthBar = this;
         playerMaxHealth = player.GetComponent<Player_Combat>().maxHealth;
         maskWidth = healthBarMask.rect.width;
+        // healthBarMask.offsetMax = healthBarMask.offsetMax - player.GetComponent<Control_List>().maskDelta;
+        // healthEdge.anchoredPosition = healthEdge.anchoredPosition - player.GetComponent<Control_List>().maskDelta;
     }
 
     void Update()
@@ -32,7 +35,9 @@ public class HealthBar : MonoBehaviour
 
     public void UpdateHealthBar(int dmg) 
     {
+        
         maskDelta = new Vector2(dmg / playerMaxHealth, 0) * maskWidth;
+        // player.GetComponent<Control_List>().maskDelta -= maskDelta;
         Debug.Log(maskDelta);
         healthBarMask.offsetMax -= maskDelta;
 

@@ -2907,7 +2907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  startMinutes: 2
+  startMinutes: 1
   currentTimeText: {fileID: 7505943353775431011}
   circleMeter: {fileID: 5335110832723036342}
 --- !u!1001 &4374370421781164833

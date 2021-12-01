@@ -337,6 +337,8 @@ MonoBehaviour:
   attackDamageLong: 100
   added: 30
   money: 0
+  ghostsCaptured: 0
+  recipesCompleted: 0
   attackRate: 2
   health: 0
   maxHealth: 100
@@ -368,6 +370,7 @@ MonoBehaviour:
   - Map
   - TitleScreen
   - GameOver
+  - LevelSummary
   currentTime: 0
   lastFillValue: 0
 --- !u!82 &4637161626130629680

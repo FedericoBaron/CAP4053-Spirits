@@ -1178,7 +1178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 844175660}
         m_TargetAssemblyTypeName: PlayerLost, Assembly-CSharp
-        m_MethodName: NextButton
+        m_MethodName: MainMenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

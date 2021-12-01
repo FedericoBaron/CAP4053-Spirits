@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class Player_Combat : MonoBehaviour
 {
 	public Rigidbody2D playerBody;
@@ -30,12 +31,11 @@ public class Player_Combat : MonoBehaviour
 
 	public HealthBar healthBar;
 
-	private RectTransform selectIcon;
-	private GameObject uiInventory;
-	private Text[] counts;
+	public RectTransform selectIcon;
+	public GameObject uiInventory;
+	public Text[] counts;
 
 	public Control_List ControlList;
-
 	void Start()
 	{   
 		ControlList = GetComponent<Control_List>();
@@ -43,9 +43,20 @@ public class Player_Combat : MonoBehaviour
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
 
+		Scene sceneCurr = SceneManager.GetActiveScene();
+		// current = true;
+        // for (int i = 0; i < ControlList.badScenes.Length; i++){
+        //     if (sceneCurr.name == ControlList.badScenes[i]){
+        //         current = false;
+        //         break;
+        //     }
+        // }
+		// if(current){
 		selectIcon = GameObject.Find("Selector").GetComponent<RectTransform>();
 		uiInventory = GameObject.Find("GhostCount");
 		counts = uiInventory.GetComponentsInChildren<Text>();
+		// }
+
 	}
 
 	void Reset(){
@@ -57,6 +68,15 @@ public class Player_Combat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		// Scene sceneCurr = SceneManager.GetActiveScene();
+		// current = true;
+        // for (int i = 0; i < ControlList.badScenes.Length; i++){
+        //     if (sceneCurr.name == ControlList.badScenes[i]){
+        //         current = false;
+        //         break;
+        //     }
+        // }
+
 		if (!ControlList.currExist) return;
 
 		if (ControlList.currentTime <= 0){
@@ -75,7 +95,8 @@ public class Player_Combat : MonoBehaviour
 			ghostSelect = 4;
 		else if(Input.GetKeyDown(KeyCode.Alpha6))
 			ghostSelect = 5;
-
+		
+		// if(current)
 		selectIcon.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
 
 		if(Time.time >= nextAttackTime){

@@ -18,6 +18,7 @@ public class Control_List : MonoBehaviour
     public string[] badScenes;
     public float currentTime = 0;
     public float lastFillValue = 0;
+    // public Vector2 maskDelta = new Vector2(0,0);
     
     private void Awake()
     {
@@ -66,18 +67,23 @@ public class Control_List : MonoBehaviour
     }
 
     void Reset(){
+        Player_Combat pc = GetComponent<Player_Combat>();
+        pc.selectIcon = GameObject.Find("Selector").GetComponent<RectTransform>();
+		pc.uiInventory = GameObject.Find("GhostCount");
+		pc.counts = pc.uiInventory.GetComponentsInChildren<Text>();
+
         List = GameObject.Find("GroceryList");
         scrollingList = List.GetComponent<CircularScrollingList>();
         bankList = List.GetComponent<IntListBank>();    
         bankList._listContents = _listContents;
-        Player_Combat player = GetComponent<Player_Combat>();
-        GameObject currHealthBar = GameObject.Find("HealthMask");
-		if (currHealthBar != null){
-			player.healthBar = currHealthBar.GetComponent<HealthBar>();
-            //player.healthBar.player = this.transform;
-            Debug.Log(player.damageTakenCurrently);
-            player.healthBar.UpdateHealthBar(player.damageTakenCurrently);
-        }
+        // Player_Combat player = GetComponent<Player_Combat>();
+        // GameObject currHealthBar = GameObject.Find("HealthMask");
+		// if (currHealthBar != null){
+		// 	player.healthBar = currHealthBar.GetComponent<HealthBar>();
+        //     //player.healthBar.player = this.transform;
+        //     Debug.Log(player.damageTakenCurrently);
+        //     player.healthBar.UpdateHealthBar(player.damageTakenCurrently);
+        // }
     }
 
     void populate(){

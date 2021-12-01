@@ -17,9 +17,10 @@ public class Timer : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Bartender").GetComponent<Control_List>();
-        if (player.currentTime == 0){
+        // if (player.currentTime == 0){
             player.currentTime = startMinutes * 60;
-        }
+            player.lastFillValue = 0;
+        // }
         circleMeter.GetComponent<Image>().fillAmount = player.lastFillValue;
     }
 
