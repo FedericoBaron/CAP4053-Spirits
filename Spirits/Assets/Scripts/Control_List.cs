@@ -75,12 +75,12 @@ public class Control_List : MonoBehaviour
     }
 
     void populate(){
-        // add(new int[]{1, 0, 0, 0, 0, 0});
-        // add(new int[]{1, 1, 0, 0, 0, 0});
-        // add(new int[]{1, 1, 1, 0, 0, 0});
-        // add(new int[]{1, 1, 1, 1, 0, 0});
-        // add(new int[]{1, 1, 1, 1, 1, 0});
-        // add(new int[]{1, 1, 1, 1, 1, 1});
+        //add(new int[]{1, 0, 0, 0, 0, 0});
+        //add(new int[]{1, 1, 0, 0, 0, 0});
+        //add(new int[]{1, 1, 1, 0, 0, 0});
+        //add(new int[]{1, 1, 1, 1, 0, 0});
+        //add(new int[]{1, 1, 1, 1, 1, 0});
+        //add(new int[]{1, 1, 1, 1, 1, 1});
         add(generateRecipe());
         printList();
         //add(generateRecipe());
