@@ -15,7 +15,7 @@ public class RecipeGeneration : MonoBehaviour
     public int[] probb2 = {5, 20, 60, 15, 0, 0};
 
     public int[] probc1 = {0, 0, 20, 40, 30, 10};
-    public int[] probc2 = {3, 3, 3, 3, 28, 60};
+    public int[] probc2 = {0, 0, 5, 7, 28, 60};
 
     public int[] curr;
 
@@ -52,26 +52,31 @@ public class RecipeGeneration : MonoBehaviour
 
         int amt = 0;
         if (money >= 700)
-            amt = (int)Random.Range(3,4);
+            amt = (int)Random.Range(1, 10);
         else if (money >= 500)
-            amt = (int)Random.Range(2,4);
+            amt = (int)Random.Range(1, 10);
         else
-            amt = (int)Random.Range(1,3);
+            amt = (int)Random.Range(1, 10);
 
         int[] list = new int[amt];
+        string x = "";
         for (int i = 0; i < amt; i++){
-            float random = Random.Range(0, 100);
+            float random = Random.Range(1, 100);
+            Debug.Log("Random" + " " + random);
             int minR = 0;
             for (int j = 0; j < curr.Length; j++){
                 int maxR = minR + curr[j];
-                if (random >= minR && random <= maxR){
-                    list[i] = j + 1;
+                if (random > minR && random <= maxR){
+                    list[i] = j;
+                    x += j + " ";
+                    Debug.Log(j);
+                    Debug.Log("asdfasdf" + j);
                     break;
                 }
                 minR = maxR;
             }
         }
-
+        Debug.Log("Values: " + x);
         return list;
     }
 

@@ -193,7 +193,7 @@ public class Player_Combat : MonoBehaviour
 				counts[type].text = capturedGhosts[type].ToString();
 
 				enemy.GetComponent<Enemy>().Captured();
-				ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
+				//ControlList.update(ControlList.find(type), type);
 				money += added;
 				ghostsCaptured += 1;
 				MoneyTextManager.instance.setText(added);

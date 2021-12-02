@@ -212,7 +212,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox
+      value: ListBox-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -298,6 +302,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3534803117342811157, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901076462539084299, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901076462539084299, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
 --- !u!224 &4151152825454497065 stripped
@@ -325,7 +341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (5)
+      value: ListBox-6
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -434,7 +450,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (2)
+      value: ListBox-3
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -543,7 +559,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (3)
+      value: ListBox-4
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -652,7 +668,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (1)
+      value: ListBox-2
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -761,7 +777,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (4)
+      value: ListBox-5
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x
@@ -870,7 +886,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1408831757004167069, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Name
-      value: ListBox (6)
+      value: ListBox-7
       objectReference: {fileID: 0}
     - target: {fileID: 2609911950272237012, guid: 57888038a43e53e41bdc2668a35586d0, type: 3}
       propertyPath: m_Pivot.x

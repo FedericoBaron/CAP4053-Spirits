@@ -2907,7 +2907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  startMinutes: 1
+  startMinutes: 20
   currentTimeText: {fileID: 7505943353775431011}
   circleMeter: {fileID: 5335110832723036342}
 --- !u!1001 &4374370421781164833
@@ -2917,11 +2917,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4374370422201305409}
     m_Modifications:
+    - target: {fileID: 1021951611586211524, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1021951611935426279, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1021951612025775431, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021951612791347040, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1021951613026594096, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021951613206459439, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021951613601653005, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
