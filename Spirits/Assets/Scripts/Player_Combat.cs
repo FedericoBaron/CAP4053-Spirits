@@ -169,7 +169,7 @@ public class Player_Combat : MonoBehaviour
 			{
 				StartCoroutine(Attack_Long());
 				nextAttackTime = Time.time + 1f / attackRate;
-				GetComponents<AudioSource>()[0].Play();
+				GetComponents<AudioSource>()[2].Play();
 			}
 			// Capture ghost
 			if(Input.GetKeyDown(KeyCode.Space))
