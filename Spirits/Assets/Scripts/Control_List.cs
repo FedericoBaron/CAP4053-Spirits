@@ -68,7 +68,8 @@ public class Control_List : MonoBehaviour
 
     void Reset(){
         Player_Combat pc = GetComponent<Player_Combat>();
-        pc.selectIcon = GameObject.Find("Selector").GetComponent<RectTransform>();
+        pc.selectIconPos = GameObject.Find("Selector").GetComponent<RectTransform>();
+        pc.selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
 		pc.uiInventory = GameObject.Find("GhostCount");
 		pc.counts = pc.uiInventory.GetComponentsInChildren<Text>();
 

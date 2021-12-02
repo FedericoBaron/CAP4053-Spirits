@@ -26,12 +26,14 @@ public class Player_Combat : MonoBehaviour
 	//public PlayerLost GameOverScreen = null;
 	int ghostSelect = 0;
 	int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
+	bool activeEffect = true;
 
 	public GameObject bottle;
 
 	public HealthBar healthBar;
 
-	public RectTransform selectIcon;
+	public RectTransform selectIconPos;
+	public Image selectIconRGB;
 	public GameObject uiInventory;
 	public Text[] counts;
 
@@ -52,7 +54,8 @@ public class Player_Combat : MonoBehaviour
         //     }
         // }
 		// if(current){
-		selectIcon = GameObject.Find("Selector").GetComponent<RectTransform>();
+		selectIconPos = GameObject.Find("Selector").GetComponent<RectTransform>();
+		selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
 		uiInventory = GameObject.Find("GhostCount");
 		counts = uiInventory.GetComponentsInChildren<Text>();
 		// }
@@ -84,20 +87,74 @@ public class Player_Combat : MonoBehaviour
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha1))
-			ghostSelect = 0;
+		{
+			if(ghostSelect == 0)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 0;
+				activeEffect = true;
+			}
+		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2))
-			ghostSelect = 1;
+		{
+			if(ghostSelect == 1)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 1;
+				activeEffect = true;
+			}
+		}
 		else if(Input.GetKeyDown(KeyCode.Alpha3))
-			ghostSelect = 2;
+		{
+			if(ghostSelect == 2)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 2;
+				activeEffect = true;
+			}
+		}
 		else if(Input.GetKeyDown(KeyCode.Alpha4))
-			ghostSelect = 3;
+		{
+			if(ghostSelect == 3)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 3;
+				activeEffect = true;
+			}
+		}
 		else if(Input.GetKeyDown(KeyCode.Alpha5))
-			ghostSelect = 4;
+		{
+			if(ghostSelect == 4)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 4;
+				activeEffect = true;
+			}
+		}
 		else if(Input.GetKeyDown(KeyCode.Alpha6))
-			ghostSelect = 5;
+		{
+			if(ghostSelect == 5)
+				activeEffect = !activeEffect;
+			else
+			{
+				ghostSelect = 5;
+				activeEffect = true;
+			}
+		}
 		
 		// if(current)
-		selectIcon.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
+		selectIconPos.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
+
+		if(activeEffect)
+			selectIconRGB.color = new Color(selectIconRGB.color.r, selectIconRGB.color.g, selectIconRGB.color.b, 200f);
+		else
+			selectIconRGB.color = new Color(selectIconRGB.color.r, selectIconRGB.color.g, selectIconRGB.color.b, 0f);
+
 
 		if(Time.time >= nextAttackTime){
 			// Short range attack
@@ -164,9 +221,12 @@ public class Player_Combat : MonoBehaviour
 
 	IEnumerator Attack_Long()
 	{
-		if(capturedGhosts[ghostSelect] > 0)
-			capturedGhosts[ghostSelect]--;
-		counts[ghostSelect].text = capturedGhosts[ghostSelect].ToString();
+		if(activeEffect)
+		{
+			if(capturedGhosts[ghostSelect] > 0)
+				capturedGhosts[ghostSelect]--;
+			counts[ghostSelect].text = capturedGhosts[ghostSelect].ToString();
+		}
 
 		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
