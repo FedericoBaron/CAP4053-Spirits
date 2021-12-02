@@ -25,11 +25,13 @@ public class LevelSummary : MonoBehaviour
 
     public void RestartButton(){
         SceneManager.LoadScene("Tutorial");
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
     }
 
     public void NextButton(){
         GameObject player = GameObject.Find("Bartender");
         player.GetComponent<Player_Combat>().health = player.GetComponent<Player_Combat>().maxHealth;  
         SceneManager.LoadScene("Forest");
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
     }
 }

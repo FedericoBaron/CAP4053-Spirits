@@ -19,6 +19,7 @@ public class PlayerLost : MonoBehaviour
 
     public void RestartButton(){
         SceneManager.LoadScene("Tutorial");
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
     }
 
     public void MainMenuButton(){

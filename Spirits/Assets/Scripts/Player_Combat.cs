@@ -182,10 +182,12 @@ public class Player_Combat : MonoBehaviour
 
 	public void GameOver(){
 		SceneManager.LoadScene("GameOverScene");
+		GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
 	}
 
 	public void LevelSummary(){
 		SceneManager.LoadScene("LevelSummary");
+		GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
 	}
 
     void Attack_Short()
