@@ -27,7 +27,6 @@ public class Control_List : MonoBehaviour
     void Start()
     {
         Reset();
-        populate();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -41,8 +40,9 @@ public class Control_List : MonoBehaviour
                 break;
             }
         }
-
+        
         if (!currExist && current){
+            currExist = current;
             Reset();
         }
 
@@ -64,7 +64,8 @@ public class Control_List : MonoBehaviour
 
     int[] generateRecipe(){
         Scene sceneCurr = SceneManager.GetActiveScene();
-        int[] recipe = generate.generateRecipe(GetComponent<Player_Combat>().money, sceneCurr.name);
+        int money = GetComponent<Player_Combat>().money;
+        int[] recipe = generate.generateRecipe(money, sceneCurr.name);
         int[] freq = new int[6];
         for (int i = 0; i < recipe.Length; i++){
            Debug.Log(recipe[i]);
@@ -74,12 +75,19 @@ public class Control_List : MonoBehaviour
     }
 
     void populate(){
-        add(new int[]{1, 0, 0, 0, 0, 0});
-        add(new int[]{1, 1, 0, 0, 0, 0});
-        add(new int[]{1, 1, 1, 0, 0, 0});
-        add(new int[]{1, 1, 1, 1, 0, 0});
-        add(new int[]{1, 1, 1, 1, 1, 0});
-        add(new int[]{1, 1, 1, 1, 1, 1});
+        // add(new int[]{1, 0, 0, 0, 0, 0});
+        // add(new int[]{1, 1, 0, 0, 0, 0});
+        // add(new int[]{1, 1, 1, 0, 0, 0});
+        // add(new int[]{1, 1, 1, 1, 0, 0});
+        // add(new int[]{1, 1, 1, 1, 1, 0});
+        // add(new int[]{1, 1, 1, 1, 1, 1});
+        add(generateRecipe());
+        printList();
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
     }
 
     void Update(){
@@ -124,5 +132,18 @@ public class Control_List : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    public void printList(){
+        Debug.Log("Start");
+        Debug.Log(_listContents.Count);
+        for (int i = 0; i < _listContents.Count; i++){
+            string x = "";
+            for (int j = 0; j < _listContents[i].Length; j++){
+                x += (_listContents[i][j].ToString()) + " ";
+            }
+            Debug.Log("Val " + (i.ToString()) + ": " +  x);
+        }
+        Debug.Log("End");
     }
 }
