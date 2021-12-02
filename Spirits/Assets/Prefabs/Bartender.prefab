@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 3663285223562782789}
   - component: {fileID: 4637161626130629680}
   - component: {fileID: 2720509597955570605}
+  - component: {fileID: 2745602779427059926}
   m_Layer: 3
   m_Name: Bartender
   m_TagString: Untagged
@@ -345,6 +346,9 @@ MonoBehaviour:
   damageTakenCurrently: 0
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
   healthBar: {fileID: 0}
+  selectIcon: {fileID: 0}
+  uiInventory: {fileID: 0}
+  counts: []
   ControlList: {fileID: 0}
 --- !u!114 &3663285223562782789
 MonoBehaviour:
@@ -565,3 +569,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2745602779427059926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663285223562782840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4cdc1e40886418ba997bcecb34e6d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 010000000200000003000000040000000500000006000000
+  probDefault: 010000000000000000000000000000000000000000000000
+  proba1: 5a0000000a00000000000000000000000000000000000000
+  proba2: 500000001400000000000000000000000000000000000000
+  probb1: 0f0000001e00000032000000050000000000000000000000
+  probb2: 05000000140000003c0000000f0000000000000000000000
+  probc1: 000000000000000014000000280000001e0000000a000000
+  probc2: 030000000300000003000000030000001c0000003c000000
+  curr: 
