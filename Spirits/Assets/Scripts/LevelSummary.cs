@@ -34,4 +34,18 @@ public class LevelSummary : MonoBehaviour
         SceneManager.LoadScene("Forest");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
     }
+
+    public void MapButton(){
+        // GameObject player = GameObject.Find("Bartender");
+        // player.GetComponent<Player_Combat>().health = player.GetComponent<Player_Combat>().maxHealth;  
+        SceneManager.LoadScene("Map");
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
+    }
+
+    public void MainMenuButton(){
+        // GameObject player = GameObject.Find("Bartender");
+        // player.GetComponent<Player_Combat>().health = player.GetComponent<Player_Combat>().maxHealth;  
+        SceneManager.LoadScene("TitleScreen");
+        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
+    }
 }
