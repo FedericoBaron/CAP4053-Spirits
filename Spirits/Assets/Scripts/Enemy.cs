@@ -188,6 +188,7 @@ public class Enemy : MonoBehaviour
             {
                 if (Vector2.Distance(transform.position, player.position) > attackDist) return;
                 animateAttack();
+                GetComponent<AudioSource>().Play();
                 // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
                 nextAttackTime = Time.time + 1f / attackRate;
             }
