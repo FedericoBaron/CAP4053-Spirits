@@ -198,8 +198,8 @@ public class Player_Combat : MonoBehaviour
 
 		if(hitEnemies.Length != 0)
 			GetComponents<AudioSource>()[0].Play();
-		//else
-		// :play some kind of whoosh sound effect to signify a miss:
+		else
+			GetComponents<AudioSource>()[3].Play();
 
 		foreach(Collider2D enemy in hitEnemies){
 			Debug.Log("We hit " + enemy.name);
