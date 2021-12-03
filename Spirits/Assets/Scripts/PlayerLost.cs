@@ -18,6 +18,7 @@ public class PlayerLost : MonoBehaviour
     }
 
     public void RestartButton(){
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Tutorial");
         GameObject music = GameObject.FindGameObjectWithTag("music");
         if (music != null)
@@ -26,6 +27,7 @@ public class PlayerLost : MonoBehaviour
     }
 
     public void MainMenuButton(){
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("TitleScreen");
     }
 }
