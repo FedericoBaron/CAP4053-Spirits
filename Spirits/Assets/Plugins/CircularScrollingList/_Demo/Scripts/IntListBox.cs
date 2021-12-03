@@ -50,10 +50,13 @@ namespace AirFishLab.ScrollingList.Demo
             int tempCnt = 0;
             for (int i = 0; i < 6; i++)
             {
-                if(int.Parse(playerInv[i].text) >= vals[i])
-                    panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesReady[temp[tempCnt][0]];
-                else
-                    panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesNeeded[temp[tempCnt][0]];
+                if(vals[i] != 0)
+                {
+                    if(int.Parse(playerInv[i].text) >= vals[i])
+                        panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesReady[temp[tempCnt][0]];
+                    else
+                        panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesNeeded[temp[tempCnt][0]];
+                }
 
                 if(present[i] == 1)
                     panels[cnt - 1].transform.GetChild(tempCnt).GetChild(0).GetComponent<Text>().text = vals[i].ToString();
