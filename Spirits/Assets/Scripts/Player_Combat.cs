@@ -25,7 +25,7 @@ public class Player_Combat : MonoBehaviour
 	float nextAttackTime = 0f;
 	//public PlayerLost GameOverScreen = null;
 	int ghostSelect = 0;
-	int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
+	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 
 	public GameObject bottle;
 

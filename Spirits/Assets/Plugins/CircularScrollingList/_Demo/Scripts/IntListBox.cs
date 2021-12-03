@@ -9,16 +9,31 @@ namespace AirFishLab.ScrollingList.Demo
     {
         [SerializeField]
         public GameObject[] panels;
-        public Sprite[] sprites;
+        public Sprite[] spritesNeeded; //these are the dull sprites
+        public Sprite[] spritesReady; //these are the vivid ones
+
+        public GameObject inventory;
+        public Text[] playerInv;
+
+        void Start()
+        {
+            inventory = GameObject.Find("GhostCount");
+        }
 
         protected override void UpdateDisplayContent(object content)
         {
             reset();
+            playerInv = inventory.GetComponentsInChildren<Text>();
+
             int[] vals = (int[])(content);
+            int[] present = {0, 0, 0, 0, 0, 0};
             int cnt = 0;
             for (int i = 0; i < 6; i++){
                 if (vals[i] != 0)
+                {
                     cnt++;
+                    present[i] = 1;
+                }
             }
 
             int[][] temp = new int[cnt][];
@@ -32,8 +47,19 @@ namespace AirFishLab.ScrollingList.Demo
                     pnt++;
                 }
             }
-            for (int i = 0; i < cnt; i++){
-                panels[cnt - 1].transform.GetChild(i).GetComponent<Image>().overrideSprite = sprites[temp[i][0]];
+            int tempCnt = 0;
+            for (int i = 0; i < 6; i++)
+            {
+                if(int.Parse(playerInv[i].text) >= vals[i])
+                    panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesReady[temp[tempCnt][0]];
+                else
+                    panels[cnt - 1].transform.GetChild(tempCnt).GetComponent<Image>().overrideSprite = spritesNeeded[temp[tempCnt][0]];
+
+                if(present[i] == 1)
+                    panels[cnt - 1].transform.GetChild(tempCnt).GetChild(0).GetComponent<Text>().text = vals[i].ToString();
+
+                if(tempCnt < cnt - 1)
+                    tempCnt++;
             }
             panels[cnt - 1].SetActive(true);
         }

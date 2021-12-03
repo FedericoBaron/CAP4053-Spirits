@@ -107,11 +107,11 @@ RectTransform:
   m_Children:
   - {fileID: 2257595289786932535}
   m_Father: {fileID: 3775342039991869968}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65, y: 60}
+  m_AnchoredPosition: {x: -170, y: 60}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4862549680191978602
@@ -1755,11 +1755,11 @@ RectTransform:
   m_Children:
   - {fileID: 969885577530761227}
   m_Father: {fileID: 3775342039991869968}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170, y: 60}
+  m_AnchoredPosition: {x: -65, y: 60}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1045202041883716523
@@ -1905,10 +1905,10 @@ RectTransform:
   m_Children:
   - {fileID: 3886543559028952}
   - {fileID: 7732505527692142366}
-  - {fileID: 8228857410977396660}
+  - {fileID: 7478153233264978933}
   - {fileID: 2012105099105367061}
   - {fileID: 2086771610020912173}
-  - {fileID: 7478153233264978933}
+  - {fileID: 8228857410977396660}
   - {fileID: 7709058575059630480}
   m_Father: {fileID: 4374370422201305409}
   m_RootOrder: 5
@@ -3129,6 +3129,30 @@ PrefabInstance:
       propertyPath: m_Transition
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 5267966952339483415, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 9213127507531840503, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 8647702362859595129, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 3320183280493057173, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -3376431240548034851, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
+    - target: {fileID: 2509682973590232156, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: -2353516574787741225, guid: dba48f001e86b654fbcacb1f33b2b990, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39775e0e58a0cc4d8b8c56c92d0b7df, type: 3}
 --- !u!224 &2384511071198428723 stripped
