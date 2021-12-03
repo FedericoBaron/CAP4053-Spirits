@@ -37,7 +37,9 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Map Loaded");
         gameIsPaused = false; 
         SceneManager.LoadScene("Map");
-        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
+        GameObject music = GameObject.FindGameObjectWithTag("music");
+        if (music != null)
+            music.GetComponent<AudioSource>().Play();
         GetComponent<AudioSource>().Play();
     }
 
@@ -45,7 +47,9 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Menu Loaded");
         gameIsPaused = false; 
         SceneManager.LoadScene("TitleScreen");
-        GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
+        GameObject music = GameObject.FindGameObjectWithTag("music");
+        if (music != null)
+            music.GetComponent<AudioSource>().Play();
         GetComponent<AudioSource>().Play();
     }
 
