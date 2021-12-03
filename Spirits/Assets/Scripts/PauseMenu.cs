@@ -34,18 +34,21 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMap(){
         Debug.Log("Map Loaded");
+        gameIsPaused = false; 
         SceneManager.LoadScene("Map");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
     }
 
     public void LoadMenu(){
         Debug.Log("Menu Loaded");
+        gameIsPaused = false; 
         SceneManager.LoadScene("TitleScreen");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
     }
 
     public void Quit(){
         Debug.Log("Quitting Game");
+        gameIsPaused = false; 
         Application.Quit();
     }
 

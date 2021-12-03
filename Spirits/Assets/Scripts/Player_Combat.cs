@@ -60,7 +60,6 @@ public class Player_Combat : MonoBehaviour
 		uiInventory = GameObject.Find("GhostCount");
 		counts = uiInventory.GetComponentsInChildren<Text>();
 		// }
-
 	}
 
 	void Reset(){
@@ -195,11 +194,16 @@ public class Player_Combat : MonoBehaviour
 
 		// Detect enemies in range of attack
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+		
+		bool paused = PauseMenu.gameIsPaused;
 
-		if(hitEnemies.Length != 0)
-			GetComponents<AudioSource>()[0].Play();
-		else
-			GetComponents<AudioSource>()[3].Play();
+		if (!paused)
+		{
+			if(hitEnemies.Length != 0)
+				GetComponents<AudioSource>()[0].Play();
+			else
+				GetComponents<AudioSource>()[3].Play();
+		}
 
 		foreach(Collider2D enemy in hitEnemies){
 			Debug.Log("We hit " + enemy.name);
