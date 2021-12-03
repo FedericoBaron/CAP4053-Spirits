@@ -65,7 +65,7 @@ public class Control_List : MonoBehaviour
 
     int[] generateRecipe(){
         Scene sceneCurr = SceneManager.GetActiveScene();
-        int money = GetComponent<Player_Combat>().money;
+        int money = GetComponent<Player_Combat>().totalMoney;
         int[] recipe = generate.generateRecipe(money, sceneCurr.name);
         int[] freq = new int[6];
         for (int i = 0; i < recipe.Length; i++){

@@ -14,8 +14,9 @@ public class Player_Combat : MonoBehaviour
 	public LayerMask enemyLayers;
 	public int attackDamageShort = 40;
 	public int attackDamageLong = 100;
-	public int added = 30;
-	public int money = 0;
+	// public int added = 30;
+	// public int money = 0;
+	public int totalMoney = 0;
 	public int ghostsCaptured = 0;
 	public int recipesCompleted = 0;
 	public float attackRate = 2f;
@@ -261,9 +262,9 @@ public class Player_Combat : MonoBehaviour
 
 				enemy.GetComponent<Enemy>().Captured();
 				//ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
-				money += added;
+				// money += added;
 				ghostsCaptured += 1;
-				MoneyTextManager.instance.setText(added);
+				// MoneyTextManager.instance.setText(added);
 			}
 		}
 

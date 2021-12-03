@@ -11,7 +11,7 @@ public class PlayerLost : MonoBehaviour
         GameObject player = GameObject.Find("Bartender");
         int score = -1;
         if (player != null){
-            score = player.GetComponent<Player_Combat>().money;
+            score = player.GetComponent<Player_Combat>().totalMoney;
             Destroy(player);
         }
         moneyText.text = "Money: " + score.ToString();

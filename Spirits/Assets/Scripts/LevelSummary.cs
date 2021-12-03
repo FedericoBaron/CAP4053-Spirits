@@ -19,8 +19,16 @@ public class LevelSummary : MonoBehaviour
             // Destroy(player);
         }
         int moneyMade = ghostsCaptured * 30;
+
+        // set total money
+        int totalMoney = player.GetComponent<Player_Combat>().totalMoney + moneyMade;
+
         Money.text = "Money: " + moneyMade.ToString();
+        TotalMoney.text = "Total Money: " + totalMoney.ToString();
         Spirits.text = "Spirits Captured: " + ghostsCaptured.ToString();
+
+        player.GetComponent<Player_Combat>().ghostsCaptured = 0;
+        player.GetComponent<Player_Combat>().totalMoney = totalMoney;
     }
 
     public void RestartButton(){
