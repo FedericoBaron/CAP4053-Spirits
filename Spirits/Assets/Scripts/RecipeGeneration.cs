@@ -15,29 +15,36 @@ public class RecipeGeneration : MonoBehaviour
     public int[] probb2 = {5, 20, 60, 15, 0, 0};
 
     public int[] probc1 = {0, 0, 20, 40, 30, 10};
-    public int[] probc2 = {3, 3, 3, 3, 28, 60};
+    public int[] probc2 = {0, 0, 5, 7, 28, 60};
 
     public int[] curr;
 
+    public void printArr(int[] arr){
+        string x = "";
+        for (int i = 0; i < arr.Length; i++)
+            x += arr[i].ToString() + " ";
+        Debug.Log(x);
+    }
+
     public void setNext(int money, string scene){
-        if (scene == "Tutorial"){
+        if (scene.Equals("Tutorial")){
            curr = probDefault;
         }
-        else if (scene == "Forest"){
+        else if (scene.Equals("Forest")){
             if (money >= 300){
                 curr = proba2;
             }
             else
                 curr = proba1;
         }
-        else if (scene == "Mansion"){
+        else if (scene.Equals("Mansion")){
             if (money >= 500){
                 curr = probb2;
             }
             else
                 curr = probb1;
         }
-        else if (scene == "Apartment"){
+        else if (scene.Equals("ApartmentWBarriers")){
             if (money >= 700){
                 curr = probc2;
             }
@@ -47,31 +54,31 @@ public class RecipeGeneration : MonoBehaviour
     }
 
     public int[] generateRecipe(int money, string scene){
-
+        //Debug.Log(scene.name);
         setNext(money, scene);
-
+        printArr(curr);
         int amt = 0;
+
         if (money >= 700)
-            amt = (int)Random.Range(3,4);
+            amt = (int)Random.Range(5, 10);
         else if (money >= 500)
-            amt = (int)Random.Range(2,4);
+            amt = (int)Random.Range(3, 7);
         else
-            amt = (int)Random.Range(1,3);
+            amt = (int)Random.Range(1, 4);
 
         int[] list = new int[amt];
         for (int i = 0; i < amt; i++){
-            float random = Random.Range(0, 100);
+            float random = Random.Range(1, 100);
             int minR = 0;
             for (int j = 0; j < curr.Length; j++){
                 int maxR = minR + curr[j];
-                if (random >= minR && random <= maxR){
-                    list[i] = j + 1;
+                if (random > minR && random <= maxR){
+                    list[i] = j;
                     break;
                 }
                 minR = maxR;
             }
         }
-
         return list;
     }
 

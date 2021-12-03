@@ -162,14 +162,12 @@ public class Player_Combat : MonoBehaviour
 				playerAnim.SetTrigger("Attacking");
         		Attack_Short();
 				nextAttackTime = Time.time + 1f / attackRate;
-				GetComponents<AudioSource>()[0].Play();
         	}
 			// Throw bottle
 			if(Input.GetMouseButtonDown(1))
 			{
 				StartCoroutine(Attack_Long());
 				nextAttackTime = Time.time + 1f / attackRate;
-				GetComponents<AudioSource>()[2].Play();
 			}
 			// Capture ghost
 			if(Input.GetKeyDown(KeyCode.Space))
@@ -196,6 +194,11 @@ public class Player_Combat : MonoBehaviour
 
 		// Detect enemies in range of attack
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+		if(hitEnemies.Length != 0)
+			GetComponents<AudioSource>()[0].Play();
+		//else
+		// :play some kind of whoosh sound effect to signify a miss:
 
 		foreach(Collider2D enemy in hitEnemies){
 			Debug.Log("We hit " + enemy.name);
@@ -236,6 +239,8 @@ public class Player_Combat : MonoBehaviour
 		Instantiate(bottle, gameObject.transform.position + new Vector3(1f, 1.5f, 0), Quaternion.identity);
 
 		yield return new WaitForSeconds(1.5f);
+		GetComponents<AudioSource>()[2].time = 0.25f;
+		GetComponents<AudioSource>()[2].Play();
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(mousePos, attackRange, enemyLayers);
 
 		foreach(Collider2D enemy in hitEnemies)
@@ -255,7 +260,7 @@ public class Player_Combat : MonoBehaviour
 				counts[type].text = capturedGhosts[type].ToString();
 
 				enemy.GetComponent<Enemy>().Captured();
-				ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
+				//ControlList.update(ControlList.FindInBank(type), type * 2 + 1);
 				money += added;
 				ghostsCaptured += 1;
 				MoneyTextManager.instance.setText(added);

@@ -8,47 +8,29 @@ using UnityEngine.SceneManagement;
 
 public class Control_List : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject List;
     public CircularScrollingList scrollingList;
     public IntListBank bankList;
-    public List<Texture> _listContents = new List<Texture>();
-    public List<Texture> images;
+    public List<int[]> _listContents = new List<int[]>();
+    public RecipeGeneration generate;
     public bool currExist = true;
     public string[] badScenes;
     public float currentTime = 0;
     public float lastFillValue = 0;
-    // public Vector2 maskDelta = new Vector2(0,0);
     
     private void Awake()
     {
-        // It is save to remove listeners even if they
-        // didn't exist so far.
-        // This makes sure it is added only once
         SceneManager.sceneLoaded -= OnSceneLoaded;
-
-        // Add the listener to be called when a scene is loaded
         SceneManager.sceneLoaded += OnSceneLoaded;
-
-        //DontDestroyOnLoad(gameObject);
-
-        // Store the creating scene as the scene to trigger start
-        //scene = SceneManager.GetActiveScene();
     }
 
     void Start()
     {
         Reset();
-        //Debug.Log(bankList.GetListLength());
-        //Debug.Log(images.Count);
-        populate();
-        // for (int i = 0; i < bankList.GetListLength(); i++)
-        //     Debug.Log(bankList.GetListContent(i));
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
         Debug.Log("Re-Initializing", this);
         Scene sceneCurr = SceneManager.GetActiveScene();
         bool current = true;
@@ -58,8 +40,9 @@ public class Control_List : MonoBehaviour
                 break;
             }
         }
-
+        
         if (!currExist && current){
+            currExist = current;
             Reset();
         }
 
@@ -72,75 +55,96 @@ public class Control_List : MonoBehaviour
         pc.selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
 		pc.uiInventory = GameObject.Find("GhostCount");
 		pc.counts = pc.uiInventory.GetComponentsInChildren<Text>();
-
         List = GameObject.Find("GroceryList");
         scrollingList = List.GetComponent<CircularScrollingList>();
         bankList = List.GetComponent<IntListBank>();    
         bankList._listContents = _listContents;
-        // Player_Combat player = GetComponent<Player_Combat>();
-        // GameObject currHealthBar = GameObject.Find("HealthMask");
-		// if (currHealthBar != null){
-		// 	player.healthBar = currHealthBar.GetComponent<HealthBar>();
-        //     //player.healthBar.player = this.transform;
-        //     Debug.Log(player.damageTakenCurrently);
-        //     player.healthBar.UpdateHealthBar(player.damageTakenCurrently);
-        // }
+        generate = GetComponent<RecipeGeneration>();
+        populate();
+    }
+
+    int[] generateRecipe(){
+        Scene sceneCurr = SceneManager.GetActiveScene();
+        int money = GetComponent<Player_Combat>().money;
+        int[] recipe = generate.generateRecipe(money, sceneCurr.name);
+        int[] freq = new int[6];
+        for (int i = 0; i < recipe.Length; i++){
+           Debug.Log(recipe[i]);
+            freq[recipe[i]]++;
+        }
+        return freq;
     }
 
     void populate(){
-        add(0);
-        add(0);
-        add(0);
-        add(0);
-        add(0);
-        add(0);
-        add(0);
+        add(new int[]{1, 0, 0, 0, 0, 0});
+        add(new int[]{3, 0, 0, 0, 5, 0});
+        add(new int[]{1, 3, 1, 0, 0, 0});
+        add(new int[]{2, 1, 5, 4, 0, 0});
+        add(new int[]{1, 4, 1, 2, 1, 0});
+        add(new int[]{5, 1, 4, 3, 2, 1});
+        //add(generateRecipe());
+        printList();
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
+        //add(generateRecipe());
     }
 
     void Update(){
-        // Return the current Active Scene in order to get the current Scene name.        
-        //Debug.Log(currExist);
         if (currExist){
             scrollingList.Refresh();
         }
-
     }
 
-    public bool remove(int val){
+    public bool remove(int[] val){
         if (!currExist) return false;
-        bool v = _listContents.Remove(images[val]);
+        int index = find(val);
+        if (index == -1) return false;
+        bool flag = _listContents.Remove(_listContents[index]);
         scrollingList.Refresh();
-        return v;
+        return flag;
     }
 
-    public void add(int val){
+    public void add(int[] val){
         if (!currExist) return;
-        _listContents.Add(images[val]);
+        _listContents.Add(val);
         scrollingList.Refresh();
     }
 
-    public void update(int index, int val){
+    public void update(int index, int[] val){
         if (index == -1) return;
         if (!currExist) return;
-        _listContents[index] = images[val];
+        _listContents[index] = val;
         scrollingList.Refresh();
     }
 
-    public void AddToBank(int val){
-        if (!currExist) return;
-        add(val);
-    }
-
-    public bool RemoveFromBank(int val){
-        if (!currExist) return false;
-        return remove(val);
-    }
-
-    public int FindInBank(int val){
+    public int find(int[] val){
         if (!currExist) return -1;
         for (int i = 0; i < bankList.GetListLength(); i++)
-            if ((Texture)bankList.GetListContent(i) == images[val])  
+            if (equalsArray((int[])bankList.GetListContent(i), val))  
                 return i;
         return -1;
+    }
+
+    public bool equalsArray(int[] a, int[] b){
+        for (int i = 0; i < a.Length; i++){
+            if (a[i] != b[i])
+                return false;
+        }
+        return true;
+    }
+
+    public void printList(){
+        Debug.Log("Start");
+        Debug.Log(_listContents.Count);
+        for (int i = 0; i < _listContents.Count; i++){
+            string x = "";
+            for (int j = 0; j < _listContents[i].Length; j++){
+                x += (_listContents[i][j].ToString()) + " ";
+            }
+            Debug.Log("Val " + (i.ToString()) + ": " +  x);
+        }
+        Debug.Log("End");
     }
 }

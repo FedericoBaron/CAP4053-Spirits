@@ -9,7 +9,7 @@ namespace AirFishLab.ScrollingList.Demo
         //     -1, -1, -1, -1, -1, -1, -1, -1, -1
         // };
 
-        public List<Texture> _listContents = new List<Texture>();
+        public List<int[]> _listContents = new List<int[]>();
 
         public override object GetListContent(int index)
         {
