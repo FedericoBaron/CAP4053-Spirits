@@ -10,6 +10,7 @@ public class Map : MonoBehaviour
         Time.timeScale = 1f;
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
         SceneManager.LoadScene("Tutorial");
+        GetComponent<AudioSource>().Play();
     }
 
     public void OpenForest()
@@ -17,6 +18,7 @@ public class Map : MonoBehaviour
         Time.timeScale = 1f;
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
         SceneManager.LoadScene("Forest");
+        GetComponent<AudioSource>().Play();
     }
 
     public void OpenApartment()
@@ -24,6 +26,7 @@ public class Map : MonoBehaviour
         Time.timeScale = 1f;
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
         SceneManager.LoadScene("ApartmentWBarriers");
+        GetComponent<AudioSource>().Play();
     }
 
     public void OpenMansion()
@@ -31,6 +34,7 @@ public class Map : MonoBehaviour
         Time.timeScale = 1f;
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
         SceneManager.LoadScene("Mansion");
+        GetComponent<AudioSource>().Play();
     }
 }
 

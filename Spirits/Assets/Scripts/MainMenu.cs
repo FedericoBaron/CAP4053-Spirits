@@ -5,13 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Start()
-    {
-        // GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
-    }
-
     public void PlayGame()
-    {
+    {   
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Tutorial");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Pause();
         Time.timeScale = 1f;
@@ -19,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void ControlsScene()
     {
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("Controls");
     }
 }

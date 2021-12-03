@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ControllerMenu : MonoBehaviour
 {
     public void BackToMainMenu(){
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene("TitleScreen");
     }
 }

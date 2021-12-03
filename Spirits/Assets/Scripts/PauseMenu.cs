@@ -24,6 +24,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false; 
+        GetComponent<AudioSource>().Play();
     }
 
     void Pause(){
@@ -37,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = false; 
         SceneManager.LoadScene("Map");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Play();
     }
 
     public void LoadMenu(){
@@ -44,11 +46,13 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = false; 
         SceneManager.LoadScene("TitleScreen");
         GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Play();
     }
 
     public void Quit(){
         Debug.Log("Quitting Game");
         gameIsPaused = false; 
+        GetComponent<AudioSource>().Play();
         Application.Quit();
     }
 
