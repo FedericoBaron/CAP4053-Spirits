@@ -36,20 +36,40 @@ public class Player_Aiming : MonoBehaviour
 
         float absAngle = Mathf.Abs(angle);
         float absDistance = Mathf.Abs(distance.x);
+        float dirScale = distance.x / absDistance;
 
         // Based on the angle/position of the cursor, we'll alter the sprite's direction to make it seem like the player is facing that way
         if(absAngle <= 45)
+        {
             // General Direction is UP
             playerAnim.SetInteger("Direction", 0);
+
+            if(Input.GetAxis("Vertical") < 0)
+                playerAnim.SetBool("Reverse", true);
+            else if(Input.GetAxis("Vertical") > 0)
+                playerAnim.SetBool("Reverse", false);
+        }
         else if(absAngle > 45 && absAngle <= 135)
         {
             // General Direction is LEFT or RIGHT
-            transform.localScale = new Vector2(distance.x / absDistance, 1);
+            transform.localScale = new Vector2(dirScale, 1);
             playerAnim.SetInteger("Direction", 1);
+
+            if((Input.GetAxis("Horizontal") < 0 && dirScale == 1) || (Input.GetAxis("Horizontal") > 0 && dirScale == -1))
+                playerAnim.SetBool("Reverse", true);
+            else if((Input.GetAxis("Horizontal") > 0 && dirScale == 1) || (Input.GetAxis("Horizontal") < 0 && dirScale == -1))
+                playerAnim.SetBool("Reverse", false);
         }
         else
+        {
             // General Direction is DOWN
             playerAnim.SetInteger("Direction", 2);
+
+            if(Input.GetAxis("Vertical") > 0)
+                playerAnim.SetBool("Reverse", true);
+            else if(Input.GetAxis("Vertical") < 0)
+                playerAnim.SetBool("Reverse", false);
+        }
         
     }
 }

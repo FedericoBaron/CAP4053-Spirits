@@ -222,6 +222,7 @@ public class Enemy : MonoBehaviour
         float reviveProbability = Random.Range(0.0f, 1.0f);
         if(reviveProbability >= 0.05f)
         {
+            animator.SetTrigger("Revival");
             currentHealth = (int)(reviveProbability * (float)maxHealth);
             healthBar.UpdateHealthBar();
         }
