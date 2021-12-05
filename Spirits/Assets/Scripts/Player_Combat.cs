@@ -17,6 +17,7 @@ public class Player_Combat : MonoBehaviour
 	// public int added = 30;
 	// public int money = 0;
 	public int totalMoney = 0;
+	public int submitRecipe = 5;
 	public int ghostsCaptured = 0;
 	public int recipesCompleted = 0;
 	public float attackRate = 2f;
@@ -26,7 +27,7 @@ public class Player_Combat : MonoBehaviour
 	float nextAttackTime = 0f;
 	//public PlayerLost GameOverScreen = null;
 	int ghostSelect = 0;
-	int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
+	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 	bool activeEffect = true;
 
 	public GameObject bottle;
