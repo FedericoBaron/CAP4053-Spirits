@@ -27,6 +27,8 @@ public class Control_List : MonoBehaviour
     void Start()
     {
         Reset();
+        populate();
+        testing();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -60,7 +62,6 @@ public class Control_List : MonoBehaviour
         bankList = List.GetComponent<IntListBank>();    
         bankList._listContents = _listContents;
         generate = GetComponent<RecipeGeneration>();
-        populate();
     }
 
     int[] generateRecipe(){
@@ -75,15 +76,34 @@ public class Control_List : MonoBehaviour
         return freq;
     }
 
-    void populate(){
-        add(new int[]{1, 0, 0, 0, 0, 0});
-        add(new int[]{3, 0, 0, 0, 5, 0});
-        add(new int[]{1, 3, 1, 0, 0, 0});
-        add(new int[]{2, 1, 5, 4, 0, 0});
-        add(new int[]{1, 4, 1, 2, 1, 0});
-        add(new int[]{5, 1, 4, 3, 2, 1});
+ void populate(){
+        add(new int[]{-1});
+        add(new int[]{-1});
+        add(new int[]{-1});
+        add(new int[]{-1});
+        add(new int[]{-1});
+        add(new int[]{-1});
+        add(new int[]{-1});
+    }
+
+    void testing(){
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 0, 2, 3});
+        add(new int[]{1, 2, 0, 3, 4, 5});
+        add(new int[]{2, 3, 1, 3, 0, 0});
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 0, 2, 3});
+        add(new int[]{1, 2, 0, 3, 4, 5});
+        add(new int[]{2, 3, 1, 3, 0, 0});
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 3, 2, 3});
+        add(new int[]{2, 3, 1, 0, 2, 3});
+        add(new int[]{1, 2, 0, 3, 4, 5});
+        add(new int[]{2, 3, 1, 3, 0, 0});
         //add(generateRecipe());
-        printList();
+        //printList();
         //add(generateRecipe());
         //add(generateRecipe());
         //add(generateRecipe());
@@ -97,18 +117,26 @@ public class Control_List : MonoBehaviour
         }
     }
 
-    public bool remove(int[] val){
+   public bool remove(int[] val){
         if (!currExist) return false;
         int index = find(val);
         if (index == -1) return false;
         bool flag = _listContents.Remove(_listContents[index]);
+        int[] empty = {-1};
+        if (_listContents.Count < 7)
+            add(empty);
         scrollingList.Refresh();
         return flag;
     }
 
     public void add(int[] val){
         if (!currExist) return;
-        _listContents.Add(val);
+        int[] empty = {-1};
+        int loc = -1;
+        if (val[0] != -1)
+            loc = find(empty);
+        if (loc != -1) _listContents[loc] = val;
+        else _listContents.Add(val);
         scrollingList.Refresh();
     }
 
