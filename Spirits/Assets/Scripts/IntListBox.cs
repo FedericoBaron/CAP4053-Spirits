@@ -13,6 +13,7 @@ public class IntListBox : ListBox
     public Player_Combat player;
     public Control_List ControlList;
     public int[] vals = null;
+
     void Start()
     {
         inventory = GameObject.Find("GhostCount");
@@ -24,6 +25,7 @@ public class IntListBox : ListBox
 
     public void submitRecipe(){
         if (vals == null) return;
+        if (vals[0] < 0) return;
         int[] inv = player.capturedGhosts;
         bool flag = true;
         for (int i = 0; i < vals.Length; i++){
@@ -37,6 +39,8 @@ public class IntListBox : ListBox
         }
         player.totalMoney += player.submitRecipe;
         ControlList.remove(vals);
+        vals = null;
+        reset();
     }
 
     protected override void UpdateDisplayContent(object content)
@@ -44,6 +48,11 @@ public class IntListBox : ListBox
         reset();
 
         vals = (int[])(content);
+
+        if (vals[0] < 0){
+            return;
+        }
+
         int[] present = {0, 0, 0, 0, 0, 0};
         int cnt = 0;
         for (int i = 0; i < 6; i++){

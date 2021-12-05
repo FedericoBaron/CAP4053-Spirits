@@ -46,7 +46,7 @@ public class Player_Combat : MonoBehaviour
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
-
+		capturedGhosts = new int[] {500, 500, 500, 500, 500, 500};
 		Scene sceneCurr = SceneManager.GetActiveScene();
 		// current = true;
         // for (int i = 0; i < ControlList.badScenes.Length; i++){
@@ -60,6 +60,10 @@ public class Player_Combat : MonoBehaviour
 		selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
 		uiInventory = GameObject.Find("GhostCount");
 		counts = uiInventory.GetComponentsInChildren<Text>();
+		for (int i = 0; i < 6; i++){
+			counts[i].text = capturedGhosts[i].ToString();
+			Debug.Log(capturedGhosts[i].ToString() + " " + "asdfasf");
+		}
 		// }
 	}
 

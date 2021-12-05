@@ -339,12 +339,14 @@ MonoBehaviour:
   attackDamageShort: 40
   attackDamageLong: 100
   totalMoney: 0
+  submitRecipe: 5
   ghostsCaptured: 0
   recipesCompleted: 0
   attackRate: 2
   health: 0
   maxHealth: 100
   damageTakenCurrently: 0
+  capturedGhosts: 000000000000000000000000000000000000000000000000
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
   healthBar: {fileID: 0}
   selectIconPos: {fileID: 0}
@@ -367,6 +369,7 @@ MonoBehaviour:
   List: {fileID: 0}
   scrollingList: {fileID: 0}
   bankList: {fileID: 0}
+  _boxes: []
   generate: {fileID: 0}
   currExist: 1
   badScenes:
@@ -376,6 +379,16 @@ MonoBehaviour:
   - LevelSummary
   currentTime: 0
   lastFillValue: 0
+  GroceryList: {fileID: 0}
+  boxList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &4637161626130629680
 AudioSource:
   m_ObjectHideFlags: 0
