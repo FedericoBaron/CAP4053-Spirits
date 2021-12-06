@@ -9,7 +9,8 @@ public class Enemy_Projectile : MonoBehaviour
     public GameObject impactEffect;
     public Rigidbody2D rb;
     public int damage;
-
+    public GameObject objectThatFired = null;
+    public float maxTime = 60f; // seconds
     Vector3 dir;
     private void Start(){
 
@@ -22,6 +23,9 @@ public class Enemy_Projectile : MonoBehaviour
 
     private void Update(){
          transform.position += dir * speed * Time.deltaTime;
+         maxTime -= Time.deltaTime;
+         if (maxTime == 0)
+             Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other){        
@@ -30,8 +34,9 @@ public class Enemy_Projectile : MonoBehaviour
             obj.TakeDamage(damage);
         }
         if (other.tag != "Enemy"){
-            Debug.Log(other.tag);
+            Debug.Log(other.name);
             Destroy(gameObject);
+            objectThatFired.GetComponent<Enemy>().firingLongRange = false;
             if (impactEffect != null){
                Instantiate(impactEffect, transform.position, Quaternion.identity);
             }

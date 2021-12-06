@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Camera_Control : MonoBehaviour
 {
-    public float mapBoundX = 5.40f;
+    public float mapBoundMaxX = 5.40f;
+    public float mapBoundMinX = -12f;
     public float mapBoundMaxY = -1f;
     public float mapBoundMinY = -5.25f;
 
@@ -14,7 +15,7 @@ public class Camera_Control : MonoBehaviour
         if (GameObject.Find("Bartender") == null) return;
         Vector3 playerTracker = GameObject.Find("Bartender").transform.position;
 
-        if (Mathf.Abs(playerTracker.x) <= mapBoundX)
+        if (Mathf.Abs(playerTracker.x) <= mapBoundMaxX && Mathf.Abs(playerTracker.x) >= mapBoundMinX)
             this.transform.position = new Vector3(playerTracker.x, this.transform.position.y, -10);
         if (playerTracker.y <= mapBoundMaxY && playerTracker.y >= mapBoundMinY)
             this.transform.position = new Vector3(this.transform.position.x, playerTracker.y, -10);

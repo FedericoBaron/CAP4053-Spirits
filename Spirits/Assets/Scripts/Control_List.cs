@@ -28,7 +28,7 @@ public class Control_List : MonoBehaviour
     {
         Reset();
         populate();
-        testing();
+        //testing();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -52,6 +52,7 @@ public class Control_List : MonoBehaviour
     }
 
     void Reset(){
+        Scene sceneCurr = SceneManager.GetActiveScene();
         Player_Combat pc = GetComponent<Player_Combat>();
         pc.selectIconPos = GameObject.Find("Selector").GetComponent<RectTransform>();
         pc.selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
@@ -62,6 +63,7 @@ public class Control_List : MonoBehaviour
         bankList = List.GetComponent<IntListBank>();    
         bankList._listContents = _listContents;
         generate = GetComponent<RecipeGeneration>();
+        GetComponent<SpawnSettings>().setDifficulty(sceneCurr.name);
     }
 
     int[] generateRecipe(){
@@ -76,7 +78,7 @@ public class Control_List : MonoBehaviour
         return freq;
     }
 
- void populate(){
+    void populate(){
         add(new int[]{-1});
         add(new int[]{-1});
         add(new int[]{-1});
@@ -113,6 +115,8 @@ public class Control_List : MonoBehaviour
 
     void Update(){
         if (currExist){
+            if (_listContents.Count < 10)
+                add(generateRecipe());
             scrollingList.Refresh();
         }
     }

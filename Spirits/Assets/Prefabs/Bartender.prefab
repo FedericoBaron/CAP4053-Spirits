@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 2745602779427059926}
   - component: {fileID: 9223224740052035208}
   - component: {fileID: 7284058595102563334}
+  - component: {fileID: -8456337489037793036}
   m_Layer: 3
   m_Name: Bartender
   m_TagString: Untagged
@@ -339,12 +340,14 @@ MonoBehaviour:
   attackDamageShort: 40
   attackDamageLong: 100
   totalMoney: 0
+  submitRecipe: 5
   ghostsCaptured: 0
   recipesCompleted: 0
   attackRate: 2
   health: 0
   maxHealth: 100
   damageTakenCurrently: 0
+  capturedGhosts: 000000000000000000000000000000000000000000000000
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
   healthBar: {fileID: 0}
   selectIconPos: {fileID: 0}
@@ -781,3 +784,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8456337489037793036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663285223562782840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aae61c4194ebd348b6f2593e9bd1b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearedLevel: 000000000000000000000000

@@ -25,7 +25,11 @@ public class Enemy : MonoBehaviour
     public float attackRate = 2f;
     bool isMoving = false;
     bool isFainted = false;
+    public bool hasLongRange = false;
+    public bool firingLongRange = false;
     public bool animationCurrPlaying = false;
+    public GameObject projectile;
+    public GameObject firePosition;
     float nextAttackTime = 0f;
 
     public void HitBoxOn(){
@@ -178,6 +182,9 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
+    public float nextFireTime = 0f;
+    public float minWaitTime = 0.7f;
+
     void attackPlayer()
     {
         //Debug.Log(Vector3.Dot(transform.right, transform.position - player.position));
@@ -186,11 +193,23 @@ public class Enemy : MonoBehaviour
         //do whatever
             if (Time.time >= nextAttackTime)
             {
-                if (Vector2.Distance(transform.position, player.position) > attackDist) return;
-                animateAttack();
-                GetComponent<AudioSource>().Play();
-                // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
-                nextAttackTime = Time.time + 1f / attackRate;
+                if (Vector2.Distance(transform.position, player.position) <= attackDist){
+                    animateAttack();
+                    GetComponent<AudioSource>().Play();
+                    // player.GetComponent<Player_Combat>().TakeDamage(attackDamageShort);
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
+                else if (Vector2.Distance(transform.position, player.position) <= 7 * attackDist){
+                    if (!hasLongRange) return;
+                    if (firingLongRange) return;
+                    Debug.Log(nextFireTime);
+                    Debug.Log(Time.time);
+                    if ((nextFireTime > Time.time)) return; 
+                    nextFireTime = Time.time + minWaitTime;
+                    firingLongRange = true;
+                    GameObject val = Instantiate(projectile, firePosition.transform.position, firePosition.transform.rotation);
+                    val.GetComponent<Enemy_Projectile>().objectThatFired = this.gameObject;
+                }
             }
         } 
     }
