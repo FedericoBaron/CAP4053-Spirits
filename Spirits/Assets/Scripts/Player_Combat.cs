@@ -12,6 +12,7 @@ public class Player_Combat : MonoBehaviour
 	public bool currExist = true;
 	public static int winMoneyAmount = 1000;
 	public Transform attackPoint;
+	public static int moneyLost = 30;
 	public float attackRange = 10f;
 	public LayerMask enemyLayers;
 	public int attackDamageShort = 40;
@@ -212,12 +213,12 @@ public class Player_Combat : MonoBehaviour
             music.GetComponent<AudioSource>().Play();
 	}
 
-	// public void GameOverLevelSummary(){
-	// 	SceneManager.LoadScene("GameOverLevelSummary");
-	// 	GameObject music = GameObject.FindGameObjectWithTag("music");
-    //     if (music != null)
-    //         music.GetComponent<AudioSource>().Play();
-	// }
+	public void GameOverLevelSummary(){
+		SceneManager.LoadScene("GameOverLevelSummary");
+		GameObject music = GameObject.FindGameObjectWithTag("music");
+        if (music != null)
+            music.GetComponent<AudioSource>().Play();
+	}
 
     void Attack_Short()
 	{
@@ -257,18 +258,17 @@ public class Player_Combat : MonoBehaviour
 			// Destroy(gameObject);
 			Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
 			int recipesMade = Player_Combat.recipesMade;
-            int moneyMade = (ghostsCaptured * 30) + (recipesMade * 10);
-            totalMoney = totalMoney + moneyMade;
+            totalMoney = totalMoney - moneyLost;
 			if(totalMoney >= winMoneyAmount){
 				//Win level
 				// WinScene();
 			}
 			else{
-				LevelSummary();
-				// GameOverLevelSummary();
+				// LevelSummary();
+				GameOverLevelSummary();
 			}
-			// ghostsCaptured = 0;
-            // recipesMade = 0;
+			ghostsCaptured = 0;
+            recipesMade = 0;
 			spawn.set = false;
 			
 			Debug.Log("Player Lost");
