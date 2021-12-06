@@ -199,7 +199,12 @@ public class Player_Combat : MonoBehaviour
 	}
 
 	public void LevelSummary(){
-		SceneManager.LoadScene("LevelSummary");
+		// if (totalMoney + ghostsCaptured * 30 >= 10) {
+		// 	SceneManager.LoadScene("WinScreen");
+		// }
+		// else {
+			SceneManager.LoadScene("LevelSummary");
+		// }
 		GameObject music = GameObject.FindGameObjectWithTag("music");
         if (music != null)
             music.GetComponent<AudioSource>().Play();
