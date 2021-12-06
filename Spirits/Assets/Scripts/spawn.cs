@@ -8,7 +8,8 @@ public class spawn : MonoBehaviour
     public GameObject[] enemy;
     public int[] prob;
     public static int numberOfEnemies = 20;
-    public static int max = 20;
+    public static bool set = false;
+    public static int max = 5;
     public int total = 20;
     float randX;
     Vector2 whereToSpawn;
@@ -22,8 +23,9 @@ public class spawn : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (numberOfEnemies > 0 && Time.time > nextSpawn){
+    {   
+        int cnt = 0;
+        if (cnt < numberOfEnemies && Time.time > nextSpawn){
             nextSpawn = Time.time + spawnRate;
             //randX = Random.Range(-8.4f, 8.4f);
             GameObject chosen = null;
@@ -41,7 +43,8 @@ public class spawn : MonoBehaviour
             
             whereToSpawn = new Vector2 (transform.position.x, transform.position.y);
             Instantiate(chosen, whereToSpawn, Quaternion.identity);
-            numberOfEnemies--;
+            //numberOfEnemies--;
+            cnt++;
             total = numberOfEnemies;
         }   
     }

@@ -6,16 +6,16 @@ public class RecipeGeneration : MonoBehaviour
 {
     public int[] id = {1, 2, 3, 4, 5, 6};
 
-    public int[] probDefault = {1, 0, 0, 0, 0, 0};
+    public int[] probDefault = {20, 20, 20, 20, 20, 0};
 
-    public int[] proba1 = {90, 10, 0, 0, 0, 0}; 
-    public int[] proba2 = {80, 20, 0, 0, 0, 0};
+    public int[] proba1 = {50, 10, 15, 15, 10, 0}; 
+    public int[] proba2 = {30, 20, 15, 15, 10, 10};
 
-    public int[] probb1 = {15, 30, 50, 5, 0, 0};
-    public int[] probb2 = {5, 20, 60, 15, 0, 0};
+    public int[] probb1 = {30, 20, 15, 15, 10, 10};
+    public int[] probb2 = {30, 20, 15, 15, 10, 10};
 
-    public int[] probc1 = {0, 0, 20, 40, 30, 10};
-    public int[] probc2 = {0, 0, 5, 7, 28, 60};
+    public int[] probc1 = {30, 20, 15, 15, 10, 10};
+    public int[] probc2 = {30, 20, 15, 15, 10, 10};
 
     public int[] curr;
 
@@ -60,13 +60,14 @@ public class RecipeGeneration : MonoBehaviour
         int amt = 0;
 
         if (money >= 700)
-            amt = (int)Random.Range(5, 10);
+            amt = (int)Random.Range(10, 20);
         else if (money >= 500)
-            amt = (int)Random.Range(3, 7);
+            amt = (int)Random.Range(7, 15);
         else
-            amt = (int)Random.Range(1, 4);
+            amt = (int)Random.Range(5, 10);
 
         int[] list = new int[amt];
+        printArr(curr);
         for (int i = 0; i < amt; i++){
             float random = Random.Range(1, 100);
             int minR = 0;

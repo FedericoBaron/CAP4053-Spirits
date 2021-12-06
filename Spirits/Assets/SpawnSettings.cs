@@ -27,10 +27,12 @@ public class SpawnSettings : MonoBehaviour
 
     void spawnSetter(int scaling){
          spawn.numberOfEnemies = spawn.max * scaling;  
-         Debug.Log("Spawn");
-         Debug.Log(spawn.max);
-         Debug.Log(scaling);
-         Debug.Log(spawn.numberOfEnemies); 
+         spawn.set = true;
+         Player_Combat.defeated = 0;
+        //  Debug.Log("Spawn");
+        //  Debug.Log(spawn.max);
+        //  Debug.Log(scaling);
+        //  Debug.Log(spawn.numberOfEnemies); 
     }
 
     public void setDifficulty(string name){
@@ -42,12 +44,12 @@ public class SpawnSettings : MonoBehaviour
         }
         
         int curr = getLevel(name);
-        Debug.Log(curr);
-        Debug.Log(min);
+        // Debug.Log(curr);
+        // Debug.Log(min);
         if (curr == 3) spawnSetter(0);
         else{
-            Debug.Log(clearedLevel.Length);
-            Debug.Log(clearedLevel[curr]);
+            // Debug.Log(clearedLevel.Length);
+            // Debug.Log(clearedLevel[curr]);
             spawnSetter(clearedLevel[curr] - clearedLevel[min] + 1);
         } 
     }

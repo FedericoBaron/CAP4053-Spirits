@@ -23,6 +23,7 @@ public class Player_Combat : MonoBehaviour
 	public float attackRate = 2f;
 	public float health = 100;
 	public float maxHealth = 100;
+	public static int defeated = 0;
 	public int damageTakenCurrently = 0;
 	float nextAttackTime = 0f;
 	//public PlayerLost GameOverScreen = null;
@@ -82,11 +83,22 @@ public class Player_Combat : MonoBehaviour
         // }
 
 		if (!ControlList.currExist) return;
-
+		Debug.Log(defeated);
+		Debug.Log(spawn.set);
+		Debug.Log(totalMoney);
+		if (defeated >= spawn.numberOfEnemies && spawn.set && totalMoney >= 1000){
+			spawn.set = false;
+			// GameOver()
+		}
+		else if (defeated >= spawn.numberOfEnemies && spawn.set){
+			//LevelSummary();
+			spawn.set = false;
+		}
 		if (ControlList.currentTime <= 0){
 			LevelSummary();
+			spawn.set = false;
 		}
-
+		
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			if(ghostSelect == 0)

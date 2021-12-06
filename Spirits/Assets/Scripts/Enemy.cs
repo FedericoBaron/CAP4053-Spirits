@@ -245,11 +245,14 @@ public class Enemy : MonoBehaviour
             currentHealth = (int)(reviveProbability * (float)maxHealth);
             healthBar.UpdateHealthBar();
         }
-        else
+        else{
             Destroy(gameObject);
+            Player_Combat.defeated++;
+        }
     }
 
     public void Captured(){
+        Player_Combat.defeated++;
         Destroy(gameObject);
     }
 
