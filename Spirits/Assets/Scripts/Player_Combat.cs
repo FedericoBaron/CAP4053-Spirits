@@ -95,7 +95,7 @@ public class Player_Combat : MonoBehaviour
             totalMoney = totalMoney + moneyMade;
 			if(totalMoney >= winMoneyAmount){
 				//Win level
-				// WinScene();
+				GameWon();
 			}
 			else{
 				Scene sceneN = SceneManager.GetActiveScene();
@@ -220,6 +220,17 @@ public class Player_Combat : MonoBehaviour
             music.GetComponent<AudioSource>().Play();
 	}
 
+	public void GameWon(){
+		Scene sceneN = SceneManager.GetActiveScene();
+		if(sceneN.name == "GameWon"){
+			return;
+		}
+		SceneManager.LoadScene("GameWon");
+		GameObject music = GameObject.FindGameObjectWithTag("music");
+        if (music != null)
+            music.GetComponent<AudioSource>().Play();
+	}
+
     void Attack_Short()
 	{
 		// add animation 
@@ -259,14 +270,7 @@ public class Player_Combat : MonoBehaviour
 			Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
 			int recipesMade = Player_Combat.recipesMade;
             totalMoney = totalMoney - moneyLost;
-			if(totalMoney >= winMoneyAmount){
-				//Win level
-				// WinScene();
-			}
-			else{
-				// LevelSummary();
-				GameOverLevelSummary();
-			}
+			GameOverLevelSummary();
 			ghostsCaptured = 0;
             recipesMade = 0;
 			spawn.set = false;
