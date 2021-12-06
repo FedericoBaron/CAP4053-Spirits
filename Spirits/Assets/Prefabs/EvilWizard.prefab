@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 899092b9079404149b1165690232ef41, type: 2}
     - target: {fileID: 871445701835663793, guid: dbdee6480c4c0a34892a61d962b04ff1, type: 3}
       propertyPath: ghostType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 871445701835663793, guid: dbdee6480c4c0a34892a61d962b04ff1, type: 3}
       propertyPath: hasLongRange

@@ -8,7 +8,7 @@ public class spawn : MonoBehaviour
     public GameObject[] enemy;
     public int[] prob;
     public static int numberOfEnemies = 20;
-    public static int max = 0;
+    public static int max = 20;
     public int total = 20;
     float randX;
     Vector2 whereToSpawn;
@@ -17,7 +17,7 @@ public class spawn : MonoBehaviour
 
     void Start()
     {
-        
+        total = numberOfEnemies;
     }
 
     // Update is called once per frame

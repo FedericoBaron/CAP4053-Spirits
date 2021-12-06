@@ -26,7 +26,11 @@ public class SpawnSettings : MonoBehaviour
     }
 
     void spawnSetter(int scaling){
-         spawn.numberOfEnemies = spawn.max * scaling;   
+         spawn.numberOfEnemies = spawn.max * scaling;  
+         Debug.Log("Spawn");
+         Debug.Log(spawn.max);
+         Debug.Log(scaling);
+         Debug.Log(spawn.numberOfEnemies); 
     }
 
     public void setDifficulty(string name){
