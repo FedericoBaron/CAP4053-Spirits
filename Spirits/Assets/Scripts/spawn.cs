@@ -13,8 +13,9 @@ public class spawn : MonoBehaviour
     public int total = 20;
     float randX;
     Vector2 whereToSpawn;
-    public float spawnRate = 2f;
+    public static float spawnRate = 20f;
     float nextSpawn = 0.0f;
+    public static float ogSpawnRate = 20f;
 
     void Start()
     {
@@ -25,7 +26,7 @@ public class spawn : MonoBehaviour
     void Update()
     {   
         int cnt = 0;
-        if (cnt < numberOfEnemies && Time.time > nextSpawn){
+        if (Time.time > nextSpawn){
             nextSpawn = Time.time + spawnRate;
             //randX = Random.Range(-8.4f, 8.4f);
             GameObject chosen = null;

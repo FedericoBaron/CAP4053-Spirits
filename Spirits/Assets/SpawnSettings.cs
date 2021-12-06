@@ -26,9 +26,14 @@ public class SpawnSettings : MonoBehaviour
     }
 
     void spawnSetter(int scaling){
-         spawn.numberOfEnemies = spawn.max * scaling;  
-         spawn.set = true;
-         Player_Combat.defeated = 0;
+        if(scaling == 0){
+            spawn.spawnRate = 20;
+        }
+        else{
+            spawn.spawnRate = spawn.ogSpawnRate / scaling;
+        }
+        
+        Player_Combat.defeated = 0;
         //  Debug.Log("Spawn");
         //  Debug.Log(spawn.max);
         //  Debug.Log(scaling);

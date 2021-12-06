@@ -10,6 +10,7 @@ public class Player_Combat : MonoBehaviour
 	public static int recipesMade = 0;
 	public Animator playerAnim;
 	public bool currExist = true;
+	public static int winMoneyAmount = 1000;
 	public Transform attackPoint;
 	public float attackRange = 10f;
 	public LayerMask enemyLayers;
@@ -86,16 +87,22 @@ public class Player_Combat : MonoBehaviour
 		Debug.Log(defeated);
 		Debug.Log(spawn.set);
 		Debug.Log(totalMoney);
-		if (defeated >= spawn.numberOfEnemies && spawn.set && totalMoney >= 1000){
-			spawn.set = false;
-			// GameOver()
-		}
-		else if (defeated >= spawn.numberOfEnemies && spawn.set){
-			//LevelSummary();
-			spawn.set = false;
-		}
+
 		if (ControlList.currentTime <= 0){
-			// LevelSummary();
+			int recipesMade = Player_Combat.recipesMade;
+            int moneyMade = (ghostsCaptured * 30) + (recipesMade * 10);
+            totalMoney = totalMoney + moneyMade;
+			if(totalMoney >= winMoneyAmount){
+				//Win level
+				// WinScene();
+			}
+			else{
+				Scene sceneN = SceneManager.GetActiveScene();
+				GetComponent<SpawnSettings>().clearedLevel[GetComponent<SpawnSettings>().getLevel(sceneN.name)]++;
+				LevelSummary();
+			}
+			// ghostsCaptured = 0;
+            // recipesMade = 0;
 			spawn.set = false;
 		}
 		
@@ -199,16 +206,18 @@ public class Player_Combat : MonoBehaviour
 	}
 
 	public void LevelSummary(){
-		Scene sceneCurr = SceneManager.GetActiveScene();
-		Debug.Log("level summary called from " + sceneCurr.name);
-		if(sceneCurr.name == "LevelSummary"){
-			return;
-		}
 		SceneManager.LoadScene("LevelSummary");
 		GameObject music = GameObject.FindGameObjectWithTag("music");
         if (music != null)
             music.GetComponent<AudioSource>().Play();
 	}
+
+	// public void GameOverLevelSummary(){
+	// 	SceneManager.LoadScene("GameOverLevelSummary");
+	// 	GameObject music = GameObject.FindGameObjectWithTag("music");
+    //     if (music != null)
+    //         music.GetComponent<AudioSource>().Play();
+	// }
 
     void Attack_Short()
 	{
@@ -246,7 +255,22 @@ public class Player_Combat : MonoBehaviour
 		healthBar.UpdateHealthBar(amt);
 		if (health == 0){
 			// Destroy(gameObject);
-			LevelSummary();
+			Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
+			int recipesMade = Player_Combat.recipesMade;
+            int moneyMade = (ghostsCaptured * 30) + (recipesMade * 10);
+            totalMoney = totalMoney + moneyMade;
+			if(totalMoney >= winMoneyAmount){
+				//Win level
+				// WinScene();
+			}
+			else{
+				LevelSummary();
+				// GameOverLevelSummary();
+			}
+			// ghostsCaptured = 0;
+            // recipesMade = 0;
+			spawn.set = false;
+			
 			Debug.Log("Player Lost");
 		}
 	}

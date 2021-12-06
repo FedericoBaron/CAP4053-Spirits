@@ -26,7 +26,7 @@ public class LevelSummary : MonoBehaviour
             // Destroy(player);
             int recipesMade = Player_Combat.recipesMade;
             int moneyMade = (ghostsCaptured * 30) + (recipesMade * 10);
-            int totalMoney = player.GetComponent<Player_Combat>().totalMoney + moneyMade;
+            int totalMoney = player.GetComponent<Player_Combat>().totalMoney;
             Debug.Log("This is money made: " + moneyMade.ToString());
             // set total money
             // if (TotalMoney != null && Money != null && Recipes != null && Spirits != null){
@@ -36,7 +36,7 @@ public class LevelSummary : MonoBehaviour
                 Spirits.text = "Spirits Captured: " + ghostsCaptured.ToString();
             // }
             player.GetComponent<Player_Combat>().ghostsCaptured = 0;
-            player.GetComponent<Player_Combat>().totalMoney = totalMoney;
+            // player.GetComponent<Player_Combat>().totalMoney = totalMoney;
             Player_Combat.recipesMade = 0;
         }
     }
