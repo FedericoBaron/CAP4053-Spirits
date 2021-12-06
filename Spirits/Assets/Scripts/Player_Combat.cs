@@ -47,7 +47,7 @@ public class Player_Combat : MonoBehaviour
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
-		capturedGhosts = new int[] {50, 50, 50, 50, 50, 50};
+		capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 		Scene sceneCurr = SceneManager.GetActiveScene();
 		// current = true;
         // for (int i = 0; i < ControlList.badScenes.Length; i++){
