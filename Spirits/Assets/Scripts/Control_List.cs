@@ -27,7 +27,7 @@ public class Control_List : MonoBehaviour
     void Start()
     {
         Reset();
-        populate();
+        // populate();
         //testing();
     }
 
@@ -61,8 +61,10 @@ public class Control_List : MonoBehaviour
         pc.health = 100;
         List = GameObject.Find("GroceryList");
         scrollingList = List.GetComponent<CircularScrollingList>();
-        bankList = List.GetComponent<IntListBank>();    
+        bankList = List.GetComponent<IntListBank>(); 
+        _listContents = new List<int[]>();
         bankList._listContents = _listContents;
+        populate();
         generate = GetComponent<RecipeGeneration>();
         GetComponent<SpawnSettings>().setDifficulty(sceneCurr.name);
     }
@@ -116,7 +118,7 @@ public class Control_List : MonoBehaviour
 
     void Update(){
         if (currExist){
-            if (_listContents.Count < 10)
+            if (_listContents.Count <= 7)
                 add(generateRecipe());
             scrollingList.Refresh();
         }
