@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player_Combat : MonoBehaviour
 {
 	public Rigidbody2D playerBody;
+	public static int recipesMade = 0;
 	public Animator playerAnim;
 	public bool currExist = true;
 	public Transform attackPoint;
@@ -19,7 +20,6 @@ public class Player_Combat : MonoBehaviour
 	public int totalMoney = 0;
 	public int submitRecipe = 5;
 	public int ghostsCaptured = 0;
-	public int recipesCompleted = 0;
 	public float attackRate = 2f;
 	public float health = 100;
 	public float maxHealth = 100;
@@ -95,7 +95,7 @@ public class Player_Combat : MonoBehaviour
 			spawn.set = false;
 		}
 		if (ControlList.currentTime <= 0){
-			LevelSummary();
+			// LevelSummary();
 			spawn.set = false;
 		}
 		
@@ -199,6 +199,11 @@ public class Player_Combat : MonoBehaviour
 	}
 
 	public void LevelSummary(){
+		Scene sceneCurr = SceneManager.GetActiveScene();
+		Debug.Log("level summary called from " + sceneCurr.name);
+		if(sceneCurr.name == "LevelSummary"){
+			return;
+		}
 		SceneManager.LoadScene("LevelSummary");
 		GameObject music = GameObject.FindGameObjectWithTag("music");
         if (music != null)

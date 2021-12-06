@@ -37,10 +37,12 @@ public class IntListBox : ListBox
             inv[i] -= vals[i];
             playerInv[i].text = inv[i].ToString();
         }
-        player.totalMoney += player.submitRecipe;
+        // player.totalMoney += player.submitRecipe;
         ControlList.remove(vals);
         vals = null;
         reset();
+        Player_Combat.recipesMade++;
+        Debug.Log("recipe made: " + Player_Combat.recipesMade.ToString());
     }
 
     protected override void UpdateDisplayContent(object content)

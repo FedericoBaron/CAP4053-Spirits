@@ -614,7 +614,6 @@ GameObject:
   m_Component:
   - component: {fileID: 939526240}
   - component: {fileID: 939526241}
-  - component: {fileID: 939526242}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -657,22 +656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486e947e03f5646e98e7dcf647c6a1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &939526242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939526239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97cfc174baf844852983b1446179acd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Money: {fileID: 1256587744}
-  Spirits: {fileID: 0}
-  Recipes: {fileID: 0}
-  TotalMoney: {fileID: 0}
 --- !u!1 &980961654
 GameObject:
   m_ObjectHideFlags: 0
