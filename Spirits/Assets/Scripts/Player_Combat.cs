@@ -241,7 +241,7 @@ public class Player_Combat : MonoBehaviour
 		healthBar.UpdateHealthBar(amt);
 		if (health == 0){
 			// Destroy(gameObject);
-			GameOver();
+			LevelSummary();
 			Debug.Log("Player Lost");
 		}
 	}

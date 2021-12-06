@@ -1,16 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Mansion.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Forest.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/ApartmentWBarriers.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Scenes/TitleScreen.unity
   isLoaded: 1
   isActive: 1

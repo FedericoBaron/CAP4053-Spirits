@@ -377,6 +377,7 @@ MonoBehaviour:
   - TitleScreen
   - GameOver
   - LevelSummary
+  - GameOverScene
   currentTime: 0
   lastFillValue: 0
 --- !u!82 &4637161626130629680
