@@ -23,11 +23,13 @@ public class Player_Combat : MonoBehaviour
 	public int submitRecipe = 5;
 	public int ghostsCaptured = 0;
 	public float attackRate = 2f;
+	public float hitRate = 0.5f;
 	public float health = 100;
 	public float maxHealth = 100;
 	public static int defeated = 0;
 	public int damageTakenCurrently = 0;
 	float nextAttackTime = 0f;
+	float nextVulnerableTime = 0f;
 	//public PlayerLost GameOverScreen = null;
 	int ghostSelect = 0;
 	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
@@ -262,20 +264,26 @@ public class Player_Combat : MonoBehaviour
 
 
 	public void TakeDamage(int amt){
-		health = 0 > (health - amt) ? 0 : (health - amt);
-		damageTakenCurrently += amt;
-		healthBar.UpdateHealthBar(amt);
-		if (health == 0){
-			// Destroy(gameObject);
-			Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
-			int recipesMade = Player_Combat.recipesMade;
-            totalMoney = totalMoney - moneyLost;
-			GameOverLevelSummary();
-			ghostsCaptured = 0;
-            recipesMade = 0;
-			spawn.set = false;
+		if(Time.time >= nextVulnerableTime)
+		{
+			health = 0 > (health - amt) ? 0 : (health - amt);
+			damageTakenCurrently += amt;
+			healthBar.UpdateHealthBar(amt);
+			if (health == 0)
+			{
+				// Destroy(gameObject);
+				Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
+				int recipesMade = Player_Combat.recipesMade;
+            	totalMoney = totalMoney - moneyLost;
+				GameOverLevelSummary();
+				ghostsCaptured = 0;
+            	recipesMade = 0;
+				spawn.set = false;
 			
-			Debug.Log("Player Lost");
+				Debug.Log("Player Lost");
+			}
+
+			nextVulnerableTime = Time.time + 1f / hitRate;
 		}
 	}
 

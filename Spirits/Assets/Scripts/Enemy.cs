@@ -225,8 +225,8 @@ public class Enemy : MonoBehaviour
     }
 
     public IEnumerator StartFaintTimer(){
-        int minimum = 2;
-        int maximum = 5;
+        int minimum = 4;
+        int maximum = 7;
 
         float timeRemaining = Random.Range(minimum, maximum);
         
