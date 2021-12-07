@@ -44,7 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy:
-  - {fileID: 0}
-  prob: 
+  - {fileID: 4217812374826389428, guid: 5195655781caf3e479490051d76515a6, type: 3}
+  - {fileID: 827918344265492706, guid: 60d6fefcc153ad541b0bc80078f65546, type: 3}
+  - {fileID: 5115063285667146421, guid: ffbb2160cda282c44a186665bf85daf4, type: 3}
+  - {fileID: 2092639906683062230, guid: a4bb440c300b65f4482f26030cd52358, type: 3}
+  - {fileID: 3217162073024924491, guid: 54dfcccd5ff1d674d8ad02d6082995f7, type: 3}
+  - {fileID: 6173098997214930656, guid: 6e265b76ffd632041bb7ee65e7fdd1cc, type: 3}
+  prob: 050000002800000005000000050000000500000028000000
   total: 20
-  spawnRate: 10
