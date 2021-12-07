@@ -7,6 +7,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1685489240109863878, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bb8fbc1d99238da4fa53afce2d1ad032, type: 2}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Size.y
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 12.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -51,6 +71,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7219636496159477101, guid: 23ef75ee85276e14b973eda4d657740d, type: 3}
     - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_Color.b
       value: 0.30588236
