@@ -34,7 +34,7 @@ public class Player_Movement : MonoBehaviour
         else
             playerAnim.SetBool("Moving", false);
 
-        if(Input.GetKeyDown(KeyCode.X) && Time.time >= nextDashTime){
+        if(Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= nextDashTime){
             GetComponents<AudioSource>()[3].Play();
 			speed.x = speed.x * dashSpeed;
             speed.y = speed.y * dashSpeed;
