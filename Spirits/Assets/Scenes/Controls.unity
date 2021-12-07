@@ -435,7 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dash: X Key'
+  m_text: 'Dash: Shift Key'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dabca3e9253dfba41ba65ac8b89369a5, type: 2}
   m_sharedMaterial: {fileID: -6481096053511376217, guid: dabca3e9253dfba41ba65ac8b89369a5, type: 2}
