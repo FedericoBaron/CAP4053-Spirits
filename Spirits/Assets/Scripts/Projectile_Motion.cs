@@ -6,10 +6,11 @@ public class Projectile_Motion : MonoBehaviour
 {
     Rigidbody2D playerBody;
     Rigidbody2D bottle;
-
+    Player_Combat player;
+    public GameObject[] attackEffect;
     private float gravity = 9.81f;
     private float time = 1.5f;
-
+    public Vector2 mousePos;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Projectile_Motion : MonoBehaviour
         transform.parent = null;
 
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+        mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
         Vector2 playerPos = new Vector2(playerBody.position.x, playerBody.position.y);
 
         // Creates a vector based on the position of the player and cursor, then turns it into an angle
@@ -32,7 +33,23 @@ public class Projectile_Motion : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, 180 * Time.deltaTime);
-
         Destroy(gameObject, time);
     }
-}
+
+    void makeEffect(){
+        player = GameObject.Find("Bartender").GetComponent<Player_Combat>();
+        Debug.Log("x" + mousePos.ToString());
+
+        if (player.attackType != -1){
+            GameObject bottle = Instantiate(attackEffect[player.attackType], new Vector3(mousePos.x, mousePos.y, 0), Quaternion.identity);
+            bottle.transform.parent = player.gameObject.transform;
+        }
+    }
+
+    void OnDestroy(){
+        //Debug.Log("print destroyed this object");
+        if(!this.gameObject.scene.isLoaded) return;
+        makeEffect();
+    }
+
+}   

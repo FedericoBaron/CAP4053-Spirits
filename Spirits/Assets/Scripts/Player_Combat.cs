@@ -31,10 +31,10 @@ public class Player_Combat : MonoBehaviour
 	float nextAttackTime = 0f;
 	float nextVulnerableTime = 0f;
 	//public PlayerLost GameOverScreen = null;
-	int ghostSelect = 0;
+	int ghostSelect = -1;
 	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 	bool activeEffect = true;
-
+	public int attackType = -1;
 	public GameObject bottle;
 
 	public HealthBar healthBar;
@@ -101,7 +101,8 @@ public class Player_Combat : MonoBehaviour
 			}
 			else{
 				Scene sceneN = SceneManager.GetActiveScene();
-				GetComponent<SpawnSettings>().clearedLevel[GetComponent<SpawnSettings>().getLevel(sceneN.name)]++;
+				if (sceneN.name != "Tutorial")
+					GetComponent<SpawnSettings>().clearedLevel[GetComponent<SpawnSettings>().getLevel(sceneN.name)]++;
 				LevelSummary();
 			}
 			// ghostsCaptured = 0;
@@ -111,69 +112,94 @@ public class Player_Combat : MonoBehaviour
 		
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
-			if(ghostSelect == 0)
+			if(ghostSelect == 0){
 				activeEffect = !activeEffect;
+				attackType = -1;
+				ghostSelect = -1;
+			}
 			else
 			{
 				ghostSelect = 0;
+				attackType = 0;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			if(ghostSelect == 1)
+			if(ghostSelect == 1){
 				activeEffect = !activeEffect;
+				ghostSelect = -1;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 1;
+				attackType = 1;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha3))
 		{
-			if(ghostSelect == 2)
+			if(ghostSelect == 2){
 				activeEffect = !activeEffect;
+				attackType = -1;
+				ghostSelect = -1;
+			}
 			else
 			{
 				ghostSelect = 2;
+				attackType = 2;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha4))
 		{
-			if(ghostSelect == 3)
+			if(ghostSelect == 3){
 				activeEffect = !activeEffect;
+				attackType = -1;
+				ghostSelect = -1;
+			}
 			else
 			{
 				ghostSelect = 3;
+				attackType = 3;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha5))
 		{
-			if(ghostSelect == 4)
+			if(ghostSelect == 4){
 				activeEffect = !activeEffect;
+				attackType = -1;
+				ghostSelect = -1;
+			}
 			else
 			{
 				ghostSelect = 4;
+				attackType = 4;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha6))
 		{
-			if(ghostSelect == 5)
+			if(ghostSelect == 5){
 				activeEffect = !activeEffect;
+				attackType = -1;
+				ghostSelect = -1;
+			}
 			else
 			{
 				ghostSelect = 5;
+				attackType = 5;
 				activeEffect = true;
 			}
 		}
 		
 		// if(current)
-		selectIconPos.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
+		if (ghostSelect != -1)
+			selectIconPos.anchoredPosition = new Vector3(-205 + (35 * ghostSelect), 60, 0);
 
-		if(activeEffect)
+		if(ghostSelect != -1)
 			selectIconRGB.color = new Color(selectIconRGB.color.r, selectIconRGB.color.g, selectIconRGB.color.b, 200f);
 		else
 			selectIconRGB.color = new Color(selectIconRGB.color.r, selectIconRGB.color.g, selectIconRGB.color.b, 0f);
