@@ -7,9 +7,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Size.x
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Size.y
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,9 +75,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -392467112569019914, guid: 7b405c34d08d4fd4f97b7e0eb486bbcd, type: 3}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49019608
+      objectReference: {fileID: 0}
     - target: {fileID: 6112629890278859522, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_Name
-      value: BottleEffect
+      value: BottleEffectVariant1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}

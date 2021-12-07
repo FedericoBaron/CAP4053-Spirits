@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Projectile_Motion : MonoBehaviour
 {
@@ -11,11 +12,18 @@ public class Projectile_Motion : MonoBehaviour
     private float gravity = 9.81f;
     private float time = 1.5f;
     public Vector2 mousePos;
+
+    public GameObject uiInventory;
+	public Text[] counts;
+
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponentInParent(typeof(Rigidbody2D)) as Rigidbody2D;
         bottle = GetComponent<Rigidbody2D>();
+
+        uiInventory = GameObject.Find("GhostCount");
+		counts = uiInventory.GetComponentsInChildren<Text>();
 
         transform.parent = null;
 
@@ -40,9 +48,12 @@ public class Projectile_Motion : MonoBehaviour
         player = GameObject.Find("Bartender").GetComponent<Player_Combat>();
         Debug.Log("x" + mousePos.ToString());
 
-        if (player.attackType != -1){
+        if (player.attackType != -1 && int.Parse(counts[player.attackType].text) > 0){
             GameObject bottle = Instantiate(attackEffect[player.attackType], new Vector3(mousePos.x, mousePos.y, 0), Quaternion.identity);
-            bottle.transform.parent = player.gameObject.transform;
+            //bottle.transform.parent = player.gameObject.transform;
+
+		    player.capturedGhosts[player.ghostSelect]--;
+		    counts[player.ghostSelect].text = player.capturedGhosts[player.ghostSelect].ToString();
         }
     }
 

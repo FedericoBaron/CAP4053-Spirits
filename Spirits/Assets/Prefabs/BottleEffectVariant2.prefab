@@ -51,9 +51,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.09803922
+      objectReference: {fileID: 0}
     - target: {fileID: 6112629890278859522, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_Name
-      value: BottleEffect
+      value: BottleEffectVariant2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}

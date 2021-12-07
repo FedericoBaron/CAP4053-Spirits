@@ -31,7 +31,7 @@ public class Player_Combat : MonoBehaviour
 	float nextAttackTime = 0f;
 	float nextVulnerableTime = 0f;
 	//public PlayerLost GameOverScreen = null;
-	int ghostSelect = -1;
+	public int ghostSelect = -1;
 	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
 	bool activeEffect = true;
 	public int attackType = -1;
@@ -315,13 +315,6 @@ public class Player_Combat : MonoBehaviour
 
 	IEnumerator Attack_Long()
 	{
-		if(activeEffect)
-		{
-			if(capturedGhosts[ghostSelect] > 0)
-				capturedGhosts[ghostSelect]--;
-			counts[ghostSelect].text = capturedGhosts[ghostSelect].ToString();
-		}
-
 		Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePos = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
 

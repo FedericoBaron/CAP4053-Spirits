@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689126926107872505, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3164345196672165322, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -51,9 +59,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 226702753830753226, guid: 6da206c9882abd247843d72deeb13dab, type: 3}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711725585300728478, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.35686275
+      objectReference: {fileID: 0}
     - target: {fileID: 6112629890278859522, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
       propertyPath: m_Name
-      value: BottleEffect
+      value: BottleEffectVariant4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
