@@ -117,3 +117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b138aaf23ece93469e191463f9fb189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffect:
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  - {fileID: 2272192815489100277, guid: db6b079f3bb24df47b062c346ea865e1, type: 3}
+  mousePos: {x: 0, y: 0}

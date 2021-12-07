@@ -28,10 +28,11 @@ public class Player_Combat : MonoBehaviour
 	public static int defeated = 0;
 	public int damageTakenCurrently = 0;
 	float nextAttackTime = 0f;
+	public int attackType = -1;
 	//public PlayerLost GameOverScreen = null;
-	int ghostSelect = 0;
+	int ghostSelect = -1;
 	public int[] capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
-	bool activeEffect = true;
+	public bool activeEffect = false;
 
 	public GameObject bottle;
 
@@ -109,61 +110,79 @@ public class Player_Combat : MonoBehaviour
 		
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
-			if(ghostSelect == 0)
+			if(ghostSelect == 0){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 0;
+				attackType = 0;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			if(ghostSelect == 1)
+			if(ghostSelect == 1){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 1;
+				attackType = 1;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha3))
 		{
-			if(ghostSelect == 2)
+			if(ghostSelect == 2){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 2;
+				attackType = 2;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha4))
 		{
-			if(ghostSelect == 3)
+			if(ghostSelect == 3){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 3;
+				attackType = 3;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha5))
 		{
-			if(ghostSelect == 4)
+			if(ghostSelect == 4){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 4;
+				attackType = 4;
 				activeEffect = true;
 			}
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha6))
 		{
-			if(ghostSelect == 5)
+			if(ghostSelect == 5){
 				activeEffect = !activeEffect;
+				attackType = -1;
+			}
 			else
 			{
 				ghostSelect = 5;
+				attackType = 5;
 				activeEffect = true;
 			}
 		}
@@ -176,7 +195,7 @@ public class Player_Combat : MonoBehaviour
 		else
 			selectIconRGB.color = new Color(selectIconRGB.color.r, selectIconRGB.color.g, selectIconRGB.color.b, 0f);
 
-
+		
 		if(Time.time >= nextAttackTime){
 			// Short range attack
 			if(Input.GetMouseButtonDown(0)){
