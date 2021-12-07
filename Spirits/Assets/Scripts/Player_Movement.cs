@@ -35,6 +35,7 @@ public class Player_Movement : MonoBehaviour
             playerAnim.SetBool("Moving", false);
 
         if(Input.GetKeyDown(KeyCode.X) && Time.time >= nextDashTime){
+            GetComponents<AudioSource>()[3].Play();
 			speed.x = speed.x * dashSpeed;
             speed.y = speed.y * dashSpeed;
             isDashing = true;
