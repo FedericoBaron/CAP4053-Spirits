@@ -15,8 +15,8 @@ public class Player_Combat : MonoBehaviour
 	public static int moneyLost = 30;
 	public float attackRange = 10f;
 	public LayerMask enemyLayers;
-	public int attackDamageShort = 40;
-	public int attackDamageLong = 100;
+	public int attackDamageShort = 10;
+	public int attackDamageLong = 20;
 	// public int added = 30;
 	// public int money = 0;
 	public int totalMoney = 0;
@@ -51,7 +51,7 @@ public class Player_Combat : MonoBehaviour
 		health = maxHealth;
 		playerBody = GetComponent<Rigidbody2D>();
 		playerAnim = GetComponent<Animator>();
-		capturedGhosts = new int[] {0, 0, 0, 0, 0, 0};
+		capturedGhosts = new int[] {50, 50, 50, 50, 50, 50};
 		Scene sceneCurr = SceneManager.GetActiveScene();
 		// current = true;
         // for (int i = 0; i < ControlList.badScenes.Length; i++){
@@ -293,6 +293,7 @@ public class Player_Combat : MonoBehaviour
 		if(Time.time >= nextVulnerableTime)
 		{
 			health = 0 > (health - amt) ? 0 : (health - amt);
+			amt = health - amt >= 100 ? 0 : amt;
 			damageTakenCurrently += amt;
 			healthBar.UpdateHealthBar(amt);
 			if (health == 0)

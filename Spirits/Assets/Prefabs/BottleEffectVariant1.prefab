@@ -99,5 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottleEffectVariant1
       objectReference: {fileID: 0}
+    - target: {fileID: 7811076825703109435, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
+      propertyPath: attackType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268dbbd2adeec9d4ca2c050427d318fc, type: 3}
