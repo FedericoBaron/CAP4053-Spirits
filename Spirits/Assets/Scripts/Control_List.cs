@@ -15,6 +15,7 @@ public class Control_List : MonoBehaviour
     public RecipeGeneration generate;
     public bool currExist = true;
     public string[] badScenes;
+    public string[] disablePlayer;
     public float currentTime = 0;
     public float lastFillValue = 0;
     
@@ -33,6 +34,7 @@ public class Control_List : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        GameObject player = GameObject.Find("Bartender");
         Debug.Log("Re-Initializing", this);
         Scene sceneCurr = SceneManager.GetActiveScene();
         bool current = true;
@@ -47,7 +49,17 @@ public class Control_List : MonoBehaviour
             currExist = current;
             Reset();
         }
-
+        bool setDisable = false;
+        for (int i = 0; i < disablePlayer.Length; i++){
+            if (sceneCurr.name == disablePlayer[i]){
+                if (player != null){
+                    player.SetActive(false);
+                    setDisable = true;
+                }
+            }
+        }
+        if (!setDisable)
+            player.SetActive(true);
         currExist = current;
     }
 

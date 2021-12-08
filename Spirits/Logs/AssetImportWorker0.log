@@ -15,12 +15,12 @@ C:/Users/JayDoshi/Documents/GitHub/CAP4053-Spirits/Spirits
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56532
+54596
 Successfully changed project path to: C:/Users/JayDoshi/Documents/GitHub/CAP4053-Spirits/Spirits
 C:/Users/JayDoshi/Documents/GitHub/CAP4053-Spirits/Spirits
 Using Asset Import Pipeline V2.
 Default GameObject BitMask: UI already registered
-Refreshing native plugins compatible for Editor in 122.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 121.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -36,169 +36,169 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006102 seconds.
+Registered in 0.005853 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 101.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.440 seconds
+- Completed reload, in  2.371 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2440ms)
-		BeginReloadAssembly (138ms)
+	ReloadAssembly (2371ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (827ms)
-			LoadAssemblies (137ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (861ms)
+			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
+			SetupTypeCache (300ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (346ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (350ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
-				BeforeProcessingInitializeOnLoad (18ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (103ms)
+				BeforeProcessingInitializeOnLoad (19ms)
 				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016996 seconds.
+Registered in 0.016138 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000026611B9D010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661165DAE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file data-000002A186D433C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E956820 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000002A186B1D030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DD34C10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000002A18A17E230 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EAD4060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000002A1898DC320 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0B1A60 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000002A188EB7270 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DFAD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000002A189FC6010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB4CA30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000002A186B41C40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DF6D420 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002A188B19020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611B9D010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611729230 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002A186B41C40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E5EF530 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002A188B48E40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612084A50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file data-000002A18632CA20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266111D4020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002A188E20020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611202230 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002A188B48E40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611731240 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000002A1898DC320 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E5EF530 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000002A188B48E40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611598C40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8544E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000002A188924C20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2C9B20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000002A18640E030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611598C40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610CB6010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000002A188B6D020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E3CDA50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002A189045020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000002A188D7A010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611731240 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000002A18614E1F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661160A010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file data-000002A189045020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611DC0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000002A189099020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E1CD540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000002A1893FE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E13D100 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000002A186CC59F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661154C010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002A189099020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8544E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002A18957CE40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DEF5040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000002A186598020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E6AC050 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000002A1864BDEA0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E36F610 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file data-000002A18957CE40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E5F7540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000002A18957CE40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611731240 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000002A189536A20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8544E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000002A188F79630 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 102.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 122.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.393 seconds
+- Completed reload, in  2.530 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2395ms)
-		BeginReloadAssembly (311ms)
+	ReloadAssembly (2532ms)
+		BeginReloadAssembly (324ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1961ms)
-			LoadAssemblies (247ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (2070ms)
+			LoadAssemblies (274ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (622ms)
+			SetupTypeCache (708ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (751ms)
+			RebuildScriptCaches (114ms)
+			SetupLoadedEditorAssemblies (713ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (452ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (403ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Default GameObject BitMask: UI already registered
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2310 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 110.1 MB.
-System memory in use after: 110.3 MB.
+System memory in use before: 110.0 MB.
+System memory in use after: 110.2 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2768.
-Total: 5.549800 ms (FindLiveObjects: 0.484100 ms CreateObjectMapping: 0.204700 ms MarkObjects: 4.740300 ms  DeleteObjects: 0.118200 ms)
+Total: 5.592200 ms (FindLiveObjects: 0.338700 ms CreateObjectMapping: 0.238600 ms MarkObjects: 4.896000 ms  DeleteObjects: 0.116800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -213,134 +213,158 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Player_Combat.cs
-  artifactKey: Guid(6a4c69b5685a64c7dabca373e942569d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player_Combat.cs using Guid(6a4c69b5685a64c7dabca373e942569d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221a9aa89aa024b253ceffa2fe91ab4d') in 0.044583 seconds 
-  Import took 0.050547 seconds .
+  path: Assets/Prefabs/Bartender.prefab
+  artifactKey: Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bartender.prefab using Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3b1c38638056a29181780e75596808') in 0.240720 seconds 
+  Import took 0.248137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Scripts/Control_List.cs
+  artifactKey: Guid(b718e09fd77e6c1488c45d3ba52f73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Control_List.cs using Guid(b718e09fd77e6c1488c45d3ba52f73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ddf8c68d1293f93168cc8c4e4954ef1') in 0.024905 seconds 
+  Import took 0.031166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.226306 seconds.
+  path: Assets/Prefabs/Bartender.prefab
+  artifactKey: Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bartender.prefab using Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e65666f32c0275f74cea7880fa9d0af') in 0.073145 seconds 
+  Import took 0.081537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.730995 seconds.
+  path: Assets/Prefabs/Bartender.prefab
+  artifactKey: Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bartender.prefab using Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf19160da39175b9c6fb6aa198ac8c7e') in 0.077453 seconds 
+  Import took 0.086774 seconds .
 
 ========================================================================
 Received Prepare
 Default GameObject BitMask: UI already registered
 Registering precompiled user dll's ...
-Registered in 0.019838 seconds.
+Registered in 0.016764 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002660E7E6370 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file data-000002A186179010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E067490 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file data-000002A18D1F7590 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661594C020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000002A188CD2010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266156F7AB0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000002A18D5FD590 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266120A3570 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000002A18CFA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611961020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000002A18CCA9E50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2F4060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000002A18CFDC6A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0BD080 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000002A189711020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2F4060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002A186D3DA10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614AB8030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266110BB010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002A1898D1910 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2F4060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002A18CFDC6A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266123EBC30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file data-000002A15B814490 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002A188CD2010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612718020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002A18A55F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266120A3570 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000002A15B80D7F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2F4060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000002A186D3DA10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614AB8030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DF41010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000002A186119020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E36E6A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000002A18A570420 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614AB8030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000002A1861497E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000002A189205010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E2AFA80 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000002A186A34F70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002A18D2C9D50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000002A188A4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8B2A40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000002A18DBB2C30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file data-000002A189205010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266149CC010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000002A18D2C9D50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB4FC20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000002A1893FE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661208D460 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000002A18971A630 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E18FD30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002A188B6D020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610B5E030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002A18C81A640 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613C80030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000002A186424330 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661501F140 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000002A1864BDB00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E7E6370 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file data-000002A18983E010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612959620 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000002A1894A1220 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8B2A40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000002A15B80D7F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611B4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000002A1898D1910 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.188 seconds
+- Completed reload, in  2.381 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2188ms)
-		BeginReloadAssembly (247ms)
+	ReloadAssembly (2382ms)
+		BeginReloadAssembly (232ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1813ms)
-			LoadAssemblies (285ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2019ms)
+			LoadAssemblies (250ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (599ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (120ms)
-			SetupLoadedEditorAssemblies (579ms)
+			SetupTypeCache (689ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (709ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (118ms)
-				ProcessInitializeOnLoadAttributes (424ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (496ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (20ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.0 MB.
-System memory in use after: 108.2 MB.
+System memory in use before: 110.9 MB.
+System memory in use after: 111.1 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2771.
-Total: 7.181000 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.187200 ms MarkObjects: 6.612500 ms  DeleteObjects: 0.030900 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2778.
+Total: 6.993400 ms (FindLiveObjects: 0.337800 ms CreateObjectMapping: 0.181700 ms MarkObjects: 6.439500 ms  DeleteObjects: 0.031900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -354,613 +378,263 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 171.490234 seconds.
-  path: Assets/Scripts/Player_Combat.cs
-  artifactKey: Guid(6a4c69b5685a64c7dabca373e942569d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player_Combat.cs using Guid(6a4c69b5685a64c7dabca373e942569d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3460328bc43f16ee52d0e977624c64f') in 0.016483 seconds 
-  Import took 0.024328 seconds .
+Received Prepare
+Default GameObject BitMask: UI already registered
+Registering precompiled user dll's ...
+Registered in 0.016033 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A186594470 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A188CD2010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D8DBEB0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A189843430 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18BDFE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18CCA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18DD74020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D6D0670 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D274010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18677D030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A189843430 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A186119020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18678E440 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A1AE570090 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A186A34F70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18A1D4020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A188A4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A189843430 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18C1F6080 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18A1D4020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18CB14820 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D201CF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A188B6D020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18AC8E630 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18641EBD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A15B7F5350 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A186A34F70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A18D87D110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.297 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2298ms)
+		BeginReloadAssembly (257ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1907ms)
+			LoadAssemblies (258ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (669ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (680ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 111.0 MB.
+System memory in use after: 111.2 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 124.612783 seconds.
-  path: Assets/Scripts/PauseMenu.cs
-  artifactKey: Guid(62fdd273792713743bb777e94b328a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PauseMenu.cs using Guid(62fdd273792713743bb777e94b328a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4794deefaf5211cac1648f47a2d3a8') in 0.013081 seconds 
-  Import took 0.020793 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2781.
+Total: 5.319400 ms (FindLiveObjects: 0.363400 ms CreateObjectMapping: 0.174400 ms MarkObjects: 4.749800 ms  DeleteObjects: 0.029600 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011629 seconds.
-  path: Assets/Scripts/PauseMenu.cs
-  artifactKey: Guid(62fdd273792713743bb777e94b328a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PauseMenu.cs using Guid(62fdd273792713743bb777e94b328a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4794deefaf5211cac1648f47a2d3a8') in 0.014502 seconds 
-  Import took 0.023615 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.488441 seconds.
-  path: Assets/Scripts/Map.cs
-  artifactKey: Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map.cs using Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da997ba4075eb8dc0954ebe017faa3bb') in 0.010315 seconds 
-  Import took 0.016968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 156.760700 seconds.
-  path: Assets/Scripts/Map.cs
-  artifactKey: Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map.cs using Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7e74b418c9687396b888f0f014881d') in 0.017465 seconds 
-  Import took 0.031926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028463 seconds.
-  path: Assets/Scripts/Map.cs
-  artifactKey: Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map.cs using Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7e74b418c9687396b888f0f014881d') in 0.019457 seconds 
-  Import took 0.033027 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Default GameObject BitMask: UI already registered
 Registering precompiled user dll's ...
-Registered in 0.018647 seconds.
+Registered in 0.017041 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EAF9270 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file data-000002A186596D10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000002A18D2327F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614FA2E00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000002A18D5E8540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614314830 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000002A18D7966B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613C80030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000002A18D879FA0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615B90010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661561F710 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000002A18CCA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266151830A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002A18BD22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266110BB010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615B90010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002663642B7E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file data-000002A18D6CE450 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002A18D274010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612718020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002A189F72020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614314830 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000002A1898433D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266151830A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266113DC020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000002A18DD7C030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612788BE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000002A186B49050 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614026E70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000002A1AE570090 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000002A186A34F70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002A18D3534A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000002A188A4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8B2A40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000002A18D7966B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614026E70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file data-000002A186B15020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000002A18D3534A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615639E20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000002A1893FE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E9AA070 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000002A1862BC270 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610CB6010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002A18BF0AE80 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612AB3020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613C80030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000002A18D432FB0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E994420 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000002A18DC98FD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610BE4010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file data-000002A1AE59DCA0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614054A80 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E8B2A40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000002A18D87D110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614832010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000002A1866BD010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.056 seconds
+- Completed reload, in  2.248 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2057ms)
-		BeginReloadAssembly (237ms)
+	ReloadAssembly (2248ms)
+		BeginReloadAssembly (223ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (61ms)
-		EndReloadAssembly (1697ms)
-			LoadAssemblies (241ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1906ms)
+			LoadAssemblies (252ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (579ms)
-			ReleaseScriptCaches (1ms)
+			SetupTypeCache (743ms)
+			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (617ms)
+			SetupLoadedEditorAssemblies (593ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (450ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (419ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (22ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.0 MB.
-System memory in use after: 108.2 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2774.
-Total: 6.188500 ms (FindLiveObjects: 0.803100 ms CreateObjectMapping: 0.514600 ms MarkObjects: 4.830600 ms  DeleteObjects: 0.037900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 48.567690 seconds.
-  path: Assets/Scripts/Map.cs
-  artifactKey: Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map.cs using Guid(f507e27886a744ee29105dc19f218ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e214e124ad3e3c83a2640c39dc3b137') in 0.013792 seconds 
-  Import took 0.020325 seconds .
-
-========================================================================
-Received Prepare
-Default GameObject BitMask: UI already registered
-Registering precompiled user dll's ...
-Registered in 0.015766 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000266150ED030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661583AF10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661155DF00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266155FC8B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615718540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661172F830 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615B90010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114DD6F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611B9D010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266110BB010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615B90010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002663643C8E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E18FD30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613D5A890 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615B90010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661202D030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266120E9020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661172F830 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615AC4010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661411E230 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611266020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266365A70E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614341040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611B4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E214050 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611911B50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142BE010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612959620 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661555CDE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611B4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.295 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2296ms)
-		BeginReloadAssembly (225ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1934ms)
-			LoadAssemblies (250ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (694ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (91ms)
-			SetupLoadedEditorAssemblies (654ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (464ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.0 MB.
-System memory in use after: 108.3 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2777.
-Total: 5.269100 ms (FindLiveObjects: 0.328500 ms CreateObjectMapping: 0.180800 ms MarkObjects: 4.726600 ms  DeleteObjects: 0.031000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Default GameObject BitMask: UI already registered
-Registering precompiled user dll's ...
-Registered in 0.014456 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266125D1DE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661155DF00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613D7A540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615718540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266123A6040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142D5020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615727CC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114C6030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614F34380 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142D5020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002663643FC10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E18FD30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636869060 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614307020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614FE9010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266123A6040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E4A8B20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FE2E10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0C60C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611266020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615752DA0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613AF0080 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610FD2030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266123A6040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114DAB50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142BDEF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DFD1540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142D5020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.083 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2084ms)
-		BeginReloadAssembly (251ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1704ms)
-			LoadAssemblies (244ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (595ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (85ms)
-			SetupLoadedEditorAssemblies (589ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (433ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.1 MB.
-System memory in use after: 108.3 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2780.
-Total: 5.823000 ms (FindLiveObjects: 0.893400 ms CreateObjectMapping: 0.236200 ms MarkObjects: 4.658100 ms  DeleteObjects: 0.030800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 143.174483 seconds.
-  path: Assets/Prefabs/Bartender.prefab
-  artifactKey: Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Bartender.prefab using Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1285eeaf5c277bed55c882f65b0377e3') in 0.213354 seconds 
-  Import took 0.222941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.283109 seconds.
-  path: Assets/Scenes/IntroSequence.unity
-  artifactKey: Guid(cffa940d5e6093e409908e283f1769d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroSequence.unity using Guid(cffa940d5e6093e409908e283f1769d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5605030ba78ae5ea2be4b59b1afe71c6') in 0.010543 seconds 
-  Import took 0.018196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.089688 seconds.
-  path: Assets/Prefabs/Bartender.prefab
-  artifactKey: Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Bartender.prefab using Guid(f6125eeed00522644a302c6c1a52ccc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7a728824bd9660913598281e7ff6f0') in 0.067010 seconds 
-  Import took 0.076394 seconds .
-
-========================================================================
-Received Prepare
-Default GameObject BitMask: UI already registered
-Registering precompiled user dll's ...
-Registered in 0.015049 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000266142BCF70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266125CE0F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614FA1B90 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615718540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266367F5010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661555FCC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0BD080 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114C6030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266158AEBF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614006020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636435170 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612718020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661131D4B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114C6030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661109B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612ABCE50 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266159F7C70 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E3B7E30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E4A8B20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611047020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E376B40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611266020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636B165A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613D8CD40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266158AEBF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266367F5010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0DF090 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266124B7020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614F3C390 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611CAD020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.391 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2392ms)
-		BeginReloadAssembly (242ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (2017ms)
-			LoadAssemblies (247ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (735ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (98ms)
-			SetupLoadedEditorAssemblies (662ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (138ms)
-				ProcessInitializeOnLoadAttributes (479ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 111.0 MB.
 System memory in use after: 111.2 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2790.
-Total: 6.945200 ms (FindLiveObjects: 0.539300 ms CreateObjectMapping: 0.242100 ms MarkObjects: 6.128100 ms  DeleteObjects: 0.032900 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2784.
+Total: 6.293900 ms (FindLiveObjects: 0.331700 ms CreateObjectMapping: 0.172900 ms MarkObjects: 5.742800 ms  DeleteObjects: 0.044200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -977,125 +651,125 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Default GameObject BitMask: UI already registered
 Registering precompiled user dll's ...
-Registered in 0.015900 seconds.
+Registered in 0.016276 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000026615607590 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266125D11B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file data-000002A18A7DCEF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000002A188D36020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614F46170 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000002A18D65B010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615718540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000002A18CFE64D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E539C60 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000002A188EB6050 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661555FCC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615727CC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000002A18CCA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266159BC020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002A1893CE010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142AEBD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661555FCC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266364273A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file data-000002A18D6D1780 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002A18D274010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612718020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002A189F72020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612878470 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000002A18CFE64D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266159BC020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000002A18D5F3CE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266114CE040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000002A18DD7C030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266141833F0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000002A18D704810 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614FA1030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000002A188D36020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB00900 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000002A188D0DC40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E3B7E30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002A189FC6010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000002A188A4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E4A8B20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000002A18CFE64D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file data-000002A188D36020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E376B40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000002A18D3534A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611266020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000002A1893FE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636B165A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000002A186325AD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266159FDFD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002A1AEA1EB20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266142AEBD0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002A188CF8220 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E539C60 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000002A18A44FF00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0DEB20 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000002A18DC98890 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661202D030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file data-000002A18BF05010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026614F3C390 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000002A18D8CE960 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661555FCC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000002A18D8B0410 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.356 seconds
+- Completed reload, in  2.299 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2357ms)
-		BeginReloadAssembly (235ms)
+	ReloadAssembly (2299ms)
+		BeginReloadAssembly (248ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (19ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1978ms)
-			LoadAssemblies (252ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1871ms)
+			LoadAssemblies (257ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (707ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (95ms)
-			SetupLoadedEditorAssemblies (642ms)
+			SetupTypeCache (623ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (695ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (477ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (489ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 111.1 MB.
-System memory in use after: 111.3 MB.
+System memory in use before: 111.0 MB.
+System memory in use after: 111.2 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2793.
-Total: 6.217500 ms (FindLiveObjects: 0.347200 ms CreateObjectMapping: 0.176600 ms MarkObjects: 5.661400 ms  DeleteObjects: 0.030400 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2787.
+Total: 6.273300 ms (FindLiveObjects: 0.365200 ms CreateObjectMapping: 0.222800 ms MarkObjects: 5.651600 ms  DeleteObjects: 0.031100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1112,125 +786,125 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Default GameObject BitMask: UI already registered
 Registering precompiled user dll's ...
-Registered in 0.014720 seconds.
+Registered in 0.059486 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000266110A3030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
+Symbol file data-000002A18D76BB90 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026610FDACC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+Symbol file data-000002A18D6FEAF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file data-000002A188E20020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002661233D550 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file data-000002A186149F90 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615569AF0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000002A18CFA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266365991C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file data-000002A18A1F3040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file data-000002A18668B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615727CC0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file data-000002A18CCA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PsdPlugin.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266368AB020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002A1893CE010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002A18668B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002A18668B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636430D30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
+Symbol file data-000002A18D6DE440 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\PackageToolsEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612A78040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002A18D274010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026612718020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-000002A189F72020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002663657D8E0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file data-000002A188B8A4B0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266368AB020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-000002A18D5F3CE0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026636B03040 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file data-000002A18DD7C030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266365991C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file data-000002A18BD98030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611228020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-000002A188E20020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266147CE020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-000002A188D0DC40 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E3B7E30 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002A18D50A030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611C4E020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file data-000002A188A4F010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DFD1540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file data-000002A18CFA0020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660EB22010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
+Symbol file data-000002A186B15020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProject.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266156EC530 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file data-000002A18D3534A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026611266020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file data-000002A1893FE030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266157548D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file data-000002A18A65F730 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613AF0080 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002A18A670030 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002A18668B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266365991C0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file data-000002A18A44FF00 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660E0DF7D0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file data-000002A188C7C9A0 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000266149DE020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
+Symbol file data-000002A18D8B8420 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026615766F10 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file data-000002A18D6B9110 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002660DFD1540 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file data-000002A18D8CE960 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000026613FB3010 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file data-000002A18668B020 doesn't match image C:\Users\JayDoshi\Documents\GitHub\CAP4053-Spirits\Spirits\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.083 seconds
+- Completed reload, in  2.071 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2084ms)
-		BeginReloadAssembly (231ms)
+	ReloadAssembly (2072ms)
+		BeginReloadAssembly (221ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1729ms)
-			LoadAssemblies (232ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1732ms)
+			LoadAssemblies (242ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (594ms)
+			SetupTypeCache (563ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (607ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (626ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (429ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (446ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2283 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 111.1 MB.
-System memory in use after: 111.3 MB.
+System memory in use before: 110.9 MB.
+System memory in use after: 111.1 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2796.
-Total: 6.002700 ms (FindLiveObjects: 0.350700 ms CreateObjectMapping: 0.178400 ms MarkObjects: 5.432400 ms  DeleteObjects: 0.039200 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2790.
+Total: 5.864000 ms (FindLiveObjects: 0.350600 ms CreateObjectMapping: 0.161900 ms MarkObjects: 5.293700 ms  DeleteObjects: 0.055200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
