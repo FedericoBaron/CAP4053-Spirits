@@ -250,10 +250,10 @@ public class Player_Combat : MonoBehaviour
 
 	public void GameWon(){
 		Scene sceneN = SceneManager.GetActiveScene();
-		if(sceneN.name == "GameWon"){
+		if(sceneN.name == "OutroSequence"){
 			return;
 		}
-		SceneManager.LoadScene("GameWon");
+		SceneManager.LoadScene("OutroSequence");
 		GameObject music = GameObject.FindGameObjectWithTag("music");
         if (music != null)
             music.GetComponent<AudioSource>().Play();
