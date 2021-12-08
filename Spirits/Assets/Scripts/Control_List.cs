@@ -58,9 +58,9 @@ public class Control_List : MonoBehaviour
         pc.selectIconRGB = GameObject.Find("Selector").GetComponent<Image>();
 		pc.uiInventory = GameObject.Find("GhostCount");
 		pc.counts = pc.uiInventory.GetComponentsInChildren<Text>();
-        //pc.capturedGhosts = new int[6];
+        pc.capturedGhosts = new int[6];
         for (int i = 0; i < 6; i++){
-            //pc.capturedGhosts[i] = 0;
+            pc.capturedGhosts[i] = 0;
             pc.counts[i].text = pc.capturedGhosts[i].ToString();
         }
         pc.health = 100;
