@@ -23,7 +23,7 @@ public class Player_Combat : MonoBehaviour
 	public int submitRecipe = 5;
 	public int ghostsCaptured = 0;
 	public float attackRate = 2f;
-	public float hitRate = 0.5f;
+	public float hitRate = 100f;
 	public float health = 100;
 	public float maxHealth = 100;
 	public static int defeated = 0;

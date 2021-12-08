@@ -60,11 +60,11 @@ public class RecipeGeneration : MonoBehaviour
         int amt = 0;
 
         if (money >= 700)
-            amt = (int)Random.Range(10, 20);
+            amt = (int)Random.Range(3, 6);
         else if (money >= 500)
-            amt = (int)Random.Range(7, 15);
+            amt = (int)Random.Range(3, 5);
         else
-            amt = (int)Random.Range(5, 10);
+            amt = (int)Random.Range(2, 4);
 
         int[] list = new int[amt];
         printArr(curr);

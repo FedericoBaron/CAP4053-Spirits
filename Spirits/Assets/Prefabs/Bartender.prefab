@@ -344,7 +344,7 @@ MonoBehaviour:
   submitRecipe: 5
   ghostsCaptured: 0
   attackRate: 2
-  hitRate: 0.5
+  hitRate: 6
   health: 0
   maxHealth: 100
   damageTakenCurrently: 0
