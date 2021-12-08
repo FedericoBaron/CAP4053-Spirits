@@ -14,14 +14,15 @@ public class SpawnPlayerPos : MonoBehaviour
     void Awake()
     {
         GameObject player = GameObject.Find("Bartender");
+        Vector3 pos = transform.position;
         Debug.Log(player);
         if (player == null){
-            Vector2 whereToSpawn = new Vector2(x, y);
+            Vector2 whereToSpawn = new Vector2(pos.x, pos.y);
             player = Instantiate(currPlayer, whereToSpawn, Quaternion.identity);
             player.name = "Bartender";
             Debug.Log(player);
         }
-        player.transform.position = new Vector3(x, y, z);   
+        player.transform.position = new Vector3(pos.x, pos.y, 0);   
         Debug.Log(player.transform.position.x + " " + player.transform.position.y + " " + player.transform.position.z);
     }
 }

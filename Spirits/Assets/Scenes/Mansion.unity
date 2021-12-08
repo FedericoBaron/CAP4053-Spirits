@@ -504,7 +504,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1070530590}
   - component: {fileID: 1070530589}
-  - component: {fileID: 1070530588}
   - component: {fileID: 1070530591}
   - component: {fileID: 1070530592}
   - component: {fileID: 1070530593}
@@ -516,22 +515,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1070530588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070530587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 330
-  y: 174
-  z: -4
-  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!212 &1070530589
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -770,6 +753,7 @@ GameObject:
   - component: {fileID: 1265306884}
   - component: {fileID: 1265306883}
   - component: {fileID: 1265306886}
+  - component: {fileID: 1265306887}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -858,6 +842,22 @@ MonoBehaviour:
   mapBoundMinX: 324.3
   mapBoundMaxY: 184.5
   mapBoundMinY: 177.5
+--- !u!114 &1265306887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265306882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  z: 0
+  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1001 &1637958348
 PrefabInstance:
   m_ObjectHideFlags: 0
