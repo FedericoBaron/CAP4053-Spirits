@@ -538,7 +538,6 @@ GameObject:
   - component: {fileID: 1480332205}
   - component: {fileID: 1480332204}
   - component: {fileID: 1480332207}
-  - component: {fileID: 1480332208}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -627,22 +626,6 @@ MonoBehaviour:
   mapBoundMinX: -11
   mapBoundMaxY: 5.6
   mapBoundMinY: -5.7
---- !u!114 &1480332208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480332203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
-  z: 0
-  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1001 &1526884862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +891,7 @@ GameObject:
   - component: {fileID: 2070874773}
   - component: {fileID: 2070874777}
   - component: {fileID: 2070874776}
+  - component: {fileID: 2070874774}
   m_Layer: 0
   m_Name: Forest
   m_TagString: Untagged
@@ -1032,6 +1016,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 28.158426, y: 0.19751644}
   m_EdgeRadius: 0
+--- !u!114 &2070874774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070874769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: -1
+  z: 0
+  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!61 &2070874776
 BoxCollider2D:
   m_ObjectHideFlags: 0

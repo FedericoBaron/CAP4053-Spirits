@@ -84,6 +84,7 @@ public class Control_List : MonoBehaviour
         populate();
         generate = GetComponent<RecipeGeneration>();
         GetComponent<SpawnSettings>().setDifficulty(sceneCurr.name);
+
     }
 
     int[] generateRecipe(){

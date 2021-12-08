@@ -240,7 +240,6 @@ GameObject:
   - component: {fileID: 777477062}
   - component: {fileID: 777477061}
   - component: {fileID: 777477064}
-  - component: {fileID: 777477065}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -329,22 +328,6 @@ MonoBehaviour:
   mapBoundMinX: -14.8
   mapBoundMaxY: 7.9
   mapBoundMinY: -7.7
---- !u!114 &777477065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777477060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
-  z: 0
-  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1 &802870059
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +792,7 @@ GameObject:
   - component: {fileID: 1643918617}
   - component: {fileID: 1643918616}
   - component: {fileID: 1643918615}
+  - component: {fileID: 1643918619}
   m_Layer: 0
   m_Name: Apartment
   m_TagString: Untagged
@@ -1092,6 +1076,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 28.76384, y: 7.431451}
   m_EdgeRadius: 0
+--- !u!114 &1643918619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643918608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0.1
+  y: -1.7
+  z: 0
+  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1 &1769171287
 GameObject:
   m_ObjectHideFlags: 0

@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 1546085049}
   - component: {fileID: 1546085051}
   - component: {fileID: 1546085050}
+  - component: {fileID: 1546085052}
   m_Layer: 0
   m_Name: Cellar Map
   m_TagString: Untagged
@@ -831,6 +832,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2189369, y: 13.09355}
   m_EdgeRadius: 0
+--- !u!114 &1546085052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546085048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: -0.2
+  y: -0.7
+  z: 0
+  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1001 &1549833839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,7 +986,6 @@ GameObject:
   - component: {fileID: 1950893961}
   - component: {fileID: 1950893960}
   - component: {fileID: 1950893963}
-  - component: {fileID: 1950893964}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1058,22 +1074,6 @@ MonoBehaviour:
   mapBoundMinX: -9.54
   mapBoundMaxY: 5.1
   mapBoundMinY: -5.3
---- !u!114 &1950893964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950893959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a8e04637ca261342b76f14a8b2806af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
-  z: 0
-  currPlayer: {fileID: 3663285223562782840, guid: f6125eeed00522644a302c6c1a52ccc6, type: 3}
 --- !u!1 &1993492757
 GameObject:
   m_ObjectHideFlags: 0
