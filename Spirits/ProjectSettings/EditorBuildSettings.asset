@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Controls.unity
     guid: 0d71af7bdb82f4a8aae88976a74d8001
   - enabled: 1
+    path: Assets/Scenes/IntroSequence.unity
+    guid: cffa940d5e6093e409908e283f1769d0
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 47c54dbe3f970384da1a839d96e04fab
   - enabled: 1
