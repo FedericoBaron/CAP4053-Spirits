@@ -224,6 +224,58 @@ public class Enemy : MonoBehaviour
         StartCoroutine(StartFaintTimer());
     }
 
+    // Effect Functions:
+    // reverse
+    public void LowerAttack(float time){
+        StartCoroutine(LowerAttackTimer(time));
+    }
+
+    public IEnumerator LowerAttackTimer(float time){
+        HitBoxEnemyAttack hitbox = this.gameObject.transform.GetChild(1).GetComponent<HitBoxEnemyAttack>();
+        if (hitbox != null){
+            hitbox.attackDamageShort = 2; 
+            Debug.Log("hitbox" + hitbox.attackDamageShort.ToString());
+            yield return new WaitForSeconds(time);
+            hitbox.attackDamageShort = 5;
+            Debug.Log("hitbox" + hitbox.attackDamageShort.ToString());
+        }
+    }
+
+    public void takeDamageOverTime(int amt, float time){
+        StartCoroutine(takeDamageOverTimeTimer(amt, time));
+    }
+
+    public IEnumerator takeDamageOverTimeTimer(int amt, float time){
+        int lose = (int)(amt / time);
+        float timeRemaining = time;
+        
+        //GetComponent<Animator>().enabled = false;
+        while(timeRemaining > 0){
+           // Debug.Log("we at: " + timeRemaining);
+            if (this != null)
+                TakeDamage(lose);
+            yield return new WaitForSeconds(1.0f);
+            timeRemaining--;
+        }
+    }
+
+    public void giveLife(float time){
+        StartCoroutine(giveLifeTimer(time));
+    }
+
+    public IEnumerator giveLifeTimer(float time){
+        float timeRemaining = time;
+        while(timeRemaining > 0){
+            if (player != null)
+                player.gameObject.GetComponent<Player_Combat>().TakeDamage(-2);
+            if (this != null)
+                TakeDamage(2);
+            yield return new WaitForSeconds(1.0f);
+            timeRemaining--;
+        }
+    }
+
+
     public IEnumerator StartFaintTimer(){
         int minimum = 4;
         int maximum = 7;

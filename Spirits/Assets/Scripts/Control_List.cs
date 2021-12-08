@@ -59,6 +59,9 @@ public class Control_List : MonoBehaviour
 		pc.uiInventory = GameObject.Find("GhostCount");
 		pc.counts = pc.uiInventory.GetComponentsInChildren<Text>();
         pc.health = 100;
+        for (int i = 0; i < 6; i++){
+            pc.counts[i].text = pc.capturedGhosts[i].ToString();
+        }
         List = GameObject.Find("GroceryList");
         scrollingList = List.GetComponent<CircularScrollingList>();
         bankList = List.GetComponent<IntListBank>(); 

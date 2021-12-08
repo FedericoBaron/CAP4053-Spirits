@@ -13,12 +13,12 @@ public class Player_Movement : MonoBehaviour
     readonly int dashSpeed = 4;
     readonly float dashLen = 0.2f;
     float nextDashTime = 0f;
-
+    public Vector2 origSpeed;
     void Start()
     {
         speed = new Vector2(8, 6);
         isDashing = false;
-
+        origSpeed = new Vector2(8, 6);
         playerAnim = GetComponent<Animator>();
     }
 
@@ -55,4 +55,15 @@ public class Player_Movement : MonoBehaviour
 
         transform.Translate(movement);
     }
+
+    public void SpeedUp(float time){
+		StartCoroutine(SpeedUpTimer(time));
+	}
+
+	public IEnumerator SpeedUpTimer(float time){
+        Vector2 prev = new Vector2(speed.x, speed.y);
+        speed = new Vector2(origSpeed.x * 2, origSpeed.y * 2);
+        yield return new WaitForSeconds(time);
+        speed = prev;
+	}
 }

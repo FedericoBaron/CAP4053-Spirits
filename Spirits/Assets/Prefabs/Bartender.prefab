@@ -305,6 +305,7 @@ MonoBehaviour:
   playerAnim: {fileID: 0}
   speed: {x: 8, y: 6}
   isDashing: 0
+  origSpeed: {x: 0, y: 0}
 --- !u!114 &3663285223562782784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,16 +338,19 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  attackDamageShort: 40
-  attackDamageLong: 100
+  attackDamageShort: 30
+  attackDamageLong: 40
   totalMoney: 0
   submitRecipe: 5
   ghostsCaptured: 0
   attackRate: 2
+  hitRate: 0.5
   health: 0
   maxHealth: 100
   damageTakenCurrently: 0
+  ghostSelect: -1
   capturedGhosts: 000000000000000000000000000000000000000000000000
+  attackType: -1
   bottle: {fileID: 4555158646149743969, guid: 123d3805fd61e724bbd0fca19cf5a08e, type: 3}
   healthBar: {fileID: 0}
   selectIconPos: {fileID: 0}
