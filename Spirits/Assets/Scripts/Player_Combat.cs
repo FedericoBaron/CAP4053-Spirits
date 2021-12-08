@@ -10,7 +10,7 @@ public class Player_Combat : MonoBehaviour
 	public static int recipesMade = 0;
 	public Animator playerAnim;
 	public bool currExist = true;
-	public static int winMoneyAmount = 1000;
+	public static int winMoneyAmount = 5000;
 	public Transform attackPoint;
 	public static int moneyLost = 30;
 	public float attackRange = 10f;
@@ -302,11 +302,11 @@ public class Player_Combat : MonoBehaviour
 				Debug.Log("Ghosts captured: " + ghostsCaptured.ToString());
 				int recipesMade = Player_Combat.recipesMade;
             	totalMoney = totalMoney - moneyLost;
+				if (totalMoney < 0) totalMoney = 0;
 				GameOverLevelSummary();
 				ghostsCaptured = 0;
             	recipesMade = 0;
 				spawn.set = false;
-			
 				Debug.Log("Player Lost");
 			}
 
